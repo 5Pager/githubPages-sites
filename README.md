@@ -5,59 +5,82 @@ This repository serves as a centralized hosting location for multiple static HTM
 ## Repository Purpose
 
 This repo is designed to:
-- Host multiple static HTML sites in an organized manner
-- Provide version management for each project
-- Serve as a single entry point for all deployed sites
+- Host multiple static HTML sites organized by framework type and implementation level
+- Showcase both Packets and Protocols AI frameworks
+- Provide version management for each project implementation
+- Serve as a single entry point for all framework demonstrations
 - Enable easy deployment via GitHub Pages
 
 ## Structure
 
 ```
 githubPages-sites/
-├── index.html                 # Main landing page with project navigation
+├── index.html                 # Main landing page with framework navigation
 ├── README.md                  # This documentation
 ├── 0_AgenticPlan.md          # Project planning and status tracking
 ├── AgenticActionLogs/        # Detailed logs of automated actions
-├── sites/                    # Individual project deployments
-│   ├── project-name/
-│   │   ├── v1.0/            # Version-specific deployments
-│   │   ├── v1.1/
-│   │   └── latest/          # Points to current stable version
-│   └── another-project/
-└── assets/                   # Shared resources
+├── sites/                    # Framework-organized deployments
+│   ├── packets-framework/    # Packets framework implementations
+│   │   ├── abstract-template/      # Template with placeholders
+│   │   ├── westdental-implementation/  # Real WestDental implementation
+│   │   └── 5pager-meta/           # Framework applied to itself
+│   ├── protocols-framework/  # Protocols framework implementations
+│   │   └── westdental-implementation/  # WestDental protocols
+│   └── legacy/              # Historical projects
+│       └── westdental-simple/     # Early iteration
+└── assets/                   # Shared resources (main site only)
     ├── css/                  # Global stylesheets
     ├── js/                   # Shared JavaScript
     └── images/               # Common images and icons
 ```
 
-## Hosted Projects
+## Framework Organization
 
-Each project in the `sites/` directory represents a static HTML site with:
+The repository is organized by framework type and implementation level:
+
+### Packets Framework
+Generates comprehensive AI-driven documentation using cortical packet processing:
+- **Abstract Template**: Shows framework structure with placeholders (`/packets-framework/abstract-template/`)
+- **WestDental Implementation**: Real-world dental practice implementation (`/packets-framework/westdental-implementation/`)
+- **5Pager Meta**: Framework applied to itself for 5Pager's own site (`/packets-framework/5pager-meta/`)
+
+### Protocols Framework
+Focuses on detailed procedural documentation and service delivery:
+- **WestDental Protocols**: Complete dental service protocols (`/protocols-framework/westdental-implementation/`)
+
+### Legacy Projects
+Historical implementations before framework development:
+- **WestDental Simple**: Early dental practice website (`/legacy/westdental-simple/`)
+
+Each implementation includes:
 - **Version Management**: Multiple versions preserved in separate directories
 - **Latest Version**: Always accessible via the `latest/` subdirectory
 - **Independent Assets**: Each version maintains its own required assets
-- **Direct Access**: Sites can be accessed directly via their paths
+- **Direct Access**: Sites can be accessed directly via their framework paths
 
 ## GitHub Pages Deployment
 
 This repository is configured for GitHub Pages deployment from the root directory. All sites are accessible at:
 - Main index: `https://[username].github.io/[repo-name]/`
-- Individual projects: `https://[username].github.io/[repo-name]/sites/[project]/latest/`
-- Specific versions: `https://[username].github.io/[repo-name]/sites/[project]/[version]/`
+- Packets framework sites: `https://[username].github.io/[repo-name]/sites/packets-framework/[implementation]/latest/`
+- Protocols framework sites: `https://[username].github.io/[repo-name]/sites/protocols-framework/[implementation]/latest/`
+- Legacy sites: `https://[username].github.io/[repo-name]/sites/legacy/[project]/latest/`
 
 ## Development Workflow
 
-1. **Source Analysis**: Projects are sourced from `../aiFrameworksSource/`
-2. **Asset Collection**: Static HTML and related assets are identified and copied
-3. **Version Management**: New versions are added while preserving existing ones
-4. **Index Updates**: The main landing page is updated to reflect new projects
+1. **Framework Analysis**: Projects are sourced from `../aiFrameworksSource/` (now organized by framework type)
+2. **Asset Collection**: Static HTML and related assets are identified and copied to appropriate framework directories
+3. **Version Management**: New versions are added while preserving existing ones within framework structure
+4. **Index Updates**: The main landing page is updated to reflect new framework implementations
 5. **Deployment**: Changes are committed and automatically deployed via GitHub Pages
 
 ## Features
 
 - 📱 **Responsive Design**: All sites and the index page are mobile-friendly
-- 🔗 **Easy Navigation**: Central index page with links to all projects
-- 📋 **Version History**: Complete version tracking for each project
+- 🧠 **Framework Organization**: Clear separation between Packets and Protocols frameworks
+- 🔗 **Easy Navigation**: Central index page with framework-based organization
+- 📋 **Version History**: Complete version tracking for each implementation
+- 🎯 **Implementation Levels**: Abstract templates, real implementations, and meta applications
 - ⚡ **Fast Loading**: Optimized static assets and minimal overhead
 - 🔍 **SEO Friendly**: Proper meta tags and structure for search engines
 
