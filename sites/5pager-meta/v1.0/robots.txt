@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Allow all search engine crawlers
+Disallow: 
+
+# Sitemap location
+Sitemap: https://5pager.com/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1

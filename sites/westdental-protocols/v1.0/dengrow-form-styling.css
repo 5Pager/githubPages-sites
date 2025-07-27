@@ -1,0 +1,159 @@
+/* =================================================== */
+/* WEST DENTAL - DENGRO FORM STYLES V19                */
+/* Nuclear Clean - Targeting .dengrow-submit-button    */
+/* =================================================== */
+
+/* 1. Global Reset */
+body {
+    background-color: transparent !important;
+    font-family: 'Satoshi-Medium', sans-serif !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  /* 2. Form Container */
+  .dengro-form {
+    text-align: left;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* 3. Fields */
+  input,
+  select,
+  textarea,
+  .form-control {
+    width: 100% !important;
+    padding: 1rem 1.25rem !important;
+    font-family: 'Satoshi-Medium', sans-serif !important;
+    font-size: 1.1rem !important;
+    color: #3A2D33 !important;
+    background-color: #fff !important;
+    border: 2px solid #F0F0F0 !important;
+    border-radius: 12px !important;
+    min-height: 54px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02) !important;
+    outline: none !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  /* 4. Field Focus */
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #E6A444 !important;
+    box-shadow: 0 0 0 4px rgba(230, 164, 68, 0.1) !important;
+    background-color: #FEFEFE !important;
+    transform: translateY(-1px);
+  }
+  
+  /* 5. Placeholder */
+  input::placeholder,
+  textarea::placeholder {
+    color: #9E919A !important;
+    opacity: 0.6 !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+  }
+  
+  /* 6. Validation Override */
+  input:valid,
+  select:valid,
+  textarea:valid {
+    border-color: #F0F0F0 !important;
+    box-shadow: none !important;
+    background-color: #fff !important;
+    color: #3A2D33 !important;
+  }
+  
+  /* 7. Labels */
+  label {
+    font-family: 'Satoshi-Bold', sans-serif !important;
+    font-size: 1rem !important;
+    color: #3A2D33 !important;
+    margin-bottom: 0.75rem !important;
+    font-weight: 600 !important;
+  }
+  
+  /* 8. Submit Button: Orange Branded */
+  .dengrow-submit-button {
+    display: block !important;
+    width: 100% !important;
+    margin-top: 2rem !important;
+    background: linear-gradient(135deg, #E6A444 0%, #f0b658 100%) !important;
+    color: #3A2D33 !important;
+    border: none !important;
+    border-radius: 50px !important;
+    padding: 1.4rem 2rem !important;
+    font-family: 'Satoshi-Bold', sans-serif !important;
+    font-size: 1.3rem !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    cursor: pointer !important;
+    box-shadow: 0 6px 24px rgba(230, 164, 68, 0.25) !important;
+    opacity: 0.9 !important;
+    transition: all 0.3s ease !important;
+    line-height: 1.2 !important;
+    appearance: none !important;
+  }
+  
+  /* 9. Submit Hover */
+  .dengrow-submit-button:hover {
+    transform: translateY(-3px) scale(1.02) !important;
+    background: linear-gradient(135deg, #f0b658 0%, #E6A444 100%) !important;
+    box-shadow: 0 12px 40px rgba(230, 164, 68, 0.4) !important;
+    opacity: 1 !important;
+  }
+  
+  /* 10. Submit Active */
+  .dengrow-submit-button:active {
+    transform: translateY(-1px) scale(1.01) !important;
+    box-shadow: 0 8px 24px rgba(230, 164, 68, 0.3) !important;
+    background: linear-gradient(135deg, #d4940a 0%, #E6A444 100%) !important;
+  }
+  
+  /* 11. Clean Up Defaults + Ghost Buttons */
+  input[type="submit"],
+  button:not(.dengrow-submit-button) {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+  }
+  
+  /* 12. Remove all green/red system styles */
+  [class*="valid"],
+  [class*="success"],
+  [class*="error"],
+  [class*="invalid"],
+  [style*="border-color: green"],
+  [style*="border-color: red"],
+  [style*="box-shadow: green"],
+  [style*="box-shadow: red"] {
+    border-color: #F0F0F0 !important;
+    box-shadow: none !important;
+    background-color: #FFFFFF !important;
+    color: #3A2D33 !important;
+  }
+  
+  /* 13. Mobile Optimisation */
+  @media (max-width: 768px) {
+    input,
+    select,
+    textarea {
+      font-size: 16px !important;
+      padding: 0.9rem 1rem !important;
+      min-height: 52px !important;
+    }
+  
+    .dengrow-submit-button {
+      font-size: 1.2rem !important;
+      padding: 1.2rem 1.5rem !important;
+      margin-top: 1.5rem !important;
+    }
+  }

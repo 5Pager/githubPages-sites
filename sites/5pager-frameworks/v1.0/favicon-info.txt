@@ -1,0 +1,41 @@
+# West Dental Favicon Information
+
+This file contains information about the favicon for the West Dental website.
+
+## Favicon Requirements
+- File: favicon.ico
+- Size: 32x32 pixels (standard)
+- Format: ICO format for maximum browser compatibility
+- Alternative formats: PNG (16x16, 32x32, 48x48)
+
+## Design Guidelines
+Based on West Dental's brand identity:
+- Primary color: #2C5F6B (Deep Teal)
+- Accent color: #E8B447 (Warm Gold)
+- Background: White or transparent
+
+## Suggested Design Elements
+1. Simple "W" lettermark in West Dental brand colors
+2. Minimalist tooth icon in teal
+3. Clean geometric design that works at small sizes
+4. High contrast for visibility
+
+## Implementation
+Place the favicon.ico file in the root directory (/Public_html/)
+The HTML files already include the reference:
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+## Future Enhancements
+Consider adding:
+- Apple touch icons for mobile devices
+- Different sizes for various devices
+- SVG favicon for modern browsers
+
+## Creation Tools
+Recommended tools for creating favicon:
+- Favicon.io
+- RealFaviconGenerator.net
+- Adobe Illustrator + online converters
+- Canva favicon maker
+
+Note: This is a placeholder file. Replace with actual favicon.ico when available.

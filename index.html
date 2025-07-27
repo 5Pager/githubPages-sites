@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Static Sites Collection | AI Framework Projects</title>
+        <meta
+            name="description"
+            content="Collection of static HTML sites for AI framework documentation and projects hosted on GitHub Pages"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: "#2563eb",
+                            secondary: "#64748b",
+                            accent: "#0f172a",
+                            muted: "#f8fafc",
+                        },
+                    },
+                },
+            };
+        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            body {
+                font-family: "Inter", sans-serif;
+            }
+            .gradient-bg {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow:
+                    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+        </style>
+    </head>
+    <body class="bg-gray-50 text-gray-900">
+        <!-- Header -->
+        <header class="gradient-bg text-white">
+            <div class="container mx-auto px-6 py-16">
+                <div class="text-center">
+                    <h1 class="text-5xl font-bold mb-4">
+                        Static Sites Collection
+                    </h1>
+                    <p class="text-xl opacity-90 max-w-2xl mx-auto">
+                        A curated collection of AI framework documentation and
+                        project sites, deployed and hosted via GitHub Pages for
+                        easy access and demonstration.
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="bg-white shadow-sm border-b">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-4">
+                        <span class="text-2xl">🚀</span>
+                        <span class="font-semibold text-lg">Projects Hub</span>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-6">
+                        <a
+                            href="#projects"
+                            class="text-secondary hover:text-primary transition-colors"
+                            >Projects</a
+                        >
+                        <a
+                            href="#about"
+                            class="text-secondary hover:text-primary transition-colors"
+                            >About</a
+                        >
+                        <a
+                            href="https://github.com"
+                            target="_blank"
+                            class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                        >
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-4">Available Projects</h2>
+                    <p class="text-secondary text-lg">
+                        Click on any project to explore the live demo and
+                        documentation
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- 5Pager Cortical Packets -->
+                    <div
+                        class="bg-white rounded-lg shadow-lg overflow-hidden card-hover"
+                    >
+                        <div
+                            class="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center"
+                        >
+                            <span class="text-white text-6xl">🧠</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">
+                                5Pager Cortical Packets
+                            </h3>
+                            <p class="text-secondary mb-4">
+                                AI framework documentation focusing on cortical
+                                packet processing and neural network
+                                architectures.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex space-x-2">
+                                    <a
+                                        href="sites/5pager-cortical/latest/"
+                                        class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                                    >
+                                        View Latest
+                                    </a>
+                                    <span
+                                        class="text-sm text-secondary bg-gray-100 px-2 py-2 rounded"
+                                        >v1.0</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5Pager Frameworks -->
+                    <div
+                        class="bg-white rounded-lg shadow-lg overflow-hidden card-hover"
+                    >
+                        <div
+                            class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center"
+                        >
+                            <span class="text-white text-6xl">⚡</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">
+                                5Pager Frameworks
+                            </h3>
+                            <p class="text-secondary mb-4">
+                                Comprehensive framework documentation for rapid
+                                AI development and deployment strategies.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex space-x-2">
+                                    <a
+                                        href="sites/5pager-frameworks/latest/"
+                                        class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                                    >
+                                        View Latest
+                                    </a>
+                                    <span
+                                        class="text-sm text-secondary bg-gray-100 px-2 py-2 rounded"
+                                        >v1.0</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5Pager Meta -->
+                    <div
+                        class="bg-white rounded-lg shadow-lg overflow-hidden card-hover"
+                    >
+                        <div
+                            class="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center"
+                        >
+                            <span class="text-white text-6xl">🎯</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">
+                                5Pager Meta
+                            </h3>
+                            <p class="text-secondary mb-4">
+                                Meta-framework documentation covering
+                                overarching principles and methodologies.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex space-x-2">
+                                    <a
+                                        href="sites/5pager-meta/latest/"
+                                        class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                                    >
+                                        View Latest
+                                    </a>
+                                    <span
+                                        class="text-sm text-secondary bg-gray-100 px-2 py-2 rounded"
+                                        >v1.0</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- WestDental Protocols -->
+                    <div
+                        class="bg-white rounded-lg shadow-lg overflow-hidden card-hover"
+                    >
+                        <div
+                            class="h-48 bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center"
+                        >
+                            <span class="text-white text-6xl">🦷</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">
+                                WestDental Protocols
+                            </h3>
+                            <p class="text-secondary mb-4">
+                                Comprehensive dental service documentation with
+                                detailed treatment protocols and procedures.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex space-x-2">
+                                    <a
+                                        href="sites/westdental-protocols/latest/"
+                                        class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                                    >
+                                        View Latest
+                                    </a>
+                                    <span
+                                        class="text-sm text-secondary bg-gray-100 px-2 py-2 rounded"
+                                        >v1.0</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- WestDental Simple -->
+                    <div
+                        class="bg-white rounded-lg shadow-lg overflow-hidden card-hover"
+                    >
+                        <div
+                            class="h-48 bg-gradient-to-br from-cyan-400 to-cyan-600 flex items-center justify-center"
+                        >
+                            <span class="text-white text-6xl">🏥</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">
+                                WestDental Simple
+                            </h3>
+                            <p class="text-secondary mb-4">
+                                Streamlined dental practice website with
+                                essential information and contact details.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex space-x-2">
+                                    <a
+                                        href="sites/westdental-simple/latest/"
+                                        class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                                    >
+                                        View Latest
+                                    </a>
+                                    <span
+                                        class="text-sm text-secondary bg-gray-100 px-2 py-2 rounded"
+                                        >v1.0</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coming Soon Placeholder -->
+                    <div
+                        class="bg-white rounded-lg shadow-lg overflow-hidden card-hover opacity-60"
+                    >
+                        <div
+                            class="h-48 bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center"
+                        >
+                            <span class="text-white text-6xl">➕</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">
+                                More Projects Coming
+                            </h3>
+                            <p class="text-secondary mb-4">
+                                Additional AI framework projects and
+                                documentation sites will be added here.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex space-x-2">
+                                    <span
+                                        class="bg-gray-300 text-gray-600 px-4 py-2 rounded-lg"
+                                    >
+                                        Coming Soon
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-4">Repository Features</h2>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div
+                            class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4"
+                        >
+                            <span class="text-white text-2xl">📱</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">
+                            Responsive Design
+                        </h3>
+                        <p class="text-secondary">
+                            All sites are optimized for mobile, tablet, and
+                            desktop viewing.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4"
+                        >
+                            <span class="text-white text-2xl">🔄</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">
+                            Version Management
+                        </h3>
+                        <p class="text-secondary">
+                            Multiple versions preserved with easy access to
+                            latest and historical releases.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4"
+                        >
+                            <span class="text-white text-2xl">⚡</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">
+                            Fast Deployment
+                        </h3>
+                        <p class="text-secondary">
+                            Automated GitHub Pages deployment for instant
+                            updates and accessibility.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 bg-muted">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold mb-6">
+                        About This Repository
+                    </h2>
+                    <p class="text-lg text-secondary mb-8">
+                        This repository serves as a centralized hosting location
+                        for multiple static HTML sites related to AI frameworks
+                        and documentation projects. It's designed to provide
+                        easy access to various project demonstrations while
+                        maintaining proper version control and organization.
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-8 text-left">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4">Purpose</h3>
+                            <ul class="space-y-2 text-secondary">
+                                <li>
+                                    • Centralized hosting for multiple static
+                                    sites
+                                </li>
+                                <li>
+                                    • Version management for project iterations
+                                </li>
+                                <li>• Easy GitHub Pages deployment</li>
+                                <li>
+                                    • Professional presentation of AI projects
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4">
+                                Technical Details
+                            </h3>
+                            <ul class="space-y-2 text-secondary">
+                                <li>• Static HTML/CSS/JavaScript sites</li>
+                                <li>• Responsive design principles</li>
+                                <li>• SEO-optimized structure</li>
+                                <li>• Automated deployment workflows</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-accent text-white py-12">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">
+                            Static Sites Collection
+                        </h3>
+                        <p class="text-gray-300">
+                            Organized repository of AI framework documentation
+                            and project sites for easy access and professional
+                            presentation.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li>
+                                <a
+                                    href="#projects"
+                                    class="text-gray-300 hover:text-white transition-colors"
+                                    >All Projects</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#about"
+                                    class="text-gray-300 hover:text-white transition-colors"
+                                    >About</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="0_AgenticPlan.md"
+                                    class="text-gray-300 hover:text-white transition-colors"
+                                    >Project Plan</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">
+                            Repository Info
+                        </h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>🔗 GitHub Pages Hosted</li>
+                            <li>📱 Mobile Responsive</li>
+                            <li>🔄 Version Controlled</li>
+                            <li>⚡ Fast Loading</li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400"
+                >
+                    <p>
+                        &copy; 2024 Static Sites Collection. Automated
+                        repository management powered by AI workflows.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Smooth Scrolling Script -->
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+                anchor.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(
+                        this.getAttribute("href"),
+                    );
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                        });
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

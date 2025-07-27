@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>West Dental Services | Comprehensive Dental Care Glasgow</title>
+        <meta
+            name="description"
+            content="Complete dental services in Glasgow's West End. From check-ups to cosmetic treatments with Dr. Karm Jandoo and team. Book your appointment today."
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            "brand-charcoal": "#0E0E0E",
+                            "brand-blue": "#6674F4",
+                            "brand-muted": "#F7F7F7",
+                            "brand-highlight": "#E0F2FF",
+                        },
+                        fontFamily: {
+                            sans: [
+                                "Inter",
+                                "system-ui",
+                                "-apple-system",
+                                "sans-serif",
+                            ],
+                        },
+                    },
+                },
+            };
+        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body class="font-sans text-brand-charcoal">
+        <!-- Header -->
+        <header class="bg-white shadow-sm">
+            <nav
+                class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between"
+            >
+                <a href="index.html" class="flex items-center space-x-3">
+                    <div
+                        class="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center"
+                    >
+                        <span class="text-white font-bold text-lg">WD</span>
+                    </div>
+                    <span class="font-semibold text-xl">West Dental</span>
+                </a>
+                <ul class="hidden md:flex space-x-8 text-sm font-medium">
+                    <li>
+                        <a
+                            href="#services"
+                            class="hover:text-brand-blue transition-colors"
+                            >Services</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#about"
+                            class="hover:text-brand-blue transition-colors"
+                            >About</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#contact"
+                            class="bg-brand-blue text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors"
+                            >Book Now</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-br from-brand-highlight to-white py-20">
+            <div class="max-w-6xl mx-auto px-4 text-center">
+                <h1 class="text-5xl font-bold mb-6 text-brand-charcoal">
+                    Complete Dental Care in Glasgow's West End
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    From routine check-ups to advanced cosmetic treatments, Dr.
+                    Karm Jandoo and our experienced team provide comprehensive
+                    dental care with a personal touch.
+                </p>
+                <a
+                    href="#services"
+                    class="bg-brand-blue text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-600 transition-colors inline-block"
+                >
+                    Explore Our Services
+                </a>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section id="services" class="py-16 bg-white">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">
+                    Our Dental Services
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Check-ups -->
+                    <div
+                        class="bg-brand-muted rounded-lg p-6 hover:shadow-lg transition-shadow"
+                    >
+                        <div
+                            class="w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center mb-4"
+                        >
+                            <span class="text-white text-xl">✓</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">
+                            Dental Check-ups
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Comprehensive examinations to maintain your oral
+                            health and prevent problems before they start.
+                        </p>
+                        <a
+                            href="checkups.html"
+                            class="text-brand-blue font-medium hover:underline"
+                            >Learn More →</a
+                        >
+                    </div>
+
+                    <!-- Hygiene -->
+                    <div
+                        class="bg-brand-muted rounded-lg p-6 hover:shadow-lg transition-shadow"
+                    >
+                        <div
+                            class="w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center mb-4"
+                        >
+                            <span class="text-white text-xl">🦷</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">
+                            Dental Hygiene
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Professional cleaning and hygiene treatments to keep
+                            your teeth and gums healthy.
+                        </p>
+                        <a
+                            href="hygiene.html"
+                            class="text-brand-blue font-medium hover:underline"
+                            >Learn More →</a
+                        >
+                    </div>
+
+                    <!-- Teeth Whitening -->
+                    <div
+                        class="bg-brand-muted rounded-lg p-6 hover:shadow-lg transition-shadow"
+                    >
+                        <div
+                            class="w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center mb-4"
+                        >
+                            <span class="text-white text-xl">✨</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">
+                            Teeth Whitening
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Safe, effective whitening treatments to brighten
+                            your smile and boost your confidence.
+                        </p>
+                        <a
+                            href="teeth-whitening.html"
+                            class="text-brand-blue font-medium hover:underline"
+                            >Learn More →</a
+                        >
+                    </div>
+
+                    <!-- Composite Bonding -->
+                    <div
+                        class="bg-brand-muted rounded-lg p-6 hover:shadow-lg transition-shadow"
+                    >
+                        <div
+                            class="w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center mb-4"
+                        >
+                            <span class="text-white text-xl">🔧</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">
+                            Composite Bonding
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Repair chips, gaps, and discoloration with
+                            natural-looking composite resin bonding.
+                        </p>
+                        <a
+                            href="composite-bonding.html"
+                            class="text-brand-blue font-medium hover:underline"
+                            >Learn More →</a
+                        >
+                    </div>
+
+                    <!-- Veneers -->
+                    <div
+                        class="bg-brand-muted rounded-lg p-6 hover:shadow-lg transition-shadow"
+                    >
+                        <div
+                            class="w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center mb-4"
+                        >
+                            <span class="text-white text-xl">💎</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">
+                            Porcelain Veneers
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Transform your smile with custom-made porcelain
+                            veneers for a perfect, natural look.
+                        </p>
+                        <a
+                            href="veneers.html"
+                            class="text-brand-blue font-medium hover:underline"
+                            >Learn More →</a
+                        >
+                    </div>
+
+                    <!-- Invisalign -->
+                    <div
+                        class="bg-brand-muted rounded-lg p-6 hover:shadow-lg transition-shadow"
+                    >
+                        <div
+                            class="w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center mb-4"
+                        >
+                            <span class="text-white text-xl">📐</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Invisalign</h3>
+                        <p class="text-gray-600 mb-4">
+                            Straighten your teeth discreetly with clear,
+                            removable Invisalign aligners.
+                        </p>
+                        <a
+                            href="invisalign.html"
+                            class="text-brand-blue font-medium hover:underline"
+                            >Learn More →</a
+                        >
+                    </div>
+
+                    <!-- Crowns & Bridges -->
+                    <div
+                        class="bg-brand-muted rounded-lg p-6 hover:shadow-lg transition-shadow"
+                    >
+                        <div
+                            class="w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center mb-4"
+                        >
+                            <span class="text-white text-xl">👑</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">
+                            Crowns & Bridges
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Restore damaged teeth or replace missing ones with
+                            high-quality crowns and bridges.
+                        </p>
+                        <a
+                            href="crowns-bridges.html"
+                            class="text-brand-blue font-medium hover:underline"
+                            >Learn More →</a
+                        >
+                    </div>
+
+                    <!-- Dental Implants -->
+                    <div
+                        class="bg-brand-muted rounded-lg p-6 hover:shadow-lg transition-shadow"
+                    >
+                        <div
+                            class="w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center mb-4"
+                        >
+                            <span class="text-white text-xl">🔩</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">
+                            Dental Implants
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Permanent solution for missing teeth with
+                            natural-looking and feeling dental implants.
+                        </p>
+                        <a
+                            href="dental-implants.html"
+                            class="text-brand-blue font-medium hover:underline"
+                            >Learn More →</a
+                        >
+                    </div>
+
+                    <!-- Root Canal -->
+                    <div
+                        class="bg-brand-muted rounded-lg p-6 hover:shadow-lg transition-shadow"
+                    >
+                        <div
+                            class="w-12 h-12 bg-brand-blue rounded-lg flex items-center justify-center mb-4"
+                        >
+                            <span class="text-white text-xl">🦷</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">
+                            Root Canal Treatment
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Save infected or damaged teeth with gentle,
+                            effective root canal therapy.
+                        </p>
+                        <a
+                            href="root-canal.html"
+                            class="text-brand-blue font-medium hover:underline"
+                            >Learn More →</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 bg-brand-highlight">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">
+                            Meet Dr. Karm Jandoo
+                        </h2>
+                        <p class="text-gray-600 mb-4">
+                            With years of experience in comprehensive dental
+                            care, Dr. Karm Jandoo is committed to providing
+                            exceptional treatment in a comfortable, welcoming
+                            environment.
+                        </p>
+                        <p class="text-gray-600 mb-6">
+                            Our practice combines the latest dental technology
+                            with a personal approach to ensure every patient
+                            receives the highest quality care tailored to their
+                            individual needs.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="flex items-center">
+                                <span class="text-brand-blue mr-2">✓</span>
+                                <span>Comprehensive dental examinations</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-brand-blue mr-2">✓</span>
+                                <span>Latest dental technology</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-brand-blue mr-2">✓</span>
+                                <span>Personalized treatment plans</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-brand-blue mr-2">✓</span>
+                                <span>Comfortable, relaxing environment</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="w-64 h-64 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center"
+                        >
+                            <span class="text-6xl">👨‍⚕️</span>
+                        </div>
+                        <p class="text-sm text-gray-500">
+                            Dr. Karm Jandoo, Principal Dentist
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 bg-brand-charcoal text-white">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-4">
+                    Ready to Transform Your Smile?
+                </h2>
+                <p class="text-xl mb-8 text-gray-300">
+                    Book your consultation today and take the first step towards
+                    optimal oral health.
+                </p>
+                <a
+                    href="#contact"
+                    class="bg-brand-blue text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-600 transition-colors inline-block"
+                >
+                    Book Appointment
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact" class="bg-white py-12 border-t">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div>
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div
+                                class="w-8 h-8 bg-brand-blue rounded-full flex items-center justify-center"
+                            >
+                                <span class="text-white font-bold">WD</span>
+                            </div>
+                            <span class="font-semibold text-lg"
+                                >West Dental</span
+                            >
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Providing exceptional dental care in Glasgow's West
+                            End with a personal touch.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="font-semibold mb-4">Contact Information</h3>
+                        <div class="space-y-2 text-gray-600">
+                            <p>📍 Glasgow West End</p>
+                            <p>📞 Book your appointment</p>
+                            <p>✉️ info@westdental.co.uk</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="font-semibold mb-4">Opening Hours</h3>
+                        <div class="space-y-2 text-gray-600">
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                            <p>Saturday: 9:00 AM - 4:00 PM</p>
+                            <p>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t mt-8 pt-8 text-center text-gray-500">
+                    <p>&copy; 2024 West Dental. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

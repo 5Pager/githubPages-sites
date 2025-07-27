@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://westdental.co.uk/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Disallow admin areas (if any in future)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+
+# Allow all common pages
+Allow: /index.html
+Allow: /about.html
+Allow: /method.html
+Allow: /services.html
+Allow: /contact.html
+Allow: /style.css
+Allow: /favicon.ico
