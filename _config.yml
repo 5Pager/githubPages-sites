@@ -1,0 +1,84 @@
+# GitHub Pages Configuration
+# This file configures Jekyll for GitHub Pages deployment
+
+# Site settings
+title: "Static Sites Collection"
+description: "A curated collection of AI framework documentation and project sites"
+url: ""
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# GitHub Pages specific settings
+github:
+  repository_name: "githubPages-sites"
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - 0_AgenticPlan.md
+  - AgenticActionLogs/
+  - .git/
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+
+# Include directories that start with underscores
+include:
+  - _pages
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Custom variables
+collections_dir: sites
+
+# SEO settings
+lang: en_US
+author: "AI Framework Projects"
+
+# Social media and meta
+social:
+  type: Organization
+  links:
+    - https://github.com
+
+# Analytics (optional - can be configured later)
+# google_analytics: UA-XXXXXXXX-X
+
+# Theme (using default GitHub Pages theme)
+theme: minima
+
+# Timezone
+timezone: UTC
+
+# Encoding
+encoding: utf-8
+
+# Sass configuration
+sass:
+  style: compressed
+  sass_dir: assets/css
+
+# Permalink structure
+permalink: pretty
+
+# Pagination (if needed)
+paginate: 10
+paginate_path: "/page:num/"
+
+# Site verification (optional)
+# google_site_verification: "verification_code_here"
+# bing_site_verification: "verification_code_here"
