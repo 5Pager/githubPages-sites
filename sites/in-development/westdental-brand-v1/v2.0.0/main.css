@@ -1,0 +1,1737 @@
+/* West Dental - Main CSS v3.0
+ * Glasgow School Contemporary Artistic Sophistication
+ * Advanced Art Theory Integration: Bauhaus + Glasgow School + Contemporary Minimalism
+ * Satoshi Typography + WD Color Palette + Museum-Quality Aesthetic System
+ * Cultural Positioning: West End Intellectual Sophistication
+ * Updated: January 2025 - Artistic Merit Enhancement Cycle
+ */
+
+/* ========================================
+ * WD BRAND CUSTOM PROPERTIES (DESIGN TOKENS)
+ * ======================================== */
+
+:root {
+    /* WD Brand Color Palette (Artistically Enhanced) */
+    --wd-black: #3a2d33; /* Sophisticated Charcoal - Rothko depth with Scottish granite permanence */
+    --wd-gold: #e6a444; /* Venetian Gold - Klimt-inspired transformation catalyst */
+    --wd-white: #eae7de; /* Gallery White - Agnes Martin contemplative sanctuary */
+    --wd-grey: #9e919a; /* Cultural Grey - Morandi sophisticated restraint */
+
+    /* WD Brand Color Variations */
+    --wd-black-hover: #433a40;
+    --wd-black-active: #4c404d;
+    --wd-black-light: #6f6569;
+    --wd-black-lighter: #928a94;
+
+    --wd-gold-hover: #e9ad55;
+    --wd-gold-active: #ecb666;
+    --wd-gold-light: #f4d0a2;
+    --wd-gold-lighter: #fce9d8;
+
+    --wd-white-pure: #ffffff;
+    --wd-white-tint: #edead1;
+    --wd-white-warm: #f0edc4;
+    --wd-white-cool: #e7e4db;
+
+    --wd-grey-light: #b5a8b0;
+    --wd-grey-lighter: #d2c9cd;
+    --wd-grey-lightest: #f0edf0;
+
+    /* Semantic Brand Applications */
+    --brand-primary: var(--wd-black);
+    --brand-accent: var(--wd-gold);
+    --brand-background: var(--wd-white);
+    --brand-text: var(--wd-black);
+    --brand-text-muted: var(--wd-grey);
+    --brand-interactive: var(--wd-gold);
+
+    /* Logo Component Colors */
+    --logo-primary: var(--wd-black);
+    --logo-accent: var(--wd-gold);
+    --logo-squiggle: var(--wd-gold);
+    --logo-background: transparent;
+
+    /* Pattern System Colors */
+    --pattern-base: var(--wd-white);
+    --pattern-overlay: var(--wd-grey-lightest);
+    --pattern-accent: var(--wd-gold-lighter);
+    --pattern-dark: var(--wd-black);
+
+    /* WD Typography System (Glasgow School Contemporary) */
+    --font-family-primary:
+        "Satoshi", "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, sans-serif; /* Bauhaus geometry meets Glasgow School craftsmanship */
+    --font-family-fallback:
+        "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        sans-serif; /* Humanist warmth with systematic clarity */
+    --font-family-cultural:
+        "Satoshi", "Gill Sans", "Optima", "Futura", sans-serif; /* Glasgow intellectual tradition */
+
+    /* Satoshi Typography Scale */
+    --font-size-h1: 3.75rem; /* 60px - Hero headlines */
+    --font-size-h2: 2.5rem; /* 40px - Section headers */
+    --font-size-h3: 1.875rem; /* 30px - Subsection headers */
+    --font-size-h4: 1.25rem; /* 20px - Component headers */
+    --font-size-body: 1.125rem; /* 18px - Primary body text */
+    --font-size-small: 1rem; /* 16px - Secondary text */
+    --font-size-tiny: 0.875rem; /* 14px - Caption text */
+
+    /* WD Typography Weights */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700; /* Satoshi Bold */
+
+    /* WD Typography Tracking (Artistic Sophistication) */
+    --letter-spacing-tight: -0.02em; /* Tight precision for impact */
+    --letter-spacing-normal: 0; /* Natural rhythm */
+    --letter-spacing-wide: 0.02em; /* Swiss typography breathing */
+    --letter-spacing-wider: 0.05em; /* Cultural sophistication */
+    --letter-spacing-brand: 0.125em; /* Bauhaus systematic beauty */
+    --letter-spacing-monument: 0.2em; /* Architectural permanence */
+
+    /* Line Heights */
+    --line-height-tight: 1.1;
+    --line-height-normal: 1.2;
+    --line-height-relaxed: 1.5;
+    --line-height-loose: 1.6;
+
+    /* WD Spacing Scale (8px base unit) */
+    --space-xs: 0.5rem; /* 8px */
+    --space-sm: 1rem; /* 16px */
+    --space-md: 1.5rem; /* 24px */
+    --space-lg: 2rem; /* 32px */
+    --space-xl: 3rem; /* 48px */
+    --space-2xl: 5rem; /* 80px */
+
+    /* Component Sizing */
+    --button-padding-x: 2rem;
+    --button-padding-y: 0.875rem;
+    --button-radius: 0.5rem;
+    --card-padding: 2rem;
+    --card-radius: 1rem;
+
+    /* WD Shadows (Museum-Quality Depth) */
+    --shadow-sm: 0 1px 2px 0 rgba(58, 45, 51, 0.05); /* Subtle paper depth */
+    --shadow-md: 0 4px 6px -1px rgba(58, 45, 51, 0.1); /* Gallery frame elevation */
+    --shadow-lg: 0 10px 15px -3px rgba(58, 45, 51, 0.1); /* Architectural element depth */
+    --shadow-xl: 0 20px 25px -5px rgba(58, 45, 51, 0.1); /* Monumental presence */
+    --shadow-vermeer: 0 8px 32px -8px rgba(58, 45, 51, 0.15); /* Vermeer lighting depth */
+    --shadow-cultural: 0 2px 8px 0 rgba(58, 45, 51, 0.08); /* Cultural sophistication */
+
+    /* WD Transitions (Artistic Timing) */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1); /* Responsive interaction */
+    --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Natural movement */
+    --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1); /* Contemplative pace */
+    --transition-cultural: 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Sophisticated easing */
+    --transition-museum: 600ms cubic-bezier(0.19, 1, 0.22, 1); /* Gallery-quality movement */
+
+    /* Layout Grid */
+    --max-width-content: 75rem; /* 1200px */
+    --grid-gutter: 1.5rem; /* 24px */
+
+    /* Logo Animation Timings (Artistic Choreography) */
+    --logo-animation-duration: 2s; /* Contemplative entrance */
+    --logo-hover-duration: 0.3s; /* Responsive interaction */
+    --squiggle-draw-duration: 1.5s; /* Artistic revelation */
+    --logo-breathing-duration: 4s; /* Natural life rhythm */
+    --cultural-entrance-duration: 800ms; /* Sophisticated arrival */
+}
+
+/* Mobile Typography Adjustments */
+@media (max-width: 767px) {
+    :root {
+        --font-size-h1: 2.5rem; /* 40px */
+        --font-size-h2: 2rem; /* 32px */
+        --font-size-h3: 1.5rem; /* 24px */
+        --font-size-body: 1rem; /* 16px */
+        --card-padding: 1.5rem;
+        --space-2xl: 3rem; /* 48px */
+    }
+}
+
+/* ========================================
+ * FONT LOADING & FALLBACKS
+ * ======================================== */
+
+/* Satoshi Font Loading */
+@font-face {
+    font-family: "Satoshi";
+    src: url("https://fonts.fontshare.com/fonts/satoshi/woff2/satoshi-regular.woff2")
+        format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url("https://fonts.fontshare.com/fonts/satoshi/woff2/satoshi-medium.woff2")
+        format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url("https://fonts.fontshare.com/fonts/satoshi/woff2/satoshi-bold.woff2")
+        format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Poppins Fallback */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+/* ========================================
+ * RESET AND BASE STYLES
+ * ======================================== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-loose);
+    color: var(--brand-text);
+    background-color: var(--brand-background);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: var(--letter-spacing-normal);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+    outline: 2px solid var(--brand-accent);
+    outline-offset: 2px;
+}
+
+/* ========================================
+ * WD TYPOGRAPHY SYSTEM
+ * ======================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+    color: var(--brand-text);
+    letter-spacing: var(--letter-spacing-brand);
+    /* Glasgow School Contemporary Typography */
+    text-rendering: optimizeLegibility;
+    -webkit-font-feature-settings:
+        "kern" 1,
+        "liga" 1;
+    font-feature-settings:
+        "kern" 1,
+        "liga" 1;
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    margin-bottom: var(--space-lg);
+    /* Monumental Typography - Architectural Presence */
+    letter-spacing: var(--letter-spacing-monument);
+    text-rendering: geometricPrecision;
+    font-variant-caps: all-small-caps;
+    font-variant-numeric: lining-nums;
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-md);
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-weight-medium);
+    margin-bottom: var(--space-sm);
+}
+
+h4 {
+    font-size: var(--font-size-h4);
+    font-weight: var(--font-weight-medium);
+    margin-bottom: var(--space-sm);
+}
+
+p {
+    margin-bottom: var(--space-sm);
+    max-width: 65ch;
+    letter-spacing: var(--letter-spacing-wide);
+}
+
+.text-large {
+    font-size: var(--font-size-h4);
+    line-height: var(--line-height-relaxed);
+}
+
+.text-small {
+    font-size: var(--font-size-small);
+}
+
+.text-tiny {
+    font-size: var(--font-size-tiny);
+}
+
+.text-muted {
+    color: var(--brand-text-muted);
+}
+
+.text-wd-gold {
+    color: var(--brand-accent);
+    /* Venetian Gold Enhancement */
+    text-shadow: 0 0 1px rgba(230, 164, 68, 0.3);
+    font-weight: var(--font-weight-medium);
+}
+
+.font-bold {
+    font-weight: var(--font-weight-bold);
+}
+
+.font-medium {
+    font-weight: var(--font-weight-medium);
+}
+
+.uppercase {
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-brand);
+}
+
+.tracking-wide {
+    letter-spacing: var(--letter-spacing-wide);
+}
+
+.tracking-wider {
+    letter-spacing: var(--letter-spacing-wider);
+}
+
+/* ========================================
+ * WD LOGO SYSTEM
+ * ======================================== */
+
+.wd-logo {
+    display: inline-flex;
+    align-items: center;
+    color: var(--logo-primary);
+    transition: all var(--transition-normal);
+}
+
+.wd-logo-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: var(--space-sm);
+}
+
+.wd-logo-text {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-h4);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-brand);
+}
+
+.wd-logo-squiggle {
+    fill: var(--logo-accent);
+    transition: all var(--transition-normal);
+}
+
+.wd-logo:hover .wd-logo-squiggle {
+    fill: var(--wd-gold-hover);
+    transform: translateX(2px) scale(1.02);
+    /* Enhanced Artistic Interaction */
+    filter: brightness(1.1) saturate(1.1);
+    transition: all var(--transition-cultural);
+}
+
+/* Logo Animation Classes */
+.wd-logo-animated .wd-logo-squiggle {
+    animation: squiggle-draw var(--squiggle-draw-duration) ease-in-out;
+}
+
+.wd-logo-breathing .wd-logo-icon {
+    animation: gentle-pulse 4s ease-in-out infinite;
+}
+
+@keyframes squiggle-draw {
+    from {
+        stroke-dasharray: 100;
+        stroke-dashoffset: 100;
+    }
+    to {
+        stroke-dasharray: 100;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes gentle-pulse {
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.02);
+        opacity: 0.95;
+    }
+}
+
+/* Advanced Artistic Animations */
+@keyframes cultural-entrance {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.98);
+    }
+    60% {
+        opacity: 0.8;
+        transform: translateY(-2px) scale(1.01);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes museum-quality-reveal {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+        filter: blur(3px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+/* ========================================
+ * LAYOUT UTILITIES
+ * ======================================== */
+
+.container {
+    max-width: var(--max-width-content);
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+.grid {
+    display: grid;
+    gap: var(--grid-gutter);
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1023px) {
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.gap-xs {
+    gap: var(--space-xs);
+}
+.gap-sm {
+    gap: var(--space-sm);
+}
+.gap-md {
+    gap: var(--space-md);
+}
+.gap-lg {
+    gap: var(--space-lg);
+}
+.gap-xl {
+    gap: var(--space-xl);
+}
+
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+
+/* ========================================
+ * WD PATTERN SYSTEM
+ * ======================================== */
+
+.wd-pattern-bg {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23F0EDF0' fill-opacity='0.05' fill-rule='evenodd'%3E%3Ctext x='10' y='20' font-family='Satoshi,sans-serif' font-size='12' font-weight='bold'%3EW%3C/text%3E%3Ctext x='35' y='20' font-family='Satoshi,sans-serif' font-size='12' font-weight='bold'%3ED%3C/text%3E%3Ctext x='10' y='45' font-family='Satoshi,sans-serif' font-size='12' font-weight='bold'%3EW%3C/text%3E%3Ctext x='35' y='45' font-family='Satoshi,sans-serif' font-size='12' font-weight='bold'%3ED%3C/text%3E%3C/g%3E%3C/svg%3E");
+    background-size: 60px 60px;
+}
+
+.wd-pattern-accent {
+    position: relative;
+}
+
+.wd-pattern-accent::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 20 Q15 15 20 20 Q25 25 30 20' stroke='%23E6A444' stroke-width='1' fill='none' opacity='0.1'/%3E%3C/svg%3E");
+    background-size: 40px 40px;
+    pointer-events: none;
+}
+
+/* ========================================
+ * SPACING UTILITIES
+ * ======================================== */
+
+.m-0 {
+    margin: 0;
+}
+.mt-xs {
+    margin-top: var(--space-xs);
+}
+.mt-sm {
+    margin-top: var(--space-sm);
+}
+.mt-md {
+    margin-top: var(--space-md);
+}
+.mt-lg {
+    margin-top: var(--space-lg);
+}
+.mt-xl {
+    margin-top: var(--space-xl);
+}
+.mt-2xl {
+    margin-top: var(--space-2xl);
+}
+
+.mb-xs {
+    margin-bottom: var(--space-xs);
+}
+.mb-sm {
+    margin-bottom: var(--space-sm);
+}
+.mb-md {
+    margin-bottom: var(--space-md);
+}
+.mb-lg {
+    margin-bottom: var(--space-lg);
+}
+.mb-xl {
+    margin-bottom: var(--space-xl);
+}
+.mb-2xl {
+    margin-bottom: var(--space-2xl);
+}
+
+.p-xs {
+    padding: var(--space-xs);
+}
+.p-sm {
+    padding: var(--space-sm);
+}
+.p-md {
+    padding: var(--space-md);
+}
+.p-lg {
+    padding: var(--space-lg);
+}
+.p-xl {
+    padding: var(--space-xl);
+}
+.p-2xl {
+    padding: var(--space-2xl);
+}
+
+.py-xs {
+    padding-top: var(--space-xs);
+    padding-bottom: var(--space-xs);
+}
+.py-sm {
+    padding-top: var(--space-sm);
+    padding-bottom: var(--space-sm);
+}
+.py-md {
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-md);
+}
+.py-lg {
+    padding-top: var(--space-lg);
+    padding-bottom: var(--space-lg);
+}
+.py-xl {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+}
+.py-2xl {
+    padding-top: var(--space-2xl);
+    padding-bottom: var(--space-2xl);
+}
+
+.px-xs {
+    padding-left: var(--space-xs);
+    padding-right: var(--space-xs);
+}
+.px-sm {
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+}
+.px-md {
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+}
+.px-lg {
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
+}
+.px-xl {
+    padding-left: var(--space-xl);
+    padding-right: var(--space-xl);
+}
+
+/* ========================================
+ * WD COMPONENT STYLES
+ * ======================================== */
+
+/* WD Button System */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--button-padding-y) var(--button-padding-x);
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-medium);
+    line-height: 1;
+    border-radius: var(--button-radius);
+    transition: all var(--transition-fast);
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    min-height: 44px; /* Accessibility touch target */
+    letter-spacing: var(--letter-spacing-wide);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary {
+    background-color: var(--brand-accent);
+    color: var(--wd-white-pure);
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+    background-color: var(--wd-gold-hover);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-primary:active {
+    background-color: var(--wd-gold-active);
+    transform: translateY(0);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--brand-accent);
+    border: 2px solid var(--brand-accent);
+}
+
+.btn-secondary:hover {
+    background-color: var(--brand-accent);
+    color: var(--wd-white-pure);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--brand-text);
+    border: 1px solid var(--wd-grey-light);
+}
+
+.btn-outline:hover {
+    border-color: var(--brand-accent);
+    color: var(--brand-accent);
+}
+
+/* Button Animation Effects */
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: left var(--transition-slow);
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+
+/* WD Card System */
+.card {
+    background-color: var(--wd-white-pure);
+    border-radius: var(--card-radius);
+    padding: var(--card-padding);
+    box-shadow: var(--shadow-cultural);
+    transition: all var(--transition-cultural);
+    border: 1px solid var(--wd-white-cool);
+    /* Museum-Quality Card Enhancement */
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg,
+        transparent 0%,
+        rgba(230, 164, 68, 0.02) 50%,
+        transparent 100%
+    );
+    opacity: 0;
+    transition: opacity var(--transition-cultural);
+    pointer-events: none;
+}
+
+.card:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: var(--shadow-vermeer);
+    /* Sophisticated Hover Enhancement */
+    border-color: var(--wd-gold-light);
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card-highlight {
+    background-color: var(--wd-gold-lighter);
+    border: 1px solid var(--wd-gold-light);
+}
+
+.card-pattern {
+    position: relative;
+}
+
+.card-pattern::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Ctext x='5' y='15' font-family='Satoshi,sans-serif' font-size='8' font-weight='bold' fill='%23F0EDF0'%3EW%3C/text%3E%3Ctext x='18' y='15' font-family='Satoshi,sans-serif' font-size='8' font-weight='bold' fill='%23F0EDF0'%3ED%3C/text%3E%3C/svg%3E");
+    background-size: 30px 30px;
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+/* Navigation */
+.nav {
+    background-color: var(--wd-white-pure);
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-sm) 0;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-h4);
+    letter-spacing: var(--letter-spacing-brand);
+    text-transform: uppercase;
+}
+
+.nav-logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--brand-accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--wd-white-pure);
+    font-weight: var(--font-weight-bold);
+    transition: all var(--transition-normal);
+}
+
+.nav-logo:hover {
+    background-color: var(--wd-gold-hover);
+    transform: scale(1.05);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.nav-link {
+    color: var(--brand-text);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-small);
+    letter-spacing: var(--letter-spacing-wide);
+    transition: all var(--transition-fast);
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--brand-accent);
+    transition: width var(--transition-normal);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--brand-accent);
+}
+
+/* Mobile navigation */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    padding: var(--space-xs);
+}
+
+.nav-toggle span {
+    width: 24px;
+    height: 2px;
+    background-color: var(--brand-text);
+    transition: all var(--transition-fast);
+}
+
+@media (max-width: 767px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-menu.open {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--wd-white-pure);
+        flex-direction: column;
+        padding: var(--space-md);
+        box-shadow: var(--shadow-lg);
+        gap: var(--space-md);
+    }
+}
+
+/* Hero Section */
+.hero {
+    padding: var(--space-2xl) 0;
+    background-color: var(--brand-background);
+    position: relative;
+    /* Museum-Quality Hero Enhancement */
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background-image:
+        radial-gradient(
+            circle at 20% 30%,
+            rgba(230, 164, 68, 0.03) 0%,
+            transparent 50%
+        ),
+        radial-gradient(
+            circle at 80% 70%,
+            rgba(58, 45, 51, 0.02) 0%,
+            transparent 50%
+        );
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(234, 231, 222, 0.8) 0%,
+        rgba(234, 231, 222, 0.95) 40%,
+        rgba(234, 231, 222, 1) 60%,
+        rgba(234, 231, 222, 0.95) 100%
+    );
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1.618fr 1fr; /* Golden ratio proportions */
+    gap: var(--space-xl);
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    /* Sophisticated Layout Enhancement */
+    max-width: var(--max-width-content);
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 5vw, var(--font-size-h1));
+    line-height: var(--line-height-tight);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-monument);
+    /* Architectural Typography Enhancement */
+    text-rendering: geometricPrecision;
+    font-variant-caps: all-small-caps;
+    font-variant-numeric: lining-nums;
+    text-shadow: 0 1px 2px rgba(58, 45, 51, 0.1);
+    position: relative;
+}
+
+.hero-title::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--wd-gold), transparent);
+    border-radius: 2px;
+}
+
+.hero-subtitle {
+    font-size: var(--font-size-h4);
+    color: var(--brand-text-muted);
+    line-height: var(--line-height-relaxed);
+    font-weight: var(--font-weight-regular);
+    letter-spacing: var(--letter-spacing-wide);
+}
+
+.hero-image {
+    position: relative;
+    aspect-ratio: 4/5;
+    border-radius: var(--card-radius);
+    overflow: hidden;
+    background-color: var(--wd-white-cool);
+    box-shadow: var(--shadow-vermeer);
+    /* Vermeer Portrait Enhancement */
+    border: 1px solid var(--wd-white-cool);
+    transition: all var(--transition-museum);
+}
+
+.hero-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(58, 45, 51, 0.05) 0%,
+        transparent 30%,
+        transparent 70%,
+        rgba(230, 164, 68, 0.03) 100%
+    );
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity var(--transition-cultural);
+}
+
+.hero-image:hover::before {
+    opacity: 1;
+}
+
+.hero-image:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-xl);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1023px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+
+    .hero-image {
+        order: -1;
+    }
+}
+
+/* Section Styles */
+.section {
+    padding: var(--space-2xl) 0;
+}
+
+.section-muted {
+    background-color: var(--wd-white-cool);
+}
+
+.section-pattern {
+    background-color: var(--brand-background);
+    position: relative;
+}
+
+.section-pattern::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23F0EDF0' fill-opacity='0.02'%3E%3Ctext x='15' y='25' font-family='Satoshi,sans-serif' font-size='14' font-weight='bold'%3EW%3C/text%3E%3Ctext x='45' y='25' font-family='Satoshi,sans-serif' font-size='14' font-weight='bold'%3ED%3C/text%3E%3Ctext x='15' y='60' font-family='Satoshi,sans-serif' font-size='14' font-weight='bold'%3EW%3C/text%3E%3Ctext x='45' y='60' font-family='Satoshi,sans-serif' font-size='14' font-weight='bold'%3ED%3C/text%3E%3C/g%3E%3C/svg%3E");
+    background-size: 80px 80px;
+    pointer-events: none;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+}
+
+.section-title {
+    margin-bottom: var(--space-sm);
+}
+
+.section-subtitle {
+    color: var(--brand-text-muted);
+    font-size: var(--font-size-h4);
+    max-width: 48rem;
+    margin: 0 auto;
+    font-weight: var(--font-weight-regular);
+    letter-spacing: var(--letter-spacing-wide);
+}
+
+/* WD Feature Grid */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-lg);
+}
+
+.feature {
+    text-align: center;
+    padding: var(--space-lg);
+    transition: transform var(--transition-normal);
+}
+
+.feature:hover {
+    transform: translateY(-4px);
+}
+
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--brand-accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--space-md);
+    color: var(--wd-white-pure);
+    transition: all var(--transition-normal);
+    box-shadow: var(--shadow-sm);
+}
+
+.feature:hover .feature-icon {
+    background-color: var(--wd-gold-hover);
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: var(--shadow-vermeer);
+    /* Enhanced Artistic Interaction */
+    filter: brightness(1.1) saturate(1.2);
+}
+
+.feature-title {
+    margin-bottom: var(--space-sm);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-wide);
+}
+
+/* WD Testimonials */
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-lg);
+}
+
+.testimonial {
+    background-color: var(--wd-white-pure);
+    padding: var(--space-lg);
+    border-radius: var(--card-radius);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--wd-white-cool);
+    transition: all var(--transition-normal);
+}
+
+.testimonial:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.testimonial-text {
+    font-style: italic;
+    font-family: var(--font-family-cultural);
+    font-size: var(--font-size-h4);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--space-md);
+    color: var(--brand-text);
+    font-weight: var(--font-weight-regular);
+    /* Cultural Typography Enhancement */
+    quotes: "" " " "" "'" "'";
+    position: relative;
+    padding-left: var(--space-md);
+}
+
+.testimonial-text::before {
+    content: open-quote;
+    position: absolute;
+    left: 0;
+    top: -8px;
+    font-size: 2em;
+    color: var(--wd-gold);
+    font-family: var(--font-family-primary);
+    font-style: normal;
+    line-height: 1;
+}
+
+.testimonial-author {
+    font-weight: var(--font-weight-bold);
+    color: var(--brand-text);
+    letter-spacing: var(--letter-spacing-wide);
+}
+
+.testimonial-rating {
+    display: flex;
+    gap: 2px;
+    margin-bottom: var(--space-sm);
+}
+
+.star {
+    color: var(--wd-gold);
+    font-size: 1.2em;
+}
+
+/* WD Forms */
+.form-group {
+    margin-bottom: var(--space-md);
+}
+
+.form-label {
+    display: block;
+    margin-bottom: var(--space-xs);
+    font-weight: var(--font-weight-medium);
+    color: var(--brand-text);
+    font-family: var(--font-family-primary);
+    letter-spacing: var(--letter-spacing-wide);
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+    width: 100%;
+    padding: var(--space-sm);
+    border: 2px solid var(--wd-grey-light);
+    border-radius: var(--button-radius);
+    font-size: var(--font-size-body);
+    font-family: var(--font-family-primary);
+    background-color: var(--wd-white-pure);
+    color: var(--brand-text);
+    transition: all var(--transition-fast);
+    letter-spacing: var(--letter-spacing-normal);
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+    outline: none;
+    border-color: var(--brand-accent);
+    box-shadow: 0 0 0 3px rgba(230, 164, 68, 0.1);
+    transform: translateY(-1px);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: var(--wd-grey);
+    font-style: italic;
+}
+
+.form-error {
+    color: #8b2635;
+    font-size: var(--font-size-small);
+    margin-top: var(--space-xs);
+    font-weight: var(--font-weight-medium);
+}
+
+.form-input.error {
+    border-color: #8b2635;
+    background-color: #fef2f2;
+}
+
+.form-success {
+    color: #2d7a2d;
+    font-size: var(--font-size-small);
+    margin-top: var(--space-xs);
+    font-weight: var(--font-weight-medium);
+}
+
+/* WD Footer */
+.footer {
+    background-color: var(--wd-black);
+    color: var(--wd-white-pure);
+    padding: var(--space-xl) 0 var(--space-md);
+    position: relative;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23433A40' fill-opacity='0.3'%3E%3Ctext x='20' y='30' font-family='Satoshi,sans-serif' font-size='16' font-weight='bold'%3EW%3C/text%3E%3Ctext x='55' y='30' font-family='Satoshi,sans-serif' font-size='16' font-weight='bold'%3ED%3C/text%3E%3Ctext x='20' y='75' font-family='Satoshi,sans-serif' font-size='16' font-weight='bold'%3EW%3C/text%3E%3Ctext x='55' y='75' font-family='Satoshi,sans-serif' font-size='16' font-weight='bold'%3ED%3C/text%3E%3C/g%3E%3C/svg%3E");
+    background-size: 100px 100px;
+    pointer-events: none;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+    margin-bottom: var(--space-lg);
+    position: relative;
+    z-index: 1;
+}
+
+.footer-section h4 {
+    color: var(--wd-white-pure);
+    margin-bottom: var(--space-md);
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-wide);
+}
+
+.footer-link {
+    color: var(--wd-grey-light);
+    display: block;
+    margin-bottom: var(--space-xs);
+    transition: all var(--transition-fast);
+    font-family: var(--font-family-primary);
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: var(--wd-white-pure);
+    transform: translateX(4px);
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--wd-black-hover);
+    padding-top: var(--space-md);
+    text-align: center;
+    color: var(--wd-grey);
+    font-size: var(--font-size-small);
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 1023px) {
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ========================================
+ * WD ARTISTIC UTILITY CLASSES
+ * ======================================== */
+
+/* Cultural Enhancement Classes */
+.cultural-sophistication {
+    font-family: var(--font-family-cultural);
+    letter-spacing: var(--letter-spacing-wide);
+    text-rendering: optimizeLegibility;
+}
+
+.museum-quality {
+    background-color: var(--wd-white-pure);
+    box-shadow: var(--shadow-vermeer);
+    border: 1px solid var(--wd-white-cool);
+    transition: all var(--transition-museum);
+}
+
+.glasgow-school-spacing {
+    margin-bottom: calc(var(--space-lg) * 1.618); /* Golden ratio spacing */
+}
+
+.bauhaus-precision {
+    letter-spacing: var(--letter-spacing-monument);
+    text-transform: uppercase;
+    font-variant-caps: all-small-caps;
+}
+
+.vermeer-lighting {
+    box-shadow: var(--shadow-vermeer);
+    background: linear-gradient(
+        135deg,
+        var(--wd-white-pure) 0%,
+        var(--wd-white) 50%,
+        var(--wd-white-cool) 100%
+    );
+}
+
+.venetian-gold-accent {
+    color: var(--wd-gold);
+    text-shadow: 0 0 1px rgba(230, 164, 68, 0.3);
+    font-weight: var(--font-weight-medium);
+}
+
+/* Advanced Animation Classes */
+.cultural-entrance {
+    animation: cultural-entrance var(--cultural-entrance-duration)
+        var(--transition-cultural) forwards;
+    opacity: 0;
+}
+
+.museum-reveal {
+    animation: museum-quality-reveal var(--transition-museum)
+        var(--transition-cultural) forwards;
+    opacity: 0;
+}
+
+/* ========================================
+ * WD UTILITY CLASSES
+ * ======================================== */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Max Width Utilities */
+.max-width-none {
+    max-width: none;
+}
+.max-width-xs {
+    max-width: 20rem;
+}
+.max-width-sm {
+    max-width: 24rem;
+}
+.max-width-md {
+    max-width: 28rem;
+}
+.max-width-lg {
+    max-width: 32rem;
+}
+.max-width-xl {
+    max-width: 36rem;
+}
+.max-width-2xl {
+    max-width: 42rem;
+}
+.max-width-3xl {
+    max-width: 48rem;
+}
+.max-width-4xl {
+    max-width: 56rem;
+}
+
+/* WD Background Utilities */
+.bg-wd-black {
+    background-color: var(--wd-black);
+}
+.bg-wd-gold {
+    background-color: var(--wd-gold);
+}
+.bg-wd-white {
+    background-color: var(--wd-white);
+}
+.bg-wd-grey {
+    background-color: var(--wd-grey);
+}
+.bg-white-pure {
+    background-color: var(--wd-white-pure);
+}
+
+/* WD Text Color Utilities */
+.text-wd-black {
+    color: var(--wd-black);
+}
+.text-wd-gold {
+    color: var(--wd-gold);
+}
+.text-wd-white {
+    color: var(--wd-white);
+}
+.text-wd-grey {
+    color: var(--wd-grey);
+}
+
+/* Border Utilities */
+.border {
+    border: 1px solid var(--wd-grey-light);
+}
+.border-wd-gold {
+    border: 1px solid var(--wd-gold);
+}
+.border-subtle {
+    border: 1px solid var(--wd-grey-lighter);
+}
+
+/* Shape Utilities */
+.rounded {
+    border-radius: var(--button-radius);
+}
+.rounded-lg {
+    border-radius: var(--card-radius);
+}
+.rounded-full {
+    border-radius: 50%;
+}
+
+/* Shadow Utilities */
+.shadow-sm {
+    box-shadow: var(--shadow-sm);
+}
+.shadow-md {
+    box-shadow: var(--shadow-md);
+}
+.shadow-lg {
+    box-shadow: var(--shadow-lg);
+}
+.shadow-xl {
+    box-shadow: var(--shadow-xl);
+}
+
+/* Animation Utilities */
+.animate-pulse {
+    animation: gentle-pulse 2s ease-in-out infinite;
+}
+
+.animate-bounce-soft {
+    animation: bounce-soft 1s ease-in-out;
+}
+
+@keyframes bounce-soft {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
+/* Interaction Utilities */
+.hover-lift {
+    transition: transform var(--transition-normal);
+}
+
+.hover-lift:hover {
+    transform: translateY(-2px);
+}
+
+.hover-glow {
+    transition: box-shadow var(--transition-normal);
+}
+
+.hover-glow:hover {
+    box-shadow: 0 0 20px rgba(230, 164, 68, 0.3);
+}
+
+/* ========================================
+ * WD RESPONSIVE DESIGN SYSTEM
+ * ======================================== */
+
+/* Tablet Adjustments */
+@media (max-width: 1023px) {
+    .hero-content {
+        gap: var(--space-lg);
+    }
+
+    .nav-brand {
+        font-size: var(--font-size-small);
+    }
+
+    .hero-title {
+        font-size: clamp(2rem, 4vw, 2.5rem);
+    }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 767px) {
+    .hero {
+        padding: var(--space-xl) 0;
+    }
+
+    .hero-title {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+        letter-spacing: var(--letter-spacing-normal);
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-body);
+    }
+
+    .btn {
+        padding: var(--space-sm) var(--space-lg);
+        font-size: var(--font-size-small);
+    }
+
+    .card {
+        padding: var(--space-md);
+    }
+
+    .feature {
+        padding: var(--space-md);
+    }
+
+    .testimonial {
+        padding: var(--space-md);
+    }
+}
+
+/* ========================================
+ * WD ACCESSIBILITY ENHANCEMENTS
+ * ======================================== */
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .btn-primary {
+        border: 2px solid var(--wd-white-pure);
+    }
+
+    .card {
+        border: 2px solid var(--wd-black);
+    }
+
+    .nav-link::after {
+        height: 3px;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .wd-logo-breathing .wd-logo-icon,
+    .animate-pulse {
+        animation: none;
+    }
+
+    .hover-lift:hover,
+    .card:hover,
+    .testimonial:hover,
+    .feature:hover {
+        transform: none;
+    }
+}
+
+/* ========================================
+ * WD PRINT STYLES
+ * ======================================== */
+
+@media print {
+    .nav,
+    .footer,
+    .btn,
+    .wd-pattern-bg,
+    .section-pattern::before,
+    .footer::before {
+        display: none !important;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: black;
+        background: white;
+    }
+
+    .hero-title,
+    h1,
+    h2,
+    h3 {
+        page-break-after: avoid;
+        color: black;
+    }
+
+    .card {
+        box-shadow: none;
+        border: 1px solid #ccc;
+        page-break-inside: avoid;
+    }
+
+    .testimonial {
+        border: 1px solid #ccc;
+        page-break-inside: avoid;
+    }
+
+    .wd-logo {
+        color: black;
+    }
+}
