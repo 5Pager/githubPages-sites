@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WestDental Signature Integrated - Experimental Gallery | Design Process Documentation</title>
+    <meta name="description" content="Visual documentation of the artistic concept creativity process for WestDental signature framework implementation - color palette experiments, layout variations, and signature mockups.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            /* Signature Framework Variables */
+            --brand-charcoal: #0E0E0E;
+            --brand-blue: #6674F4;
+            --brand-muted: #F7F7F7;
+            --brand-highlight: #E0F2FF;
+            --signature-font-primary: 'Inter', system-ui, sans-serif;
+
+            /* Gallery Specific */
+            --gallery-spacing: 2rem;
+            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --card-shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--signature-font-primary);
+            line-height: 1.6;
+            color: var(--brand-charcoal);
+            background-color: #FFFFFF;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--brand-blue) 0%, #4F46E5 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Navigation */
+        .nav-breadcrumb {
+            padding: 1rem 0;
+            background-color: var(--brand-muted);
+            border-bottom: 1px solid #E5E7EB;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: #6B7280;
+        }
+
+        .breadcrumb a {
+            color: var(--brand-blue);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .breadcrumb a:hover {
+            color: #4F46E5;
+        }
+
+        .breadcrumb-separator {
+            color: #9CA3AF;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 3rem 0;
+        }
+
+        /* Category Sections */
+        .category-section {
+            margin-bottom: 4rem;
+        }
+
+        .category-header {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .category-title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--brand-charcoal);
+            margin-bottom: 0.5rem;
+        }
+
+        .category-description {
+            font-size: 1.1rem;
+            color: #6B7280;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Image Grid */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--gallery-spacing);
+            margin-top: 2rem;
+        }
+
+        .image-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .image-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--card-shadow-hover);
+        }
+
+        .image-container {
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 16/10;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .image-card:hover .image-container img {
+            transform: scale(1.05);
+        }
+
+        .image-info {
+            padding: 1.5rem;
+        }
+
+        .image-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--brand-charcoal);
+            margin-bottom: 0.5rem;
+        }
+
+        .image-description {
+            font-size: 0.95rem;
+            color: #6B7280;
+            line-height: 1.5;
+        }
+
+        .image-meta {
+            display: flex;
+            justify-content: between;
+            align-items: center;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #F3F4F6;
+        }
+
+        .image-week {
+            background-color: var(--brand-highlight);
+            color: var(--brand-blue);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            padding: 2rem;
+        }
+
+        .lightbox.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+            position: relative;
+        }
+
+        .lightbox-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -2rem;
+            right: -2rem;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.5);
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.2s;
+        }
+
+        .lightbox-close:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Back to Main */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--brand-blue);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.75rem 1.5rem;
+            border: 2px solid var(--brand-blue);
+            border-radius: 8px;
+            transition: all 0.2s;
+            margin-bottom: 2rem;
+        }
+
+        .back-link:hover {
+            background-color: var(--brand-blue);
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .lightbox {
+                padding: 1rem;
+            }
+
+            .lightbox-close {
+                top: -1rem;
+                right: -1rem;
+                width: 2.5rem;
+                height: 2.5rem;
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Breadcrumb -->
+    <nav class="nav-breadcrumb">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../../../index.html">GitHub Pages Sites</a>
+                <span class="breadcrumb-separator">→</span>
+                <a href="index.html">WestDental Signature Integrated</a>
+                <span class="breadcrumb-separator">→</span>
+                <span>Experimental Gallery</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>Experimental Gallery</h1>
+            <p>Visual documentation of the artistic concept creativity process for WestDental signature framework implementation</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Back to Main Site -->
+            <a href="index.html" class="back-link">
+                ← Back to Main Site
+            </a>
+
+            <!-- Week 1 Experiments -->
+            <section class="category-section">
+                <div class="category-header">
+                    <h2 class="category-title">Week 1: Initial Experiments</h2>
+                    <p class="category-description">
+                        Early exploration of color palette and layout concepts, establishing the foundation for the signature framework implementation.
+                    </p>
+                </div>
+
+                <div class="image-grid">
+                    <div class="image-card" onclick="openLightbox('assets/images/ColorPaletteScreenshot.png')">
+                        <div class="image-container">
+                            <img src="assets/images/ColorPaletteScreenshot.png" alt="Color Palette Initial Experiment">
+                        </div>
+                        <div class="image-info">
+                            <h3 class="image-title">Color Palette Initial Experiment</h3>
+                            <p class="image-description">
+                                First exploration of color harmonies and brand palette integration, testing emotional temperature and founder personality expression.
+                            </p>
+                            <div class="image-meta">
+                                <span class="image-week">Week 1</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="image-card" onclick="openLightbox('assets/images/LayoutExperimentScreenshot.png')">
+                        <div class="image-container">
+                            <img src="assets/images/LayoutExperimentScreenshot.png" alt="Layout Experiment Initial">
+                        </div>
+                        <div class="image-info">
+                            <h3 class="image-title">Layout Experiment Initial</h3>
+                            <p class="image-description">
+                                Early layout composition testing, exploring breathing room and spatial relationships based on founder's "calm clarity" principle.
+                            </p>
+                            <div class="image-meta">
+                                <span class="image-week">Week 1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Week 2: Refined Experiments -->
+            <section class="category-section">
+                <div class="category-header">
+                    <h2 class="category-title">Week 2: Systematic Experimentation</h2>
+                    <p class="category-description">
+                        Detailed section-by-section analysis and refinement, developing the systematic approach that became the signature framework methodology.
+                    </p>
+                </div>
+
+                <!-- Color Palette Experiments -->
+                <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--brand-charcoal);">Color Palette Progression</h3>
+                <div class="image-grid">
+                    <div class="image-card" onclick="openLightbox('assets/images/ColorPaletteExperiment_FullPage_1.png')">
+                        <div class="image-container">
+                            <img src="assets/images/ColorPaletteExperiment_FullPage_1.png" alt="Color Palette Full Page Experiment">
+                        </div>
+                        <div class="image-info">
+                            <h3 class="image-title">Color Palette Full Page</h3>
+                            <p class="image-description">
+                                Comprehensive full-page color palette implementation showing complete harmony and emotional temperature calibration.
+                            </p>
+                            <div class="image-meta">
+                                <span class="image-week">Week 2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="image-card" onclick="openLightbox('assets/images/ColorPaletteExperiment_Section1_2.png')">
+                        <div class="image-container">
+                            <img src="assets/images/ColorPaletteExperiment_Section1_2.png" alt="Color Palette Section 1-2">
+                        </div>
+                        <div class="image-info">
+                            <h3 class="image-title">Color Palette Section 1-2</h3>
+                            <p class="image-description">
+                                Header and hero section color experimentation, establishing the primary brand expression and emotional entry point.
+                            </p>
+                            <div class="image-meta">
+                                <span class="image-week">Week 2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="image-card" onclick="openLightbox('assets/images/ColorPaletteExperiment_Section2_3.png')">
+                        <div class="image-container">
+                            <img src="assets/images/ColorPaletteExperiment_Section2_3.png" alt="Color Palette Section 2-3">
+                        </div>
+                        <div class="image-info">
+                            <h3 class="image-title">Color Palette Section 2-3</h3>
+                            <p class="image-description">
+                                Middle content sections testing sustained emotional engagement and information hierarchy through color relationships.
+                            </p>
+                            <div class="image-meta">
+                                <span class="image-week">Week 2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="image-card" onclick="openLightbox('assets/images/ColorPaletteExperiment_Section3_4.png')">
+                        <div class="image-container">
+                            <img src="assets/images/ColorPaletteExperiment_Section3_4.png" alt="Color Palette Section 3-4">
+                        </div>
+                        <div class="image-info">
+                            <h3 class="image-title">Color Palette Section 3-4</h3>
+                            <p class="image-description">
+                                Service presentation and trust-building sections, calibrating professional credibility through color psychology.
+                            </p>
+                            <div class="image-meta">
+                                <span class="image-week">Week 2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="image-card" onclick="openLightbox('assets/images/ColorPaletteExperiment_Section4_5.png')">
+                        <div class="image-container">
+                            <img src="assets/images/ColorPaletteExperiment_Section4_5.png" alt="Color Palette Section 4-5">
+                        </div>
+                        <div class="image-info">
+                            <h3 class="image-title">Color Palette Section 4-5</h3>
+                            <p class="image-description">
+                                Footer and action sections, designing confident conclusion and clear conversion pathways through color guidance.
+                            </p>
+                            <div class="image-meta">
+                                <span class="image-week">Week 2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Layout Experiments -->
+                <h3 style="font-size: 1.5rem; margin: 3rem 0 1.5rem; color: var(--brand-charcoal);">Layout Structure Evolution</h3>
+                <div class="image-grid">
+                    <div class="image-card" onclick="openLightbox('assets/images/LayoutExperiment_FullPage_6.png')">
+                        <div class="image-container">
+                            <img src="assets/images/LayoutExperiment_FullPage_6.png" alt="Layout Experiment Full Page">
+                        </div>
+                        <div class="image-info">
+                            <h3 class="image-title">Layout Full Page Architecture</h3>
+                            <p class="image-description">
+                                Complete page structure showing breathing room calculations and spatial relationship optimization for calm clarity.
+                            </p>
+                            <div class="image-meta">
+                                <span class="image-week">Week 2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="image-card" onclick="openLightbox('assets/images/LayoutExperiment_Section1_7.png')">
+                        <div class="image-container">
+                            <img src="assets/images/LayoutExperiment_Section1_7.png" alt="Layout Experiment Section 1">
+                        </div>
+                        <div class="image-info">
+                            <h3 class="image-title">Layout Section 1: Navigation & Hero</h3>
+                            <p class="image-description">
+                                Header area spatial design emphasizing professional presence and immediate trust establishment through layout.
+                            </p>
+                            <div class="image-meta">
+                                <span class="image-week">Week 2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="image-card" onclick="openLightbox('assets/images/LayoutExperiment_Section2_8.png')">
+                        <div class="image-container">
+                            <img src="assets/images/LayoutExperiment_Section2_8.png" alt="Layout Experiment Section 2">
+                        </div>
+                        <div class="image-info">
+                            <h3 class="image-title">Layout Section 2: Content Flow</h3>
+                            <p class="image-description">
+                                Information architecture testing for optimal content consumption and emotional journey progression.
+                            </p>
+                            <div class="image-meta">
+                                <span class="image-week">Week 2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="image-card" onclick="openLightbox('assets/images/LayoutExperiment_Section3_9.png')">
+                        <div class="image-container">
+                            <img src="assets/images/LayoutExperiment_Section3_9.png" alt="Layout Experiment Section 3">
+                        </div>
+                        <div class="image-info">
+                            <h3 class="image-title">Layout Section 3: Service Presentation</h3>
+                            <p class="image-description">
+                                Service information layout optimized for clarity and decision-making support through thoughtful spacing.
+                            </p>
+                            <div class="image-meta">
+                                <span class="image-week">Week 2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="image-card" onclick="openLightbox('assets/images/LayoutExperiment_Section4_10.png')">
+                        <div class="image-container">
+                            <img src="assets/images/LayoutExperiment_Section4_10.png" alt="Layout Experiment Section 4">
+                        </div>
+                        <div class="image-info">
+                            <h3 class="image-title">Layout Section 4: Action & Contact</h3>
+                            <p class="image-description">
+                                Conversion area design balancing confidence-building with clear action pathways and contact accessibility.
+                            </p>
+                            <div class="image-meta">
+                                <span class="image-week">Week 2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Signature Mockup -->
+                <h3 style="font-size: 1.5rem; margin: 3rem 0 1.5rem; color: var(--brand-charcoal);">Signature Framework Integration</h3>
+                <div class="image-grid">
+                    <div class="image-card" onclick="openLightbox('assets/images/SignatureMockup_11.png')">
+                        <div class="image-container">
+                            <img src="assets/images/SignatureMockup_11.png" alt="Signature Framework Mockup">
+                        </div>
+                        <div class="image-info">
+                            <h3 class="image-title">Signature Framework Mockup</h3>
+                            <p class="image-description">
+                                Final signature framework integration showing the complete system of personality expression through design variables and component behavior.
+                            </p>
+                            <div class="image-meta">
+                                <span class="image-week">Week 2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <img class="lightbox-image" id="lightboxImage" src="" alt="">
+        </div>
+    </div>
+
+    <script>
+        function openLightbox(imageSrc) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightboxImage');
+
+            lightboxImage.src = imageSrc;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close lightbox with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        // Prevent lightbox from closing when clicking on the image
+        document.querySelector('.lightbox-content').addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+    </script>
+</body>
+</html>

@@ -1083,6 +1083,17 @@
             }
         }
 
+        /* Gallery Preview Cards */
+        .preview-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .gallery-showcase a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 116, 244, 0.4);
+        }
+
         .signature-loading:nth-child(1) { animation-delay: 0.1s; }
         .signature-loading:nth-child(2) { animation-delay: 0.2s; }
         .signature-loading:nth-child(3) { animation-delay: 0.3s; }
@@ -1109,6 +1120,7 @@
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="method.html" class="nav-link">Method</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
                 <li><a href="contact.html" class="nav-link nav-cta">Book Now</a></li>
             </ul>
         </div>
@@ -1337,6 +1349,51 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Experimental Gallery Showcase -->
+    <section class="gallery-showcase breathing-room-section" data-component="comp_015" data-archetype="owl_wisdom" data-act="act4_insight" style="background: linear-gradient(135deg, var(--brand-muted) 0%, #F0F4F8 100%); padding: calc(var(--signature-spacing-unit) * 3) 0;">
+        <div class="gallery-container breathing-room-content" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem; text-align: center;">
+            <div class="gallery-header" style="margin-bottom: calc(var(--signature-spacing-unit) * 2);">
+                <h2 style="font-size: clamp(1.75rem, 3vw, 2.25rem); font-weight: 600; color: var(--brand-charcoal); margin-bottom: 1rem;">
+                    Behind the Design
+                </h2>
+                <p style="font-size: 1.1rem; color: #6B7280; max-width: 600px; margin: 0 auto; line-height: 1.6;">
+                    Explore the artistic concept creativity process that shaped this signature framework implementation
+                </p>
+            </div>
+
+            <div class="gallery-preview" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: calc(var(--signature-spacing-unit) * 2);">
+                <div class="preview-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+                    <img src="assets/images/ColorPaletteExperiment_FullPage_1.png" alt="Color Palette Experiments" style="width: 100%; height: 120px; object-fit: cover;">
+                    <div style="padding: 1rem;">
+                        <h3 style="font-size: 0.9rem; font-weight: 600; color: var(--brand-charcoal); margin-bottom: 0.5rem;">Color Palette</h3>
+                        <p style="font-size: 0.8rem; color: #6B7280;">Emotional temperature calibration</p>
+                    </div>
+                </div>
+
+                <div class="preview-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+                    <img src="assets/images/LayoutExperiment_FullPage_6.png" alt="Layout Experiments" style="width: 100%; height: 120px; object-fit: cover;">
+                    <div style="padding: 1rem;">
+                        <h3 style="font-size: 0.9rem; font-weight: 600; color: var(--brand-charcoal); margin-bottom: 0.5rem;">Layout Structure</h3>
+                        <p style="font-size: 0.8rem; color: #6B7280;">Breathing room optimization</p>
+                    </div>
+                </div>
+
+                <div class="preview-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+                    <img src="assets/images/SignatureMockup_11.png" alt="Signature Framework" style="width: 100%; height: 120px; object-fit: cover;">
+                    <div style="padding: 1rem;">
+                        <h3 style="font-size: 0.9rem; font-weight: 600; color: var(--brand-charcoal); margin-bottom: 0.5rem;">Signature Integration</h3>
+                        <p style="font-size: 0.8rem; color: #6B7280;">Framework implementation</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="gallery.html" style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--brand-blue); color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 500; transition: all 0.3s ease; box-shadow: 0 4px 6px -1px rgba(102, 116, 244, 0.3);">
+                <span>Explore Full Gallery</span>
+                <span style="font-size: 1.2rem;">→</span>
+            </a>
         </div>
     </section>
 
