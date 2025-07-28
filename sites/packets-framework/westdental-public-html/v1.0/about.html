@@ -1,0 +1,883 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            About Dr. Karm Jandoo | West Dental Glasgow | The Story Behind the
+            Smile
+        </title>
+        <meta
+            name="description"
+            content="Meet Dr. Karm Jandoo - the dentist who creates calm clarity in transformation spaces. Discover the journey from NHS burnout to authentic dental care in Glasgow's West End."
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <style>
+            :root {
+                /* Week 1 Signature: Organic Precision Harmony */
+                --color-deep-trust: #2b3a42;
+                --color-sage-wisdom: #6b8f71;
+                --color-cream-comfort: #f4f1ea;
+                --color-copper-warmth: #c4975a;
+                --color-gentle-highlight: #e8d5b7;
+                --color-depth-shadow: #1a252b;
+                --color-trust-accent: #4a6b75;
+
+                /* Semantic Applications */
+                --color-primary: var(--color-deep-trust);
+                --color-secondary: var(--color-sage-wisdom);
+                --color-accent: var(--color-copper-warmth);
+                --color-background: var(--color-cream-comfort);
+                --color-surface: #ffffff;
+                --color-text-primary: var(--color-depth-shadow);
+                --color-text-secondary: var(--color-deep-trust);
+
+                /* Interactive States */
+                --color-hover: var(--color-trust-accent);
+                --color-active: var(--color-copper-warmth);
+                --color-focus: var(--color-gentle-highlight);
+
+                /* Breathing Room Philosophy */
+                --spacing-breathing: 120px;
+                --spacing-section: 80px;
+                --spacing-element: 48px;
+                --content-max-width: 680px;
+                --container-max-width: 1200px;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family:
+                    "Inter",
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    "Segoe UI",
+                    Roboto,
+                    sans-serif;
+                line-height: 1.7;
+                color: var(--color-text-primary);
+                background-color: var(--color-background);
+                font-size: 16px;
+            }
+
+            /* Header - Calm Precision Navigation */
+            .header {
+                background: var(--color-surface);
+                border-bottom: 1px solid var(--color-gentle-highlight);
+                position: sticky;
+                top: 0;
+                z-index: 100;
+                backdrop-filter: blur(10px);
+            }
+
+            .nav-container {
+                max-width: var(--container-max-width);
+                margin: 0 auto;
+                padding: 24px 60px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .logo-container {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                text-decoration: none;
+                color: var(--color-primary);
+            }
+
+            .logo-icon {
+                width: 48px;
+                height: 48px;
+                background: linear-gradient(
+                    135deg,
+                    var(--color-copper-warmth),
+                    #d4a76a
+                );
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-weight: 700;
+                font-size: 18px;
+                box-shadow: 0 4px 15px rgba(196, 151, 90, 0.25);
+            }
+
+            .logo-text {
+                font-size: 24px;
+                font-weight: 600;
+                color: var(--color-primary);
+            }
+
+            .nav-menu {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                list-style: none;
+            }
+
+            .nav-link {
+                text-decoration: none;
+                color: var(--color-text-secondary);
+                font-weight: 500;
+                font-size: 15px;
+                transition: all 0.3s ease;
+                position: relative;
+            }
+
+            .nav-link:hover,
+            .nav-link.active {
+                color: var(--color-copper-warmth);
+            }
+
+            .nav-cta {
+                background: var(--color-copper-warmth);
+                color: white;
+                padding: 12px 24px;
+                border-radius: 12px;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 15px;
+                transition: all 0.3s ease;
+                border: none;
+                cursor: pointer;
+            }
+
+            .nav-cta:hover {
+                background: var(--color-trust-accent);
+                transform: translateY(-1px);
+                box-shadow: 0 4px 15px rgba(196, 151, 90, 0.3);
+            }
+
+            /* Hero Section - Personal Story Introduction */
+            .hero-section {
+                padding: var(--spacing-breathing) 0;
+                background: var(--color-surface);
+            }
+
+            .hero-container {
+                max-width: var(--container-max-width);
+                margin: 0 auto;
+                padding: 0 60px;
+                display: grid;
+                grid-template-columns: 55% 45%;
+                gap: 80px;
+                align-items: center;
+            }
+
+            .hero-content {
+                margin-right: 5%; /* Asymmetric positioning opposite to index */
+            }
+
+            .hero-title {
+                font-size: clamp(2.5rem, 4vw, 3.5rem);
+                font-weight: 700;
+                line-height: 1.2;
+                color: var(--color-depth-shadow);
+                margin-bottom: 2rem;
+            }
+
+            .hero-title-highlight {
+                color: var(--color-copper-warmth);
+                display: block;
+                font-style: italic;
+            }
+
+            .hero-subtitle {
+                font-size: 1.25rem;
+                line-height: 1.6;
+                color: var(--color-primary);
+                margin-bottom: 3rem;
+                max-width: 65ch;
+                font-weight: 400;
+            }
+
+            .hero-image {
+                background: var(--color-gentle-highlight);
+                border-radius: 20px;
+                height: 450px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--color-primary);
+                font-style: italic;
+                transform: translateX(15px); /* Organic offset */
+                box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+            }
+
+            /* Story Section - Three Act Structure */
+            .story-section {
+                padding: var(--spacing-breathing) 0;
+                background: var(--color-background);
+            }
+
+            .story-container {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 0 60px;
+            }
+
+            .story-title {
+                font-size: 2.5rem;
+                font-weight: 600;
+                color: var(--color-primary);
+                text-align: center;
+                margin-bottom: 4rem;
+            }
+
+            .story-acts {
+                display: grid;
+                gap: 80px;
+            }
+
+            .story-act {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                gap: 60px;
+                align-items: start;
+            }
+
+            .story-act:nth-child(even) {
+                grid-template-columns: 2fr 1fr;
+            }
+
+            .story-act:nth-child(even) .act-content {
+                order: 2;
+            }
+
+            .story-act:nth-child(even) .act-visual {
+                order: 1;
+            }
+
+            .act-visual {
+                background: var(--color-gentle-highlight);
+                border-radius: 16px;
+                height: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--color-primary);
+                font-style: italic;
+                position: relative;
+            }
+
+            .act-number {
+                position: absolute;
+                top: -15px;
+                left: 20px;
+                background: var(--color-copper-warmth);
+                color: white;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+                font-size: 1.2rem;
+            }
+
+            .act-content h3 {
+                font-size: 1.8rem;
+                font-weight: 600;
+                color: var(--color-primary);
+                margin-bottom: 1.5rem;
+            }
+
+            .act-content p {
+                font-size: 1.1rem;
+                line-height: 1.7;
+                color: var(--color-text-primary);
+                margin-bottom: 1.5rem;
+            }
+
+            .act-insight {
+                background: var(--color-surface);
+                padding: 24px;
+                border-radius: 12px;
+                border-left: 4px solid var(--color-sage-wisdom);
+                font-style: italic;
+                color: var(--color-text-secondary);
+            }
+
+            /* Philosophy Section */
+            .philosophy-section {
+                padding: var(--spacing-breathing) 0;
+                background: var(--color-surface);
+            }
+
+            .philosophy-container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 0 60px;
+                text-align: center;
+            }
+
+            .philosophy-title {
+                font-size: 2.5rem;
+                font-weight: 600;
+                color: var(--color-primary);
+                margin-bottom: 3rem;
+            }
+
+            .philosophy-quote {
+                font-size: 1.8rem;
+                line-height: 1.5;
+                color: var(--color-primary);
+                font-style: italic;
+                margin-bottom: 3rem;
+                position: relative;
+                padding: 0 40px;
+            }
+
+            .philosophy-quote::before,
+            .philosophy-quote::after {
+                content: '"';
+                font-size: 4rem;
+                color: var(--color-copper-warmth);
+                position: absolute;
+                top: -20px;
+                font-family: Georgia, serif;
+            }
+
+            .philosophy-quote::before {
+                left: 0;
+            }
+
+            .philosophy-quote::after {
+                right: 0;
+                transform: rotate(180deg);
+            }
+
+            .philosophy-principles {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 40px;
+                margin-top: 60px;
+            }
+
+            .principle {
+                padding: 40px 24px;
+                background: var(--color-background);
+                border-radius: 16px;
+                text-align: center;
+                transition: transform 0.3s ease;
+            }
+
+            .principle:hover {
+                transform: translateY(-5px);
+            }
+
+            .principle-icon {
+                font-size: 2.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .principle-title {
+                font-size: 1.3rem;
+                font-weight: 600;
+                color: var(--color-primary);
+                margin-bottom: 1rem;
+            }
+
+            .principle-description {
+                color: var(--color-text-secondary);
+                font-size: 0.95rem;
+                line-height: 1.6;
+            }
+
+            /* Journey Section */
+            .journey-section {
+                padding: var(--spacing-breathing) 0;
+                background: var(--color-gentle-highlight);
+            }
+
+            .journey-container {
+                max-width: var(--container-max-width);
+                margin: 0 auto;
+                padding: 0 60px;
+            }
+
+            .journey-header {
+                text-align: center;
+                margin-bottom: 80px;
+            }
+
+            .journey-title {
+                font-size: 2.5rem;
+                font-weight: 600;
+                color: var(--color-primary);
+                margin-bottom: 1.5rem;
+            }
+
+            .journey-subtitle {
+                font-size: 1.2rem;
+                color: var(--color-text-secondary);
+                max-width: 600px;
+                margin: 0 auto;
+                line-height: 1.6;
+            }
+
+            .journey-steps {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 40px;
+            }
+
+            .journey-step {
+                background: var(--color-surface);
+                padding: 40px;
+                border-radius: 16px;
+                text-align: center;
+                border-top: 4px solid var(--color-sage-wisdom);
+                transition: all 0.3s ease;
+            }
+
+            .journey-step:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            }
+
+            .step-number {
+                background: var(--color-copper-warmth);
+                color: white;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+                font-size: 1.3rem;
+                margin: 0 auto 1.5rem;
+            }
+
+            .step-title {
+                font-size: 1.3rem;
+                font-weight: 600;
+                color: var(--color-primary);
+                margin-bottom: 1rem;
+            }
+
+            .step-description {
+                color: var(--color-text-secondary);
+                line-height: 1.6;
+            }
+
+            /* CTA Section */
+            .cta-section {
+                padding: var(--spacing-breathing) 0;
+                background: var(--color-primary);
+                color: white;
+                text-align: center;
+            }
+
+            .cta-container {
+                max-width: 700px;
+                margin: 0 auto;
+                padding: 0 60px;
+            }
+
+            .cta-title {
+                font-size: 2.5rem;
+                font-weight: 600;
+                margin-bottom: 1.5rem;
+            }
+
+            .cta-subtitle {
+                font-size: 1.2rem;
+                margin-bottom: 3rem;
+                opacity: 0.9;
+                line-height: 1.6;
+            }
+
+            .cta-button {
+                background: var(--color-copper-warmth);
+                color: white;
+                padding: 18px 36px;
+                border-radius: 12px;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 1.1rem;
+                display: inline-block;
+                transition: all 0.3s ease;
+            }
+
+            .cta-button:hover {
+                background: var(--color-sage-wisdom);
+                transform: translateY(-2px);
+            }
+
+            /* Mobile Responsive */
+            @media (max-width: 768px) {
+                .nav-container {
+                    padding: 20px 32px;
+                    flex-direction: column;
+                    gap: 20px;
+                }
+
+                .nav-menu {
+                    gap: 24px;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+
+                .hero-container {
+                    grid-template-columns: 1fr;
+                    gap: 40px;
+                    padding: 0 32px;
+                    text-align: center;
+                }
+
+                .hero-content {
+                    margin-right: 0;
+                }
+
+                .hero-image {
+                    transform: translateX(0);
+                    height: 300px;
+                }
+
+                .story-container,
+                .philosophy-container,
+                .journey-container,
+                .cta-container {
+                    padding: 0 32px;
+                }
+
+                .story-act {
+                    grid-template-columns: 1fr;
+                    gap: 30px;
+                }
+
+                .story-act:nth-child(even) {
+                    grid-template-columns: 1fr;
+                }
+
+                .story-act:nth-child(even) .act-content,
+                .story-act:nth-child(even) .act-visual {
+                    order: unset;
+                }
+
+                .philosophy-principles {
+                    grid-template-columns: 1fr;
+                    gap: 30px;
+                }
+
+                .journey-steps {
+                    grid-template-columns: 1fr;
+                }
+
+                .philosophy-quote {
+                    font-size: 1.4rem;
+                    padding: 0 20px;
+                }
+            }
+
+            /* Scroll Animation */
+            .fade-in-up {
+                opacity: 0;
+                transform: translateY(30px);
+                transition:
+                    opacity 0.6s ease,
+                    transform 0.6s ease;
+            }
+
+            .fade-in-up.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <nav class="nav-container">
+                <a href="index.html" class="logo-container">
+                    <div class="logo-icon">WD</div>
+                    <span class="logo-text">West Dental</span>
+                </a>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="about.html" class="nav-link active">About</a>
+                    </li>
+                    <li><a href="method.html" class="nav-link">Method</a></li>
+                    <li>
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li><a href="contact.html" class="nav-cta">Book Now</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            This wasn't
+                            <span class="hero-title-highlight">the plan.</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            From NHS burnout to creating safe harbors for dental
+                            transformation. The story of how one dentist
+                            discovered that helping people feel safe matters
+                            more than following industry standards.
+                        </p>
+                    </div>
+                    <div class="hero-image">[Dr. Karm Jandoo Portrait]</div>
+                </div>
+            </section>
+
+            <!-- Story Section -->
+            <section class="story-section">
+                <div class="story-container">
+                    <h2 class="story-title fade-in-up">
+                        The Journey to Authentic Care
+                    </h2>
+
+                    <div class="story-acts">
+                        <div class="story-act fade-in-up">
+                            <div class="act-visual">
+                                <div class="act-number">1</div>
+                                [NHS Training Image]
+                            </div>
+                            <div class="act-content">
+                                <h3>The Conventional Path</h3>
+                                <p>
+                                    Like most dentists, I started with NHS
+                                    training, believing that technical
+                                    excellence was all that mattered. Rush
+                                    through appointments, hit targets, follow
+                                    protocols. The system worked—for the system.
+                                </p>
+                                <p>
+                                    But I kept noticing something the metrics
+                                    didn't measure: the fear in people's eyes,
+                                    the shame they carried about their teeth,
+                                    the way they apologized for existing.
+                                </p>
+                                <div class="act-insight">
+                                    "I realized I was treating teeth, not
+                                    people."
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="story-act fade-in-up">
+                            <div class="act-visual">
+                                <div class="act-number">2</div>
+                                [Private Practice Transition]
+                            </div>
+                            <div class="act-content">
+                                <h3>The Awakening Moment</h3>
+                                <p>
+                                    Moving to private practice, I thought I'd
+                                    found freedom. Better equipment, more time,
+                                    higher quality work. But the pressure to
+                                    sell, upsell, and compete with chains
+                                    created a different kind of exhaustion.
+                                </p>
+                                <p>
+                                    Then came the moment that changed
+                                    everything: a patient started crying in the
+                                    chair— not from pain, but from relief. "No
+                                    one's ever explained things to me like
+                                    this," she said. "I finally feel safe."
+                                </p>
+                                <div class="act-insight">
+                                    "That's when I understood: my real skill
+                                    wasn't in my hands—it was in creating calm."
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="story-act fade-in-up">
+                            <div class="act-visual">
+                                <div class="act-number">3</div>
+                                [West Dental Vision]
+                            </div>
+                            <div class="act-content">
+                                <h3>Building the Safe Harbor</h3>
+                                <p>
+                                    West Dental isn't about competing with
+                                    chains or following industry trends. It's
+                                    about creating a space where people can
+                                    breathe, think, and make decisions without
+                                    pressure or judgment.
+                                </p>
+                                <p>
+                                    Every detail—from the extra time in
+                                    appointments to the way we explain
+                                    treatments— is designed around one
+                                    principle: helping people rediscover their
+                                    authentic selves through their smile.
+                                </p>
+                                <div class="act-insight">
+                                    "Now when the mirror goes up, patients don't
+                                    just see better teeth—they recognize
+                                    themselves."
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Philosophy Section -->
+            <section class="philosophy-section">
+                <div class="philosophy-container">
+                    <h2 class="philosophy-title fade-in-up">My Philosophy</h2>
+                    <blockquote class="philosophy-quote fade-in-up">
+                        Calm clarity. I help people feel safe in a space most
+                        people associate with fear or shame.
+                    </blockquote>
+
+                    <div class="philosophy-principles">
+                        <div class="principle fade-in-up">
+                            <div class="principle-icon">🦉</div>
+                            <h3 class="principle-title">Owl Wisdom</h3>
+                            <p class="principle-description">
+                                Patient observation that sees beneath the
+                                surface. Taking time to understand what's really
+                                happening before making recommendations.
+                            </p>
+                        </div>
+                        <div class="principle fade-in-up">
+                            <div class="principle-icon">🛡️</div>
+                            <h3 class="principle-title">Safe Harbor</h3>
+                            <p class="principle-description">
+                                Creating protected spaces where people can make
+                                decisions without pressure, judgment, or shame
+                                about their dental history.
+                            </p>
+                        </div>
+                        <div class="principle fade-in-up">
+                            <div class="principle-icon">🪞</div>
+                            <h3 class="principle-title">Mirror Recognition</h3>
+                            <p class="principle-description">
+                                Helping people align their outer appearance with
+                                who they've become inside— not changing them,
+                                but revealing their authentic self.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Journey Section -->
+            <section class="journey-section">
+                <div class="journey-container">
+                    <div class="journey-header fade-in-up">
+                        <h2 class="journey-title">How We Work Together</h2>
+                        <p class="journey-subtitle">
+                            Every relationship begins with understanding. Here's
+                            how we build trust and create transformation that
+                            feels natural and authentic.
+                        </p>
+                    </div>
+
+                    <div class="journey-steps">
+                        <div class="journey-step fade-in-up">
+                            <div class="step-number">1</div>
+                            <h3 class="step-title">Listen & Understand</h3>
+                            <p class="step-description">
+                                We start by understanding your story—not just
+                                your dental history, but how you feel about your
+                                smile and what you hope to achieve.
+                            </p>
+                        </div>
+                        <div class="journey-step fade-in-up">
+                            <div class="step-number">2</div>
+                            <h3 class="step-title">Observe & Assess</h3>
+                            <p class="step-description">
+                                Comprehensive examination including 3D scans and
+                                X-rays, explained in language that makes sense
+                                without overwhelming you.
+                            </p>
+                        </div>
+                        <div class="journey-step fade-in-up">
+                            <div class="step-number">3</div>
+                            <h3 class="step-title">Plan & Align</h3>
+                            <p class="step-description">
+                                Creating a treatment plan that aligns with your
+                                authentic self—not what trends dictate, but what
+                                feels right for you.
+                            </p>
+                        </div>
+                        <div class="journey-step fade-in-up">
+                            <div class="step-number">4</div>
+                            <h3 class="step-title">Transform & Recognize</h3>
+                            <p class="step-description">
+                                Gentle, precise treatment delivered in a calm
+                                environment where you feel supported throughout
+                                the entire process.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta-section">
+                <div class="cta-container">
+                    <h2 class="cta-title fade-in-up">
+                        Ready to Experience the Difference?
+                    </h2>
+                    <p class="cta-subtitle fade-in-up">
+                        Book your comprehensive £95 Smile Check-Up and discover
+                        what authentic dental care feels like.
+                    </p>
+                    <a href="contact.html" class="cta-button fade-in-up"
+                        >Book Your Consultation</a
+                    >
+                </div>
+            </section>
+        </main>
+
+        <script>
+            // Scroll animation observer
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px",
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll(".fade-in-up").forEach((el) => {
+                observer.observe(el);
+            });
+
+            // Header background on scroll
+            window.addEventListener("scroll", () => {
+                const header = document.querySelector(".header");
+                if (window.scrollY > 100) {
+                    header.style.background = "rgba(255, 255, 255, 0.95)";
+                } else {
+                    header.style.background = "var(--color-surface)";
+                }
+            });
+        </script>
+    </body>
+</html>

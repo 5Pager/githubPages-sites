@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West Dental Glasgow | Smile with Self-Respect | Dr. Karm Jandoo</title>
+    <meta name="description" content="Not all dentists are the same. We're here for people who care how they feel — not just how they look. Book your £95 Smile Check-Up in Glasgow's West End.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            /* Week 1 Signature: Organic Precision Harmony */
+            --color-deep-trust: #2B3A42;
+            --color-sage-wisdom: #6B8F71;
+            --color-cream-comfort: #F4F1EA;
+            --color-copper-warmth: #C4975A;
+            --color-gentle-highlight: #E8D5B7;
+            --color-depth-shadow: #1A252B;
+            --color-trust-accent: #4A6B75;
+
+            /* Semantic Applications */
+            --color-primary: var(--color-deep-trust);
+            --color-secondary: var(--color-sage-wisdom);
+            --color-accent: var(--color-copper-warmth);
+            --color-background: var(--color-cream-comfort);
+            --color-surface: #FFFFFF;
+            --color-text-primary: var(--color-depth-shadow);
+            --color-text-secondary: var(--color-deep-trust);
+
+            /* Interactive States */
+            --color-hover: var(--color-trust-accent);
+            --color-active: var(--color-copper-warmth);
+            --color-focus: var(--color-gentle-highlight);
+
+            /* Breathing Room Philosophy */
+            --spacing-breathing: 120px;
+            --spacing-section: 80px;
+            --spacing-element: 48px;
+            --content-max-width: 680px;
+            --container-max-width: 1200px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: var(--color-text-primary);
+            background-color: var(--color-background);
+            font-size: 16px;
+        }
+
+        /* Header - Calm Precision Navigation */
+        .header {
+            background: var(--color-surface);
+            border-bottom: 1px solid var(--color-gentle-highlight);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 24px 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            text-decoration: none;
+            color: var(--color-primary);
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--color-copper-warmth), #D4A76A);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+            box-shadow: 0 4px 15px rgba(196, 151, 90, 0.25);
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--color-text-secondary);
+            font-weight: 500;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: var(--color-copper-warmth);
+        }
+
+        .nav-cta {
+            background: var(--color-copper-warmth);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .nav-cta:hover {
+            background: var(--color-trust-accent);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(196, 151, 90, 0.3);
+        }
+
+        /* Hero Section - Safe Harbor Entry */
+        .hero-section {
+            padding: var(--spacing-breathing) 0;
+            background: var(--color-background);
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 0 60px;
+            display: grid;
+            grid-template-columns: 60% 40%;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .hero-content {
+            margin-left: 5%; /* Asymmetric positioning */
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 700;
+            line-height: 1.1;
+            color: var(--color-depth-shadow);
+            margin-bottom: 2rem;
+        }
+
+        .hero-title-highlight {
+            color: var(--color-copper-warmth);
+            display: block;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            color: var(--color-primary);
+            margin-bottom: 3rem;
+            max-width: 65ch;
+            font-weight: 400;
+        }
+
+        .hero-cta-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .hero-cta {
+            background: var(--color-copper-warmth);
+            color: white;
+            padding: 18px 36px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.4s ease;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .hero-cta:hover {
+            background: var(--color-trust-accent);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(196, 151, 90, 0.3);
+        }
+
+        .hero-trust-note {
+            font-size: 0.9rem;
+            color: var(--color-text-secondary);
+            opacity: 0.8;
+            font-style: italic;
+        }
+
+        .hero-image {
+            background: var(--color-gentle-highlight);
+            border-radius: 20px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-primary);
+            font-style: italic;
+            transform: translateX(-20px); /* Organic offset */
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Trust Building Section */
+        .trust-section {
+            padding: var(--spacing-breathing) 0;
+            background: var(--color-surface);
+        }
+
+        .trust-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 60px;
+            text-align: center;
+        }
+
+        .trust-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+
+        .trust-content {
+            font-size: 1.2rem;
+            color: var(--color-text-primary);
+            line-height: 1.7;
+            max-width: 65ch;
+            margin: 0 auto 4rem;
+        }
+
+        .trust-features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .trust-feature {
+            padding: 40px 24px;
+            background: var(--color-background);
+            border-radius: 16px;
+            text-align: center;
+            border-left: 4px solid var(--color-sage-wisdom);
+            transition: transform 0.3s ease;
+        }
+
+        .trust-feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .trust-feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .trust-feature-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+
+        .trust-feature-description {
+            color: var(--color-text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Services Preview Section */
+        .services-preview {
+            padding: var(--spacing-breathing) 0;
+            background: var(--color-gentle-highlight);
+        }
+
+        .services-container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 0 60px;
+        }
+
+        .services-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .services-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .services-subtitle {
+            font-size: 1.1rem;
+            color: var(--color-text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+        }
+
+        .service-card {
+            background: var(--color-surface);
+            padding: 40px;
+            border-radius: 16px;
+            border-left: 4px solid var(--color-sage-wisdom);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:nth-child(1) {
+            transform: translateY(-15px);
+        }
+
+        .service-card:nth-child(2) {
+            transform: translateY(10px);
+        }
+
+        .service-card:nth-child(3) {
+            transform: translateY(-5px);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .service-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+
+        .service-description {
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-price {
+            font-weight: 600;
+            color: var(--color-copper-warmth);
+            font-size: 1.1rem;
+        }
+
+        /* Recognition Section */
+        .recognition-section {
+            padding: 200px 0;
+            background: var(--color-surface);
+            text-align: center;
+        }
+
+        .recognition-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 60px;
+        }
+
+        .recognition-quote {
+            font-size: 1.8rem;
+            line-height: 1.5;
+            color: var(--color-primary);
+            font-style: italic;
+            margin-bottom: 3rem;
+            position: relative;
+            padding: 0 40px;
+        }
+
+        .recognition-quote::before,
+        .recognition-quote::after {
+            content: '"';
+            font-size: 4rem;
+            color: var(--color-copper-warmth);
+            position: absolute;
+            top: -20px;
+            font-family: Georgia, serif;
+        }
+
+        .recognition-quote::before {
+            left: 0;
+        }
+
+        .recognition-quote::after {
+            right: 0;
+            transform: rotate(180deg);
+        }
+
+        .recognition-attribution {
+            color: var(--color-text-secondary);
+            font-weight: 500;
+            opacity: 0.8;
+        }
+
+        /* Footer */
+        .footer {
+            padding: var(--spacing-breathing) 0 60px 0;
+            background: var(--color-primary);
+            color: white;
+        }
+
+        .footer-container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 0 60px;
+            text-align: center;
+        }
+
+        .footer-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-cta {
+            background: var(--color-copper-warmth);
+            color: white;
+            padding: 18px 36px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .footer-cta:hover {
+            background: var(--color-sage-wisdom);
+            transform: translateY(-2px);
+        }
+
+        .footer-info {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            opacity: 0.8;
+        }
+
+        .footer-contact {
+            font-size: 0.95rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 20px 32px;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav-menu {
+                gap: 24px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                padding: 0 32px;
+                text-align: center;
+            }
+
+            .hero-content {
+                margin-left: 0;
+            }
+
+            .hero-image {
+                transform: translateX(0);
+                height: 300px;
+            }
+
+            .trust-container,
+            .services-container,
+            .recognition-container,
+            .footer-container {
+                padding: 0 32px;
+            }
+
+            .trust-features {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-card:nth-child(1),
+            .service-card:nth-child(2),
+            .service-card:nth-child(3) {
+                transform: translateY(0);
+            }
+
+            .recognition-section {
+                padding: 120px 0;
+            }
+
+            .recognition-quote {
+                font-size: 1.4rem;
+                padding: 0 20px;
+            }
+        }
+
+        /* Scroll Animation */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo-container">
+                <div class="logo-icon">WD</div>
+                <span class="logo-text">West Dental</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="method.html" class="nav-link">Method</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="contact.html" class="nav-cta">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Smile with
+                        <span class="hero-title-highlight">self-respect.</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        We help people rediscover the freedom to eat, smile, and express themselves without shame.
+                        Not all dentists are the same—we're here for people who care how they feel, not just how they look.
+                    </p>
+                    <div class="hero-cta-container">
+                        <a href="contact.html" class="hero-cta">Book Your £95 Smile Check-Up</a>
+                        <p class="hero-trust-note">Comprehensive check including 3D scan, X-rays & treatment plan</p>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    [Dr. Karm's Portrait]
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Building Section -->
+        <section class="trust-section">
+            <div class="trust-container">
+                <h2 class="trust-title fade-in-up">Not All Dentists Are the Same</h2>
+                <p class="trust-content fade-in-up">
+                    Our approach combines clinical precision with genuine warmth. We don't rush. We don't sell.
+                    We see. Every treatment plan is built around your authentic self, not industry standards.
+                </p>
+
+                <div class="trust-features">
+                    <div class="trust-feature fade-in-up">
+                        <div class="trust-feature-icon">🦉</div>
+                        <h3 class="trust-feature-title">Calm Wisdom</h3>
+                        <p class="trust-feature-description">Patient observation and thoughtful treatment planning that sees beneath the surface</p>
+                    </div>
+                    <div class="trust-feature fade-in-up">
+                        <div class="trust-feature-icon">🪶</div>
+                        <h3 class="trust-feature-title">Gentle Precision</h3>
+                        <p class="trust-feature-description">Clinical excellence delivered with emotional sensitivity and authentic care</p>
+                    </div>
+                    <div class="trust-feature fade-in-up">
+                        <div class="trust-feature-icon">🛡️</div>
+                        <h3 class="trust-feature-title">Safe Harbor</h3>
+                        <p class="trust-feature-description">Protected space free from judgment, pressure, or rushed decisions</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Preview -->
+        <section class="services-preview">
+            <div class="services-container">
+                <div class="services-header fade-in-up">
+                    <h2 class="services-title">Our Smile Journey Services</h2>
+                    <p class="services-subtitle">
+                        Each service is designed around the understanding that your smile tells your story.
+                        Let's make sure it tells the truth about who you've become.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card fade-in-up">
+                        <h3 class="service-title">Smile Check-Up</h3>
+                        <p class="service-description">
+                            Comprehensive diagnostic experience including full dental check, 3D scan, X-rays,
+                            and personalized treatment plan. Let's find out what's really going on.
+                        </p>
+                        <div class="service-price">£95</div>
+                    </div>
+                    <div class="service-card fade-in-up">
+                        <h3 class="service-title">Cosmetic Veneers</h3>
+                        <p class="service-description">
+                            Premium veneers designed to reflect your authentic self, not just follow trends.
+                            We create smiles that match who you've become inside.
+                        </p>
+                        <div class="service-price">From £800</div>
+                    </div>
+                    <div class="service-card fade-in-up">
+                        <h3 class="service-title">Invisalign</h3>
+                        <p class="service-description">
+                            Discreet alignment that fits your lifestyle while creating your ideal smile.
+                            Gentle, precise movement that respects your daily life.
+                        </p>
+                        <div class="service-price">From £2,500</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recognition Moment -->
+        <section class="recognition-section">
+            <div class="recognition-container">
+                <blockquote class="recognition-quote fade-in-up">
+                    When the mirror went up, I finally recognised myself. It wasn't just about the teeth—
+                    it was about feeling like the person I'd become inside finally matched what I saw outside.
+                </blockquote>
+                <div class="recognition-attribution fade-in-up">
+                    — Sarah M., West Dental Patient
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <h2 class="footer-title fade-in-up">Ready to Smile with Self-Respect?</h2>
+            <p class="footer-subtitle fade-in-up">
+                Book your £95 Smile Check-Up and discover what's really possible for your smile.
+            </p>
+            <a href="contact.html" class="footer-cta fade-in-up">Book Your Check-Up</a>
+
+            <div class="footer-info">
+                <div class="footer-contact">📍 Glasgow West End</div>
+                <div class="footer-contact">📞 0141 XXX XXXX</div>
+                <div class="footer-contact">✉️ hello@westdental.co.uk</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll animation observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            } else {
+                header.style.background = 'var(--color-surface)';
+            }
+        });
+    </script>
+</body>
+</html>

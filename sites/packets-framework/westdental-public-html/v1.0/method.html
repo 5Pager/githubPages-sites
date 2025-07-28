@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Smile Journey Method | West Dental Glasgow | Dr. Karm Jandoo</title>
+    <meta name="description" content="Discover the Smile Journey Method - our calm, patient approach to dental transformation that prioritizes understanding over rushing. Experience the difference at West Dental Glasgow.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            /* Week 1 Signature: Organic Precision Harmony */
+            --color-deep-trust: #2B3A42;
+            --color-sage-wisdom: #6B8F71;
+            --color-cream-comfort: #F4F1EA;
+            --color-copper-warmth: #C4975A;
+            --color-gentle-highlight: #E8D5B7;
+            --color-depth-shadow: #1A252B;
+            --color-trust-accent: #4A6B75;
+
+            /* Semantic Applications */
+            --color-primary: var(--color-deep-trust);
+            --color-secondary: var(--color-sage-wisdom);
+            --color-accent: var(--color-copper-warmth);
+            --color-background: var(--color-cream-comfort);
+            --color-surface: #FFFFFF;
+            --color-text-primary: var(--color-depth-shadow);
+            --color-text-secondary: var(--color-deep-trust);
+
+            /* Interactive States */
+            --color-hover: var(--color-trust-accent);
+            --color-active: var(--color-copper-warmth);
+            --color-focus: var(--color-gentle-highlight);
+
+            /* Breathing Room Philosophy */
+            --spacing-breathing: 120px;
+            --spacing-section: 80px;
+            --spacing-element: 48px;
+            --content-max-width: 680px;
+            --container-max-width: 1200px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: var(--color-text-primary);
+            background-color: var(--color-background);
+            font-size: 16px;
+        }
+
+        /* Header - Calm Precision Navigation */
+        .header {
+            background: var(--color-surface);
+            border-bottom: 1px solid var(--color-gentle-highlight);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 24px 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            text-decoration: none;
+            color: var(--color-primary);
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--color-copper-warmth), #D4A76A);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+            box-shadow: 0 4px 15px rgba(196, 151, 90, 0.25);
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--color-text-secondary);
+            font-weight: 500;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--color-copper-warmth);
+        }
+
+        .nav-cta {
+            background: var(--color-copper-warmth);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .nav-cta:hover {
+            background: var(--color-trust-accent);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(196, 151, 90, 0.3);
+        }
+
+        /* Hero Section - Method Introduction */
+        .hero-section {
+            padding: var(--spacing-breathing) 0;
+            background: var(--color-surface);
+            text-align: center;
+        }
+
+        .hero-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 60px;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--color-depth-shadow);
+            margin-bottom: 2rem;
+        }
+
+        .hero-title-highlight {
+            color: var(--color-copper-warmth);
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            line-height: 1.6;
+            color: var(--color-primary);
+            margin-bottom: 3rem;
+            max-width: 70ch;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 400;
+        }
+
+        .hero-contrast {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 4rem;
+            text-align: left;
+        }
+
+        .contrast-side {
+            padding: 40px;
+            border-radius: 16px;
+            border-top: 4px solid;
+        }
+
+        .contrast-rush {
+            background: #F5F5F5;
+            border-color: #999;
+        }
+
+        .contrast-calm {
+            background: var(--color-gentle-highlight);
+            border-color: var(--color-sage-wisdom);
+        }
+
+        .contrast-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .contrast-rush .contrast-title {
+            color: #666;
+        }
+
+        .contrast-calm .contrast-title {
+            color: var(--color-primary);
+        }
+
+        .contrast-list {
+            list-style: none;
+            line-height: 1.8;
+        }
+
+        .contrast-list li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 24px;
+        }
+
+        .contrast-rush .contrast-list li:before {
+            content: '❌';
+            position: absolute;
+            left: 0;
+        }
+
+        .contrast-calm .contrast-list li:before {
+            content: '✨';
+            position: absolute;
+            left: 0;
+        }
+
+        /* Method Steps Section */
+        .method-section {
+            padding: var(--spacing-breathing) 0;
+            background: var(--color-background);
+        }
+
+        .method-container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 0 60px;
+        }
+
+        .method-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .method-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .method-subtitle {
+            font-size: 1.2rem;
+            color: var(--color-text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .method-steps {
+            display: grid;
+            gap: 80px;
+        }
+
+        .method-step {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .method-step:nth-child(even) {
+            grid-template-columns: 1fr 300px;
+        }
+
+        .method-step:nth-child(even) .step-content {
+            order: 1;
+        }
+
+        .method-step:nth-child(even) .step-visual {
+            order: 2;
+        }
+
+        .step-visual {
+            background: var(--color-gentle-highlight);
+            border-radius: 20px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-primary);
+            font-style: italic;
+            position: relative;
+            transform: translateY(-10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-number {
+            position: absolute;
+            top: -20px;
+            left: 30px;
+            background: var(--color-copper-warmth);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 15px rgba(196, 151, 90, 0.3);
+        }
+
+        .step-content h3 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .step-content p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--color-text-primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .step-details {
+            background: var(--color-surface);
+            padding: 24px;
+            border-radius: 12px;
+            border-left: 4px solid var(--color-sage-wisdom);
+        }
+
+        .step-details h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .step-details p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+            color: var(--color-text-secondary);
+        }
+
+        /* Philosophy Section */
+        .philosophy-section {
+            padding: var(--spacing-breathing) 0;
+            background: var(--color-surface);
+        }
+
+        .philosophy-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 60px;
+            text-align: center;
+        }
+
+        .philosophy-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 3rem;
+        }
+
+        .philosophy-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .philosophy-pillar {
+            padding: 40px 24px;
+            background: var(--color-background);
+            border-radius: 16px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .philosophy-pillar:hover {
+            transform: translateY(-5px);
+        }
+
+        .pillar-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .pillar-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+
+        .pillar-description {
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+        }
+
+        .philosophy-quote {
+            font-size: 1.6rem;
+            line-height: 1.5;
+            color: var(--color-primary);
+            font-style: italic;
+            margin-top: 60px;
+            position: relative;
+            padding: 0 40px;
+        }
+
+        .philosophy-quote::before,
+        .philosophy-quote::after {
+            content: '"';
+            font-size: 3rem;
+            color: var(--color-copper-warmth);
+            position: absolute;
+            top: -15px;
+            font-family: Georgia, serif;
+        }
+
+        .philosophy-quote::before {
+            left: 0;
+        }
+
+        .philosophy-quote::after {
+            right: 0;
+            transform: rotate(180deg);
+        }
+
+        /* Difference Section */
+        .difference-section {
+            padding: var(--spacing-breathing) 0;
+            background: var(--color-gentle-highlight);
+        }
+
+        .difference-container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 0 60px;
+        }
+
+        .difference-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .difference-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .difference-subtitle {
+            font-size: 1.2rem;
+            color: var(--color-text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .difference-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .difference-card {
+            background: var(--color-surface);
+            padding: 40px;
+            border-radius: 16px;
+            border-top: 4px solid var(--color-sage-wisdom);
+            transition: all 0.3s ease;
+        }
+
+        .difference-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .difference-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .difference-card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+
+        .difference-card-description {
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: var(--spacing-breathing) 0;
+            background: var(--color-primary);
+            color: white;
+            text-align: center;
+        }
+
+        .cta-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 60px;
+        }
+
+        .cta-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            background: var(--color-copper-warmth);
+            color: white;
+            padding: 18px 36px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: var(--color-sage-wisdom);
+            transform: translateY(-2px);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 20px 32px;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav-menu {
+                gap: 24px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero-container,
+            .method-container,
+            .philosophy-container,
+            .difference-container,
+            .cta-container {
+                padding: 0 32px;
+            }
+
+            .hero-contrast {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .method-step {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                text-align: center;
+            }
+
+            .method-step:nth-child(even) {
+                grid-template-columns: 1fr;
+            }
+
+            .method-step:nth-child(even) .step-content,
+            .method-step:nth-child(even) .step-visual {
+                order: unset;
+            }
+
+            .step-visual {
+                height: 200px;
+            }
+
+            .philosophy-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .difference-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .philosophy-quote {
+                font-size: 1.3rem;
+                padding: 0 20px;
+            }
+        }
+
+        /* Scroll Animation */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo-container">
+                <div class="logo-icon">WD</div>
+                <span class="logo-text">West Dental</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="method.html" class="nav-link active">Method</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="contact.html" class="nav-cta">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <h1 class="hero-title">
+                    The <span class="hero-title-highlight">Smile Journey</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Most dental practices rush you through. We slow down. Because real transformation
+                    requires understanding what's really happening first.
+                </p>
+
+                <div class="hero-contrast fade-in-up">
+                    <div class="contrast-side contrast-rush">
+                        <h3 class="contrast-title">The Rush Approach</h3>
+                        <ul class="contrast-list">
+                            <li>15-minute appointments</li>
+                            <li>Immediate treatment recommendations</li>
+                            <li>Focus on what's wrong</li>
+                            <li>Pressure to decide quickly</li>
+                            <li>One-size-fits-all solutions</li>
+                        </ul>
+                    </div>
+                    <div class="contrast-side contrast-calm">
+                        <h3 class="contrast-title">The Smile Journey</h3>
+                        <ul class="contrast-list">
+                            <li>Time to understand your story</li>
+                            <li>Comprehensive assessment first</li>
+                            <li>Focus on your authentic goals</li>
+                            <li>Space to think and reflect</li>
+                            <li>Personalized transformation plan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Method Steps Section -->
+        <section class="method-section">
+            <div class="method-container">
+                <div class="method-header fade-in-up">
+                    <h2 class="method-title">How The Smile Journey Works</h2>
+                    <p class="method-subtitle">
+                        Four carefully designed phases that prioritize understanding, trust, and authentic transformation.
+                    </p>
+                </div>
+
+                <div class="method-steps">
+                    <div class="method-step fade-in-up">
+                        <div class="step-visual">
+                            <div class="step-number">1</div>
+                            [Listening & Understanding]
+                        </div>
+                        <div class="step-content">
+                            <h3>Listen & Understand</h3>
+                            <p>
+                                We begin by understanding your relationship with your smile. Not just the clinical history,
+                                but how you feel, what you hope for, and what matters most to you.
+                            </p>
+                            <div class="step-details">
+                                <h4>What this includes:</h4>
+                                <p>Comprehensive consultation, understanding your goals, exploring your concerns, and building trust through genuine conversation.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="method-step fade-in-up">
+                        <div class="step-visual">
+                            <div class="step-number">2</div>
+                            [Comprehensive Assessment]
+                        </div>
+                        <div class="step-content">
+                            <h3>Observe & Assess</h3>
+                            <p>
+                                Thorough examination using advanced technology, but explained in language that makes sense.
+                                We show you what we see, without overwhelming you with information.
+                            </p>
+                            <div class="step-details">
+                                <h4>What this includes:</h4>
+                                <p>3D scans, X-rays, comprehensive oral health assessment, and clear explanation of findings in understandable terms.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="method-step fade-in-up">
+                        <div class="step-visual">
+                            <div class="step-number">3</div>
+                            [Personalized Planning]
+                        </div>
+                        <div class="step-content">
+                            <h3>Plan & Align</h3>
+                            <p>
+                                Creating a treatment plan that aligns with your authentic self and lifestyle.
+                                Not what trends dictate, but what feels right for who you are.
+                            </p>
+                            <div class="step-details">
+                                <h4>What this includes:</h4>
+                                <p>Personalized treatment options, timeline discussions, investment planning, and space to make informed decisions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="method-step fade-in-up">
+                        <div class="step-visual">
+                            <div class="step-number">4</div>
+                            [Gentle Transformation]
+                        </div>
+                        <div class="step-content">
+                            <h3>Transform & Recognize</h3>
+                            <p>
+                                Precise, gentle treatment delivered in a calm environment. Each appointment is designed
+                                to be comfortable, with care that honors your trust in us.
+                            </p>
+                            <div class="step-details">
+                                <h4>What this includes:</h4>
+                                <p>Comfortable treatment delivery, regular check-ins, gentle techniques, and ongoing support throughout your transformation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section class="philosophy-section">
+            <div class="philosophy-container">
+                <h2 class="philosophy-title fade-in-up">Our Three Pillars</h2>
+
+                <div class="philosophy-grid">
+                    <div class="philosophy-pillar fade-in-up">
+                        <div class="pillar-icon">🦉</div>
+                        <h3 class="pillar-title">Owl Wisdom</h3>
+                        <p class="pillar-description">
+                            Patient observation and thoughtful assessment. We see beneath the surface
+                            and take time to understand what's really happening.
+                        </p>
+                    </div>
+                    <div class="philosophy-pillar fade-in-up">
+                        <div class="pillar-icon">🛡️</div>
+                        <h3 class="pillar-title">Safe Harbor</h3>
+                        <p class="pillar-description">
+                            Creating protected spaces free from judgment, pressure, or shame.
+                            A calm environment where you can think and decide at your own pace.
+                        </p>
+                    </div>
+                    <div class="philosophy-pillar fade-in-up">
+                        <div class="pillar-icon">🪞</div>
+                        <h3 class="pillar-title">Mirror Recognition</h3>
+                        <p class="pillar-description">
+                            Helping you align your outer appearance with who you've become inside.
+                            Not changing you, but revealing your authentic self.
+                        </p>
+                    </div>
+                </div>
+
+                <blockquote class="philosophy-quote fade-in-up">
+                    Real transformation happens when people feel safe enough to be vulnerable,
+                    and trusted enough to be authentic.
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Difference Section -->
+        <section class="difference-section">
+            <div class="difference-container">
+                <div class="difference-header fade-in-up">
+                    <h2 class="difference-title">What Makes Us Different</h2>
+                    <p class="difference-subtitle">
+                        Four key differences that create a fundamentally different experience.
+                    </p>
+                </div>
+
+                <div class="difference-grid">
+                    <div class="difference-card fade-in-up">
+                        <div class="difference-icon">⏰</div>
+                        <h3 class="difference-card-title">Time to Think</h3>
+                        <p class="difference-card-description">
+                            We give you the breathing room to process information and make decisions
+                            that feel right for you, not rushed by appointment pressure.
+                        </p>
+                    </div>
+                    <div class="difference-card fade-in-up">
+                        <div class="difference-icon">🎯</div>
+                        <h3 class="difference-card-title">Authentic Goals</h3>
+                        <p class="difference-card-description">
+                            Treatment plans based on your authentic self and lifestyle, not what
+                            industry trends or profit margins suggest.
+                        </p>
+                    </div>
+                    <div class="difference-card fade-in-up">
+                        <div class="difference-icon">💝</div>
+                        <h3 class="difference-card-title">Gentle Approach</h3>
+                        <p class="difference-card-description">
+                            Clinical precision delivered with emotional sensitivity. Every technique
+                            chosen for your comfort and peace of mind.
+                        </p>
+                    </div>
+                    <div class="difference-card fade-in-up">
+                        <div class="difference-icon">🤝</div>
+                        <h3 class="difference-card-title">Long-term Partnership</h3>
+                        <p class="difference-card-description">
+                            Building relationships that last beyond treatment. We're here for your
+                            ongoing oral health and confidence journey.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-container">
+                <h2 class="cta-title fade-in-up">Ready to Experience the Difference?</h2>
+                <p class="cta-subtitle fade-in-up">
+                    Begin your Smile Journey with a comprehensive £95 consultation
+                    that prioritizes understanding over rushing.
+                </p>
+                <a href="contact.html" class="cta-button fade-in-up">Start Your Smile Journey</a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Scroll animation observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            } else {
+                header.style.background = 'var(--color-surface)';
+            }
+        });
+    </script>
+</body>
+</html>

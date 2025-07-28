@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | West Dental Glasgow | Authentic Smile Transformation | Dr. Karm Jandoo</title>
+    <meta name="description" content="Discover our comprehensive dental services designed around your authentic self. From £95 Smile Check-Ups to premium veneers and Invisalign, experience the West Dental difference.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            /* Week 1 Signature: Organic Precision Harmony */
+            --color-deep-trust: #2B3A42;
+            --color-sage-wisdom: #6B8F71;
+            --color-cream-comfort: #F4F1EA;
+            --color-copper-warmth: #C4975A;
+            --color-gentle-highlight: #E8D5B7;
+            --color-depth-shadow: #1A252B;
+            --color-trust-accent: #4A6B75;
+
+            /* Semantic Applications */
+            --color-primary: var(--color-deep-trust);
+            --color-secondary: var(--color-sage-wisdom);
+            --color-accent: var(--color-copper-warmth);
+            --color-background: var(--color-cream-comfort);
+            --color-surface: #FFFFFF;
+            --color-text-primary: var(--color-depth-shadow);
+            --color-text-secondary: var(--color-deep-trust);
+
+            /* Interactive States */
+            --color-hover: var(--color-trust-accent);
+            --color-active: var(--color-copper-warmth);
+            --color-focus: var(--color-gentle-highlight);
+
+            /* Breathing Room Philosophy */
+            --spacing-breathing: 120px;
+            --spacing-section: 80px;
+            --spacing-element: 48px;
+            --content-max-width: 680px;
+            --container-max-width: 1200px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: var(--color-text-primary);
+            background-color: var(--color-background);
+            font-size: 16px;
+        }
+
+        /* Header - Calm Precision Navigation */
+        .header {
+            background: var(--color-surface);
+            border-bottom: 1px solid var(--color-gentle-highlight);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 24px 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            text-decoration: none;
+            color: var(--color-primary);
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--color-copper-warmth), #D4A76A);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+            box-shadow: 0 4px 15px rgba(196, 151, 90, 0.25);
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--color-text-secondary);
+            font-weight: 500;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--color-copper-warmth);
+        }
+
+        .nav-cta {
+            background: var(--color-copper-warmth);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .nav-cta:hover {
+            background: var(--color-trust-accent);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(196, 151, 90, 0.3);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            padding: var(--spacing-breathing) 0;
+            background: var(--color-surface);
+            text-align: center;
+        }
+
+        .hero-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 60px;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--color-depth-shadow);
+            margin-bottom: 2rem;
+        }
+
+        .hero-title-highlight {
+            color: var(--color-copper-warmth);
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            line-height: 1.6;
+            color: var(--color-primary);
+            margin-bottom: 3rem;
+            max-width: 70ch;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 400;
+        }
+
+        /* Services Grid */
+        .services-section {
+            padding: var(--spacing-breathing) 0;
+            background: var(--color-background);
+        }
+
+        .services-container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 0 60px;
+        }
+
+        .services-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .services-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .services-subtitle {
+            font-size: 1.2rem;
+            color: var(--color-text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .services-grid {
+            display: grid;
+            gap: 60px;
+        }
+
+        .service-item {
+            display: grid;
+            grid-template-columns: 400px 1fr;
+            gap: 60px;
+            align-items: center;
+            background: var(--color-surface);
+            border-radius: 20px;
+            padding: 60px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .service-item:nth-child(even) {
+            grid-template-columns: 1fr 400px;
+        }
+
+        .service-item:nth-child(even) .service-content {
+            order: 1;
+        }
+
+        .service-item:nth-child(even) .service-visual {
+            order: 2;
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .service-visual {
+            background: var(--color-gentle-highlight);
+            border-radius: 16px;
+            height: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-primary);
+            font-style: italic;
+            position: relative;
+        }
+
+        .service-price-badge {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background: var(--color-copper-warmth);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 15px rgba(196, 151, 90, 0.3);
+        }
+
+        .service-content h3 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .service-content .service-tagline {
+            font-size: 1.2rem;
+            color: var(--color-copper-warmth);
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .service-content p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--color-text-primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .service-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .service-features li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 24px;
+            color: var(--color-text-secondary);
+        }
+
+        .service-features li:before {
+            content: '✨';
+            position: absolute;
+            left: 0;
+        }
+
+        .service-cta {
+            display: inline-block;
+            background: var(--color-copper-warmth);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .service-cta:hover {
+            background: var(--color-trust-accent);
+            transform: translateY(-1px);
+        }
+
+        /* Signature Service Section */
+        .signature-section {
+            padding: var(--spacing-breathing) 0;
+            background: var(--color-gentle-highlight);
+        }
+
+        .signature-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 60px;
+            text-align: center;
+        }
+
+        .signature-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 2rem;
+        }
+
+        .signature-description {
+            font-size: 1.2rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+
+        .signature-card {
+            background: var(--color-surface);
+            padding: 60px;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            border-left: 6px solid var(--color-sage-wisdom);
+        }
+
+        .signature-card h3 {
+            font-size: 2rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+
+        .signature-card .signature-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color-copper-warmth);
+            margin-bottom: 1.5rem;
+        }
+
+        .signature-includes {
+            text-align: left;
+            margin-bottom: 2rem;
+        }
+
+        .signature-includes h4 {
+            font-size: 1.2rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+
+        .signature-includes ul {
+            list-style: none;
+            column-count: 2;
+            column-gap: 40px;
+        }
+
+        .signature-includes li {
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 24px;
+            color: var(--color-text-secondary);
+            break-inside: avoid;
+        }
+
+        .signature-includes li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--color-sage-wisdom);
+            font-weight: bold;
+        }
+
+        .signature-cta {
+            background: var(--color-copper-warmth);
+            color: white;
+            padding: 18px 36px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .signature-cta:hover {
+            background: var(--color-trust-accent);
+            transform: translateY(-2px);
+        }
+
+        /* Investment Section */
+        .investment-section {
+            padding: var(--spacing-breathing) 0;
+            background: var(--color-surface);
+        }
+
+        .investment-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 60px;
+            text-align: center;
+        }
+
+        .investment-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 2rem;
+        }
+
+        .investment-description {
+            font-size: 1.2rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+
+        .investment-philosophy {
+            background: var(--color-background);
+            padding: 40px;
+            border-radius: 16px;
+            border-left: 4px solid var(--color-sage-wisdom);
+            margin-bottom: 3rem;
+        }
+
+        .investment-quote {
+            font-size: 1.4rem;
+            font-style: italic;
+            color: var(--color-primary);
+            line-height: 1.5;
+        }
+
+        .investment-options {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 3rem;
+        }
+
+        .investment-option {
+            background: var(--color-background);
+            padding: 30px 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .investment-option h4 {
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .investment-option p {
+            color: var(--color-text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: var(--spacing-breathing) 0;
+            background: var(--color-primary);
+            color: white;
+            text-align: center;
+        }
+
+        .cta-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 60px;
+        }
+
+        .cta-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            background: var(--color-copper-warmth);
+            color: white;
+            padding: 18px 36px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: var(--color-sage-wisdom);
+            transform: translateY(-2px);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 20px 32px;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav-menu {
+                gap: 24px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero-container,
+            .services-container,
+            .signature-container,
+            .investment-container,
+            .cta-container {
+                padding: 0 32px;
+            }
+
+            .service-item {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                padding: 40px 30px;
+            }
+
+            .service-item:nth-child(even) {
+                grid-template-columns: 1fr;
+            }
+
+            .service-item:nth-child(even) .service-content,
+            .service-item:nth-child(even) .service-visual {
+                order: unset;
+            }
+
+            .service-visual {
+                height: 200px;
+            }
+
+            .signature-card {
+                padding: 40px 30px;
+            }
+
+            .signature-includes ul {
+                column-count: 1;
+            }
+
+            .investment-options {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+
+        /* Scroll Animation */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo-container">
+                <div class="logo-icon">WD</div>
+                <span class="logo-text">West Dental</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="method.html" class="nav-link">Method</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li><a href="contact.html" class="nav-cta">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <h1 class="hero-title">
+                    Services that restore <br>
+                    <span class="hero-title-highlight">your confidence</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Each service designed around your authentic self, not industry trends.
+                    We create transformations that feel natural and help you recognize yourself in the mirror.
+                </p>
+            </div>
+        </section>
+
+        <!-- Signature Service Section -->
+        <section class="signature-section">
+            <div class="signature-container">
+                <h2 class="signature-title fade-in-up">Our Signature Service</h2>
+                <p class="signature-description fade-in-up">
+                    Every journey begins with understanding. Our comprehensive Smile Check-Up is designed to uncover
+                    what's really happening and create a path forward that feels right for you.
+                </p>
+
+                <div class="signature-card fade-in-up">
+                    <h3>Comprehensive Smile Check-Up</h3>
+                    <div class="signature-price">£95</div>
+
+                    <div class="signature-includes">
+                        <h4>What's Included:</h4>
+                        <ul>
+                            <li>Extended consultation (60+ minutes)</li>
+                            <li>Complete oral health assessment</li>
+                            <li>Advanced 3D digital scans</li>
+                            <li>Comprehensive X-ray examination</li>
+                            <li>Personalized treatment planning</li>
+                            <li>Clear explanation of all findings</li>
+                            <li>No-pressure discussion of options</li>
+                            <li>Written treatment plan to take home</li>
+                        </ul>
+                    </div>
+
+                    <a href="contact.html" class="signature-cta">Book Your Check-Up</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="services-section">
+            <div class="services-container">
+                <div class="services-header fade-in-up">
+                    <h2 class="services-title">Transformation Services</h2>
+                    <p class="services-subtitle">
+                        Comprehensive treatments designed to help you rediscover confidence in your smile.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-item fade-in-up">
+                        <div class="service-visual">
+                            <div class="service-price-badge">From £800</div>
+                            [Cosmetic Veneers Image]
+                        </div>
+                        <div class="service-content">
+                            <h3>Cosmetic Veneers</h3>
+                            <p class="service-tagline">"Revealing who you've become inside"</p>
+                            <p>
+                                Premium porcelain veneers designed to reflect your authentic self, not just follow trends.
+                                We create smiles that match who you are today, with careful attention to proportion,
+                                color, and character that feels naturally yours.
+                            </p>
+                            <ul class="service-features">
+                                <li>Custom design consultation</li>
+                                <li>Digital smile preview</li>
+                                <li>Premium materials and techniques</li>
+                                <li>Gentle, comfortable process</li>
+                                <li>Natural-looking results</li>
+                            </ul>
+                            <a href="contact.html" class="service-cta">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="service-item fade-in-up">
+                        <div class="service-visual">
+                            <div class="service-price-badge">From £2,500</div>
+                            [Invisalign Treatment Image]
+                        </div>
+                        <div class="service-content">
+                            <h3>Invisalign Clear Aligners</h3>
+                            <p class="service-tagline">"Transformation that fits your life"</p>
+                            <p>
+                                Discreet teeth straightening that respects your lifestyle while creating your ideal smile.
+                                Gentle, precise movement with clear aligners that work around your daily routine,
+                                not against it.
+                            </p>
+                            <ul class="service-features">
+                                <li>Virtually invisible treatment</li>
+                                <li>Removable for eating and cleaning</li>
+                                <li>Comfortable, gradual movement</li>
+                                <li>Regular progress monitoring</li>
+                                <li>Predictable results</li>
+                            </ul>
+                            <a href="contact.html" class="service-cta">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="service-item fade-in-up">
+                        <div class="service-visual">
+                            <div class="service-price-badge">From £150</div>
+                            [Dental Hygiene Image]
+                        </div>
+                        <div class="service-content">
+                            <h3>Comprehensive Hygiene Care</h3>
+                            <p class="service-tagline">"Foundation for lifelong confidence"</p>
+                            <p>
+                                Professional cleaning and gum care that goes beyond the surface. We help you maintain
+                                the health and beauty of your smile with gentle, thorough techniques that feel
+                                comfortable and leave you feeling refreshed.
+                            </p>
+                            <ul class="service-features">
+                                <li>Deep cleaning and scaling</li>
+                                <li>Gum health assessment</li>
+                                <li>Stain removal and polishing</li>
+                                <li>Personalized home care guidance</li>
+                                <li>Prevention-focused approach</li>
+                            </ul>
+                            <a href="contact.html" class="service-cta">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="service-item fade-in-up">
+                        <div class="service-visual">
+                            <div class="service-price-badge">From £450</div>
+                            [Teeth Whitening Image]
+                        </div>
+                        <div class="service-content">
+                            <h3>Professional Whitening</h3>
+                            <p class="service-tagline">"Brightness that looks natural"</p>
+                            <p>
+                                Safe, effective teeth whitening that enhances your natural smile without looking artificial.
+                                Custom treatment plans that respect your tooth sensitivity and deliver results that
+                                complement your skin tone and personality.
+                            </p>
+                            <ul class="service-features">
+                                <li>Custom-fitted whitening trays</li>
+                                <li>Professional-grade materials</li>
+                                <li>Sensitivity management</li>
+                                <li>Gradual, natural-looking results</li>
+                                <li>At-home maintenance system</li>
+                            </ul>
+                            <a href="contact.html" class="service-cta">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Investment Section -->
+        <section class="investment-section">
+            <div class="investment-container">
+                <h2 class="investment-title fade-in-up">Investment in Your Confidence</h2>
+                <p class="investment-description fade-in-up">
+                    We believe in transparent pricing and flexible options that respect your financial comfort.
+                </p>
+
+                <div class="investment-philosophy fade-in-up">
+                    <p class="investment-quote">
+                        "Quality dental care is an investment in yourself. We work with you to make it accessible
+                        without compromising on the care you deserve."
+                    </p>
+                </div>
+
+                <div class="investment-options fade-in-up">
+                    <div class="investment-option">
+                        <h4>Flexible Payment Plans</h4>
+                        <p>Spread the cost of treatment over time with our interest-free payment options.</p>
+                    </div>
+                    <div class="investment-option">
+                        <h4>Insurance Coordination</h4>
+                        <p>We work with your dental insurance to maximize your benefits and minimize out-of-pocket costs.</p>
+                    </div>
+                    <div class="investment-option">
+                        <h4>Treatment Packages</h4>
+                        <p>Comprehensive care packages that combine services for better value and coordinated results.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-container">
+                <h2 class="cta-title fade-in-up">Ready to Begin Your Transformation?</h2>
+                <p class="cta-subtitle fade-in-up">
+                    Start with our comprehensive £95 Smile Check-Up and discover what's really possible for your smile.
+                </p>
+                <a href="contact.html" class="cta-button fade-in-up">Book Your Consultation</a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Scroll animation observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            } else {
+                header.style.background = 'var(--color-surface)';
+            }
+        });
+    </script>
+</body>
+</html>
