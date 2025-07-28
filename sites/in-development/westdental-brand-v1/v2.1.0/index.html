@@ -1,0 +1,1001 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            West Dental Glasgow | Smile with Self-Respect | Dr. Karm Jandoo |
+            West End Cultural Sophistication
+        </title>
+        <meta
+            name="description"
+            content="Museum-quality dental care in Glasgow's West End. Where artistic sophistication meets transformative dental excellence. Experience the difference cultural appreciation makes."
+        />
+
+        <!-- Preconnect to external domains -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <!-- WD Brand Fonts - Satoshi Primary, Poppins Fallback -->
+        <link
+            href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="transitions.css" />
+
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="../0.PrimaryContext.ColourCardAndStyleGuide/West Dental logo_W favicon.svg"
+        />
+        <link
+            rel="alternate icon"
+            type="image/png"
+            href="../0.PrimaryContext.ImagesFromClient/West Dental logo_Smiley favicon.png"
+        />
+
+        <!-- Open Graph Meta Tags -->
+        <meta
+            property="og:title"
+            content="West Dental Glasgow | Smile with Self-Respect"
+        />
+        <meta
+            property="og:description"
+            content="Glasgow School Contemporary dental artistry. Where cultural sophistication meets transformative care in the West End's intellectual district."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://westdental.co.uk" />
+        <meta
+            property="og:image"
+            content="../0.PrimaryContext.ImagesFromClient/karm with patient on dental chair.png"
+        />
+
+        <!-- Schema.org JSON-LD -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                "name": "West Dental",
+                "description": "Museum-quality dental care in Glasgow's West End. Cultural sophistication meets transformative dental artistry.",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Glasgow",
+                    "addressRegion": "Scotland",
+                    "addressCountry": "GB"
+                },
+                "url": "https://westdental.co.uk",
+                "priceRange": "££",
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Dental Services",
+                    "itemListElement": [
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Smile Check-Up"
+                            },
+                            "price": "95",
+                            "priceCurrency": "GBP"
+                        }
+                    ]
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Scroll Progress Indicator -->
+        <div class="scroll-progress" id="scroll-progress"></div>
+
+        <!-- Header Navigation -->
+        <header class="nav">
+            <div class="container">
+                <nav class="nav-container">
+                    <a
+                        href="index.html"
+                        class="nav-brand wd-logo wd-logo-breathing cultural-sophistication"
+                    >
+                        <svg
+                            class="wd-logo-icon"
+                            viewBox="0 0 170 170"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <defs>
+                                <style>
+                                    .logo-squiggle {
+                                        fill: var(--wd-gold);
+                                    }
+                                    .logo-text {
+                                        fill: var(--wd-black);
+                                    }
+                                </style>
+                            </defs>
+                            <!-- W Letter -->
+                            <path
+                                class="logo-text"
+                                d="M82.6837,110.8138l-17.4868-58.6353h10.6722l9.3015,30.9593c.483,1.6057.9334,3.3028,1.3642,5.0979.4243,1.7885.8551,3.9686,1.2859,6.5339.4765-2.6175.9465-4.7976,1.4034-6.5339.4504-1.7363.9204-3.4399,1.4034-5.0979l9.3015-30.9593h11.3119l9.06,30.9593c.483,1.658.953,3.4008,1.4034,5.2154.4569,1.8211.9269,3.9556,1.4034,6.4164.5352-2.7284,1.0313-4.9608,1.4882-6.6971.4504-1.7363.8942-3.329,1.3185-4.7715l9.4647-31.1225h10.4307l-17.8066,58.6353h-9.9477l-12.513-42.6694-12.8328,42.6694h-10.026Z"
+                            />
+
+                            <!-- D Letter -->
+                            <circle
+                                class="logo-text"
+                                cx="315.8757"
+                                cy="66.8477"
+                                r="5.108"
+                            />
+                            <circle
+                                class="logo-text"
+                                cx="315.8757"
+                                cy="96.3546"
+                                r="5.108"
+                            />
+                            <path
+                                class="logo-text"
+                                d="M331.4264,110.8138v-58.6353h20.5338c17.3274,0,29.2759,11.9537,29.2759,29.4378,0,17.2438-11.7083,29.1975-28.7119,29.1975h-21.0978ZM341.6934,61.6464v39.7047h9.87c11.7083,0,18.8471-7.5409,18.8471-19.7348,0-12.4342-7.3007-19.9698-19.4111-19.9698h-9.306Z"
+                            />
+
+                            <!-- Toothbrush Squiggle -->
+                            <path
+                                class="logo-squiggle wd-logo-squiggle"
+                                d="M117.4021,39.697c-4.2182,0-8.6665-1.422-13.294-4.2556-3.9852-2.4437-7.5581-3.2473-10.6292-2.3869-4.7619,1.3428-7.349,6.3318-7.3759,6.3811l-8.9831-4.4497c.4451-.9097,4.6185-8.9637,13.5001-11.5404,5.9091-1.7163,12.2006-.5527,18.7281,3.446,4.0689,2.4945,7.594,3.3115,10.4649,2.4168,4.1555-1.2876,6.2347-5.8464,6.2556-5.8927l9.2042,3.9718c-.3794.8902-3.9523,8.7725-12.3499,11.4522-1.7895.5721-3.6327.8574-5.5207.8574Z"
+                            />
+
+                            <!-- Underline -->
+                            <rect
+                                class="logo-text"
+                                x="82.7184"
+                                y="126.7087"
+                                width="248.5249"
+                                height="9.3543"
+                            />
+                        </svg>
+                        <span class="wd-logo-text">West Dental</span>
+                    </a>
+
+                    <div class="nav-menu" id="nav-menu">
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="method.html" class="nav-link">Method</a>
+                        <a href="services.html" class="nav-link">Services</a>
+                        <a href="contact.html" class="btn btn-primary"
+                            >Book Now</a
+                        >
+                    </div>
+
+                    <button
+                        class="nav-toggle"
+                        id="nav-toggle"
+                        aria-label="Toggle navigation"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section with Glasgow School Contemporary Integration -->
+            <section
+                class="hero section-pattern museum-quality vermeer-lighting"
+            >
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <div class="hero-headline-group">
+                                <h1
+                                    class="hero-title bauhaus-precision cultural-entrance"
+                                >
+                                    Smile with <br />
+                                    <span class="venetian-gold-accent"
+                                        >self-respect.</span
+                                    >
+                                </h1>
+                                <p
+                                    class="hero-subtitle cultural-sophistication cultural-entrance"
+                                >
+                                    Not all dentists are the same.<br />
+                                    We're here for people who care how they
+                                    <em class="venetian-gold-accent">feel</em> —
+                                    not just how they look.
+                                </p>
+                            </div>
+
+                            <div class="hero-description">
+                                <p
+                                    class="text-large text-muted cultural-sophistication museum-reveal"
+                                >
+                                    Discover what's really going on with your
+                                    smile. Find out if veneers, whitening, or
+                                    alignment are the right next step for you.
+                                </p>
+                            </div>
+
+                            <div class="hero-cta-group flex flex-col gap-md">
+                                <a
+                                    href="#smile-checkup"
+                                    class="btn btn-primary animate-bounce-soft museum-reveal"
+                                >
+                                    Book Your £95 Smile Check-Up
+                                </a>
+                                <p
+                                    class="text-small text-muted cultural-sophistication"
+                                >
+                                    ✓ Full dental examination ✓ 3D diagnostic
+                                    scan ✓ Digital X-rays ✓ Comprehensive
+                                    treatment plan
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="hero-image hover-lift vermeer-lighting museum-reveal"
+                        >
+                            <img
+                                src="../0.PrimaryContext.ImagesFromClient/karm with patient on dental chair.png"
+                                alt="Dr. Karm Jandoo with patient in modern dental surgery - Glasgow West End cultural sophistication meets transformative dental artistry"
+                                loading="eager"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Core Values Section -->
+            <section class="section section-muted museum-quality">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title cultural-sophistication">
+                            The freedom to eat and smile with confidence
+                        </h2>
+                        <p class="section-subtitle cultural-sophistication">
+                            We restore more than teeth — we restore trust in
+                            yourself and readiness to show up fully in life.
+                        </p>
+                    </div>
+
+                    <div class="features">
+                        <div
+                            class="feature hover-lift museum-quality cultural-entrance"
+                        >
+                            <div
+                                class="feature-icon hover-glow venetian-gold-accent"
+                            >
+                                <svg
+                                    width="32"
+                                    height="32"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <h3 class="feature-title cultural-sophistication">
+                                Precision
+                            </h3>
+                            <p class="text-muted cultural-sophistication">
+                                We listen carefully, examine thoroughly, and
+                                explain exactly what's happening with your
+                                smile.
+                            </p>
+                        </div>
+
+                        <div
+                            class="feature hover-lift museum-quality cultural-entrance"
+                        >
+                            <div
+                                class="feature-icon hover-glow venetian-gold-accent"
+                            >
+                                <svg
+                                    width="32"
+                                    height="32"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <h3 class="feature-title cultural-sophistication">
+                                Compassion
+                            </h3>
+                            <p class="text-muted cultural-sophistication">
+                                We create a space where you feel safe, seen, and
+                                understood — never judged or rushed.
+                            </p>
+                        </div>
+
+                        <div
+                            class="feature hover-lift museum-quality cultural-entrance"
+                        >
+                            <div
+                                class="feature-icon hover-glow venetian-gold-accent"
+                            >
+                                <svg
+                                    width="32"
+                                    height="32"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M13 10V3L4 14h7v7l9-11h-7z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <h3 class="feature-title cultural-sophistication">
+                                Clarity
+                            </h3>
+                            <p class="text-muted cultural-sophistication">
+                                You'll leave with a clear understanding of your
+                                options and a plan that makes sense for you.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Smile Check-Up Offer Section -->
+            <section id="smile-checkup" class="section">
+                <div class="container">
+                    <div class="max-width-4xl" style="margin: 0 auto">
+                        <div
+                            class="card card-highlight card-pattern hover-lift museum-quality vermeer-lighting"
+                        >
+                            <div class="text-center">
+                                <div class="mb-xl">
+                                    <h2 class="mb-md cultural-sophistication">
+                                        Your £95 Smile Check-Up
+                                    </h2>
+                                    <p
+                                        class="text-large text-muted cultural-sophistication"
+                                    >
+                                        Let's make sure your smile reflects the
+                                        person you've become.
+                                    </p>
+                                </div>
+
+                                <div class="grid grid-2 gap-xl mb-xl">
+                                    <div class="text-left">
+                                        <h3 class="mb-md font-bold">
+                                            What's included:
+                                        </h3>
+                                        <ul class="flex flex-col gap-sm">
+                                            <li
+                                                class="flex items-center gap-sm"
+                                            >
+                                                <svg
+                                                    class="text-wd-gold"
+                                                    width="20"
+                                                    height="20"
+                                                    fill="currentColor"
+                                                    viewBox="0 0 20 20"
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                        clip-rule="evenodd"
+                                                    ></path>
+                                                </svg>
+                                                <span
+                                                    >Full dental
+                                                    examination</span
+                                                >
+                                            </li>
+                                            <li
+                                                class="flex items-center gap-sm"
+                                            >
+                                                <svg
+                                                    class="text-wd-gold"
+                                                    width="20"
+                                                    height="20"
+                                                    fill="currentColor"
+                                                    viewBox="0 0 20 20"
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                        clip-rule="evenodd"
+                                                    ></path>
+                                                </svg>
+                                                <span>Intraoral 3D scan</span>
+                                            </li>
+                                            <li
+                                                class="flex items-center gap-sm"
+                                            >
+                                                <svg
+                                                    class="text-wd-gold"
+                                                    width="20"
+                                                    height="20"
+                                                    fill="currentColor"
+                                                    viewBox="0 0 20 20"
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                        clip-rule="evenodd"
+                                                    ></path>
+                                                </svg>
+                                                <span>Digital X-rays</span>
+                                            </li>
+                                            <li
+                                                class="flex items-center gap-sm"
+                                            >
+                                                <svg
+                                                    class="text-wd-gold"
+                                                    width="20"
+                                                    height="20"
+                                                    fill="currentColor"
+                                                    viewBox="0 0 20 20"
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                        clip-rule="evenodd"
+                                                    ></path>
+                                                </svg>
+                                                <span>Smile diagnosis</span>
+                                            </li>
+                                            <li
+                                                class="flex items-center gap-sm"
+                                            >
+                                                <svg
+                                                    class="text-wd-gold"
+                                                    width="20"
+                                                    height="20"
+                                                    fill="currentColor"
+                                                    viewBox="0 0 20 20"
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                        clip-rule="evenodd"
+                                                    ></path>
+                                                </svg>
+                                                <span
+                                                    >Personalised treatment
+                                                    plan</span
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="text-left">
+                                        <h3 class="mb-md font-bold">
+                                            Perfect for you if:
+                                        </h3>
+                                        <ul
+                                            class="flex flex-col gap-sm text-muted"
+                                        >
+                                            <li>
+                                                • You're considering veneers or
+                                                whitening
+                                            </li>
+                                            <li>
+                                                • You want to understand your
+                                                options
+                                            </li>
+                                            <li>
+                                                • You value thoroughness over
+                                                speed
+                                            </li>
+                                            <li>
+                                                • You're ready to invest in
+                                                yourself
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col gap-md items-center">
+                                    <a
+                                        href="contact.html"
+                                        class="btn btn-primary hover-glow"
+                                    >
+                                        Book Your Smile Check-Up
+                                    </a>
+                                    <p class="text-small text-muted">
+                                        Located in Glasgow's West End • Usually
+                                        available within 7 days
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Social Proof Section -->
+            <section class="section section-muted museum-quality">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title cultural-sophistication">
+                            What our patients say
+                        </h2>
+                        <p class="section-subtitle cultural-sophistication">
+                            Real experiences from people who've rediscovered
+                            their confidence.
+                        </p>
+                    </div>
+
+                    <div class="testimonials">
+                        <div
+                            class="testimonial hover-lift museum-quality cultural-entrance"
+                        >
+                            <div class="testimonial-rating mb-sm">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                            <p class="testimonial-text">
+                                "Before I came here, I felt embarrassed about my
+                                smile. After my consultation with Dr. Jandoo, I
+                                finally understood what was possible. It was the
+                                first time I felt my smile could match who I am
+                                inside."
+                            </p>
+                            <p class="testimonial-author">Sarah M.</p>
+                        </div>
+
+                        <div
+                            class="testimonial hover-lift museum-quality cultural-entrance"
+                        >
+                            <div class="testimonial-rating mb-sm">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                            <p class="testimonial-text">
+                                "The diagnostic session was incredibly thorough.
+                                Dr. Jandoo explained everything clearly and
+                                never pressured me into anything. I finally felt
+                                like I could trust a dentist again."
+                            </p>
+                            <p class="testimonial-author">James R.</p>
+                        </div>
+
+                        <div
+                            class="testimonial hover-lift museum-quality cultural-entrance"
+                        >
+                            <div class="testimonial-rating mb-sm">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                            <p class="testimonial-text">
+                                "I can now eat and smile with confidence. The
+                                process was exactly what Dr. Jandoo promised —
+                                calm, thorough, and focused on what I actually
+                                needed."
+                            </p>
+                            <p class="testimonial-author">Emma L.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Final CTA Section -->
+            <section class="section wd-pattern-accent museum-quality">
+                <div class="container">
+                    <div
+                        class="max-width-4xl text-center"
+                        style="margin: 0 auto"
+                    >
+                        <div class="flex flex-col gap-xl items-center">
+                            <div class="flex flex-col gap-md">
+                                <h2 class="cultural-sophistication">
+                                    This is your moment to reset
+                                </h2>
+                                <p
+                                    class="text-large text-muted max-width-2xl cultural-sophistication"
+                                >
+                                    You deserve a smile that matches who you've
+                                    become. Let's discover what's possible
+                                    together.
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-md items-center">
+                                <a
+                                    href="contact.html"
+                                    class="btn btn-primary hover-glow animate-pulse museum-reveal"
+                                >
+                                    Start Your Smile Journey
+                                </a>
+                                <p
+                                    class="text-small text-muted cultural-sophistication"
+                                >
+                                    Located in Glasgow's West End Cultural
+                                    District • Dr. Karm Jandoo & Team
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- WD Footer with Pattern Integration -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="flex items-center gap-sm mb-md">
+                            <svg
+                                class="wd-logo-icon"
+                                width="32"
+                                height="32"
+                                viewBox="0 0 170 170"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <defs>
+                                    <style>
+                                        .footer-logo-squiggle {
+                                            fill: var(--wd-gold);
+                                        }
+                                        .footer-logo-text {
+                                            fill: var(--wd-white-pure);
+                                        }
+                                    </style>
+                                </defs>
+                                <path
+                                    class="footer-logo-text"
+                                    d="M82.6837,110.8138l-17.4868-58.6353h10.6722l9.3015,30.9593c.483,1.6057.9334,3.3028,1.3642,5.0979.4243,1.7885.8551,3.9686,1.2859,6.5339.4765-2.6175.9465-4.7976,1.4034-6.5339.4504-1.7363.9204-3.4399,1.4034-5.0979l9.3015-30.9593h11.3119l9.06,30.9593c.483,1.658.953,3.4008,1.4034,5.2154.4569,1.8211.9269,3.9556,1.4034,6.4164.5352-2.7284,1.0313-4.9608,1.4882-6.6971.4504-1.7363.8942-3.329,1.3185-4.7715l9.4647-31.1225h10.4307l-17.8066,58.6353h-9.9477l-12.513-42.6694-12.8328,42.6694h-10.026Z"
+                                />
+                                <circle
+                                    class="footer-logo-text"
+                                    cx="315.8757"
+                                    cy="66.8477"
+                                    r="5.108"
+                                />
+                                <circle
+                                    class="footer-logo-text"
+                                    cx="315.8757"
+                                    cy="96.3546"
+                                    r="5.108"
+                                />
+                                <path
+                                    class="footer-logo-text"
+                                    d="M331.4264,110.8138v-58.6353h20.5338c17.3274,0,29.2759,11.9537,29.2759,29.4378,0,17.2438-11.7083,29.1975-28.7119,29.1975h-21.0978ZM341.6934,61.6464v39.7047h9.87c11.7083,0,18.8471-7.5409,18.8471-19.7348,0-12.4342-7.3007-19.9698-19.4111-19.9698h-9.306Z"
+                                />
+                                <path
+                                    class="footer-logo-squiggle"
+                                    d="M117.4021,39.697c-4.2182,0-8.6665-1.422-13.294-4.2556-3.9852-2.4437-7.5581-3.2473-10.6292-2.3869-4.7619,1.3428-7.349,6.3318-7.3759,6.3811l-8.9831-4.4497c.4451-.9097,4.6185-8.9637,13.5001-11.5404,5.9091-1.7163,12.2006-.5527,18.7281,3.446,4.0689,2.4945,7.594,3.3115,10.4649,2.4168,4.1555-1.2876,6.2347-5.8464,6.2556-5.8927l9.2042,3.9718c-.3794.8902-3.9523,8.7725-12.3499,11.4522-1.7895.5721-3.6327.8574-5.5207.8574Z"
+                                />
+                                <rect
+                                    class="footer-logo-text"
+                                    x="82.7184"
+                                    y="126.7087"
+                                    width="248.5249"
+                                    height="9.3543"
+                                />
+                            </svg>
+                            <span
+                                class="font-bold text-large uppercase tracking-wide"
+                                >West Dental</span
+                            >
+                        </div>
+                        <p
+                            class="text-small text-wd-grey cultural-sophistication"
+                        >
+                            Museum-quality dental care in Glasgow's West End.
+                            Where cultural sophistication meets transformative
+                            dental artistry.
+                        </p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <a href="about.html" class="footer-link"
+                            >About Dr. Jandoo</a
+                        >
+                        <a href="method.html" class="footer-link">Our Method</a>
+                        <a href="services.html" class="footer-link">Services</a>
+                        <a href="contact.html" class="footer-link"
+                            >Book Appointment</a
+                        >
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <p
+                            class="footer-link"
+                            style="cursor: default; color: var(--wd-grey)"
+                        >
+                            Smile Check-Up
+                        </p>
+                        <p
+                            class="footer-link"
+                            style="cursor: default; color: var(--wd-grey)"
+                        >
+                            Veneers
+                        </p>
+                        <p
+                            class="footer-link"
+                            style="cursor: default; color: var(--wd-grey)"
+                        >
+                            Teeth Whitening
+                        </p>
+                        <p
+                            class="footer-link"
+                            style="cursor: default; color: var(--wd-grey)"
+                        >
+                            Invisalign
+                        </p>
+                        <p
+                            class="footer-link"
+                            style="cursor: default; color: var(--wd-grey)"
+                        >
+                            Dental Implants
+                        </p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <p
+                            class="footer-link"
+                            style="cursor: default; color: var(--wd-grey)"
+                        >
+                            Glasgow West End
+                        </p>
+                        <p
+                            class="footer-link"
+                            style="cursor: default; color: var(--wd-grey)"
+                        >
+                            Scotland
+                        </p>
+                        <div class="mt-md">
+                            <a
+                                href="contact.html"
+                                class="text-wd-gold footer-link hover-glow"
+                                >Book Online</a
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p class="cultural-sophistication">
+                        © 2025 West Dental. All rights reserved. Glasgow School
+                        Contemporary.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Enhanced JavaScript with WD Brand Integration -->
+        <script>
+            // Mobile Navigation Toggle
+            const navToggle = document.getElementById("nav-toggle");
+            const navMenu = document.getElementById("nav-menu");
+
+            navToggle.addEventListener("click", () => {
+                navMenu.classList.toggle("open");
+                navToggle.classList.toggle("active");
+            });
+
+            // Scroll Progress Indicator
+            const scrollProgress = document.getElementById("scroll-progress");
+
+            window.addEventListener("scroll", () => {
+                const totalHeight =
+                    document.documentElement.scrollHeight - window.innerHeight;
+                const progress = (window.pageYOffset / totalHeight) * 100;
+                scrollProgress.style.width = progress + "%";
+            });
+
+            // Enhanced Intersection Observer for WD Brand Animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px",
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add(
+                            "in-view",
+                            "animate-on-scroll",
+                        );
+                    }
+                });
+            }, observerOptions);
+
+            // Observe elements for scroll animations (only sections that need scroll trigger)
+            document
+                .querySelectorAll(".section:not(.hero)")
+                .forEach((element) => {
+                    element.classList.add("animate-on-scroll");
+                    observer.observe(element);
+                });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+                anchor.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(
+                        this.getAttribute("href"),
+                    );
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                        });
+                    }
+                });
+            });
+
+            // Page Load Animation Coordination
+            function initializePageAnimations() {
+                // Add page-loaded class to enable CSS animations
+                document.body.classList.add("page-loaded");
+
+                // WD Logo Animation Triggers
+                const logoElement =
+                    document.querySelector(".wd-logo-breathing");
+                if (logoElement) {
+                    // Logo hover enhancements are handled by CSS
+                    logoElement.addEventListener("mouseenter", function () {
+                        this.querySelector(
+                            ".wd-logo-squiggle",
+                        )?.style.setProperty(
+                            "transform",
+                            "translateX(2px) scale(1.02)",
+                        );
+                    });
+
+                    logoElement.addEventListener("mouseleave", function () {
+                        this.querySelector(
+                            ".wd-logo-squiggle",
+                        )?.style.setProperty(
+                            "transform",
+                            "translateX(0) scale(1)",
+                        );
+                    });
+                }
+            }
+
+            // Enhanced parallax effect for hero image (if motion is not reduced)
+            if (
+                window.matchMedia("(prefers-reduced-motion: no-preference)")
+                    .matches
+            ) {
+                const heroImage = document.querySelector(".hero-image");
+                if (heroImage) {
+                    window.addEventListener("scroll", () => {
+                        const scrolled = window.pageYOffset;
+                        const parallax = scrolled * 0.05; // More subtle for sophistication
+                        heroImage.style.transform = `translateY(${parallax}px) translateZ(0)`;
+                    });
+                }
+            }
+
+            // WD Pattern animation on scroll
+            const patternElements = document.querySelectorAll(
+                ".section-pattern, .wd-pattern-accent",
+            );
+            patternElements.forEach((element) => {
+                window.addEventListener("scroll", () => {
+                    const rect = element.getBoundingClientRect();
+                    const isVisible =
+                        rect.top < window.innerHeight && rect.bottom > 0;
+
+                    if (isVisible) {
+                        const scrollPercent =
+                            (window.innerHeight - rect.top) /
+                            window.innerHeight;
+                        element.style.setProperty(
+                            "--pattern-opacity",
+                            Math.min(scrollPercent * 0.05, 0.05),
+                        );
+                    }
+                });
+            });
+
+            // Add loading state management
+            window.addEventListener("load", function () {
+                // Initialize all page animations after load
+                setTimeout(initializePageAnimations, 100);
+            });
+
+            // Also initialize on DOMContentLoaded as fallback
+            document.addEventListener("DOMContentLoaded", function () {
+                setTimeout(initializePageAnimations, 50);
+            });
+
+            // WD Brand color system enhancement
+            const prefersDarkMode = window.matchMedia(
+                "(prefers-color-scheme: dark)",
+            );
+            function handleDarkModeChange(e) {
+                if (e.matches) {
+                    // Optional: Add dark mode adaptations for WD brand
+                    document.documentElement.style.setProperty(
+                        "--wd-white",
+                        "#2A2A2A",
+                    );
+                    document.documentElement.style.setProperty(
+                        "--wd-black",
+                        "#FFFFFF",
+                    );
+                } else {
+                    // Reset to light mode
+                    document.documentElement.style.removeProperty("--wd-white");
+                    document.documentElement.style.removeProperty("--wd-black");
+                }
+            }
+
+            prefersDarkMode.addListener(handleDarkModeChange);
+            handleDarkModeChange(prefersDarkMode);
+        </script>
+
+        <!-- Anti-flicker initial styles -->
+        <style>
+            /* Prevent flicker by hiding animated elements until page loads */
+            .cultural-entrance,
+            .museum-reveal,
+            .hero-title,
+            .hero-subtitle,
+            .hero-cta-group,
+            .features .feature,
+            .testimonials .testimonial {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            /* Show elements immediately for users who prefer reduced motion */
+            @media (prefers-reduced-motion: reduce) {
+                .cultural-entrance,
+                .museum-reveal,
+                .hero-title,
+                .hero-subtitle,
+                .hero-cta-group,
+                .features .feature,
+                .testimonials .testimonial {
+                    opacity: 1 !important;
+                    transform: none !important;
+                }
+            }
+
+            /* Prevent layout shift during font loading */
+            .cultural-sophistication {
+                font-display: swap;
+            }
+
+            /* GPU acceleration for smooth animations */
+            .hero-image,
+            .card,
+            .btn {
+                transform: translateZ(0);
+                backface-visibility: hidden;
+            }
+        </style>
+    </body>
+</html>
