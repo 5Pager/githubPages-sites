@@ -1,0 +1,1034 @@
+{
+  "sessionName": "Priority1_HighImpact",
+  "components": {
+    "comp_001": {
+      "analysis": {
+        "componentId": "comp_001",
+        "timestamp": "2025-07-28T14:43:07.276Z",
+        "analysisVersion": "v2.0_seven_dimensional",
+        "dimensions": {
+          "domHierarchy": {
+            "assembly": "layout_section",
+            "parent": "body",
+            "children": [
+              "div"
+            ],
+            "reusability": "unique_instance",
+            "semanticStructure": {
+              "role": "section",
+              "ariaLevel": null,
+              "isLandmark": true
+            },
+            "complexity": {
+              "childrenCount": 1,
+              "nestingLevel": 2
+            }
+          },
+          "functionalPurpose": {
+            "primaryFunction": "value_demonstration",
+            "secondaryFunction": "differentiation",
+            "conversionStage": "decision",
+            "functionalPriority": "critical",
+            "userAction": "click_to_convert"
+          },
+          "contentMediaType": {
+            "contentCategory": "headline_focused",
+            "mediaFormat": "text_primary",
+            "informationDensity": "minimal",
+            "contentMetrics": {
+              "wordCount": 41,
+              "interactiveElements": 1,
+              "mediaElements": 0
+            },
+            "typographyRequirements": {
+              "hierarchyLevels": 1,
+              "primaryHeading": "h1",
+              "readabilityPriority": "medium",
+              "emphasysNeeded": false
+            }
+          },
+          "userJourneyStage": {
+            "primaryStage": "decision",
+            "secondaryStage": "information_gathering",
+            "transitionTrigger": "curiosity_activation",
+            "emotionalState": "empowered",
+            "decisionSupport": {
+              "evidenceProvided": false,
+              "socialProof": false,
+              "riskReduction": false,
+              "supportLevel": "medium"
+            }
+          },
+          "archetypeExpression": {
+            "archetypeCarrierStrength": "medium",
+            "personalityTraits": [
+              "thoughtful",
+              "patient",
+              "wise",
+              "protective",
+              "calming",
+              "trustworthy"
+            ],
+            "voiceReflection": "gentle_guidance",
+            "archetypeScores": {
+              "owlWisdom": 65,
+              "safeHarbor": 55,
+              "mirrorRecognition": 25
+            },
+            "enhancementOpportunities": [
+              "warm_background_colors",
+              "protective_language",
+              "contained_widths",
+              "self_recognition_messaging",
+              "authentic_positioning",
+              "clear_presentation"
+            ]
+          },
+          "conversionPsychology": {
+            "trustBuilding": {
+              "indicators": {
+                "credentials": false,
+                "experience": false,
+                "testimonials": false,
+                "transparency": false
+              },
+              "score": 0
+            },
+            "urgencyCreation": {
+              "type": "none",
+              "appropriateForArchetype": true
+            },
+            "valueDemonstration": {
+              "indicators": {
+                "uniqueApproach": false,
+                "qualityFocus": false,
+                "outcomes": false,
+                "experience": true
+              },
+              "score": 25
+            },
+            "frictionReduction": {
+              "complexity": "low",
+              "clarity": "medium",
+              "accessibility": "present"
+            },
+            "socialProof": {
+              "types": [],
+              "strength": "moderate"
+            },
+            "persuasionTechniques": [
+              "self_empowerment"
+            ]
+          },
+          "visualBehavior": {
+            "responsiveness": {
+              "mobile": {
+                "width": 360,
+                "height": 646.03125,
+                "fontSize": "16px",
+                "padding": "80px 32px",
+                "display": "flex"
+              },
+              "tablet": {
+                "width": 753,
+                "height": 716.796875,
+                "fontSize": "16px",
+                "padding": "80px 32px",
+                "display": "flex"
+              },
+              "desktop": {
+                "width": 1385,
+                "height": 765,
+                "fontSize": "16px",
+                "padding": "120px 60px",
+                "display": "flex"
+              }
+            },
+            "interactions": {
+              "hasHoverStates": false,
+              "hasTransitions": true,
+              "isInteractive": false,
+              "focusable": false
+            },
+            "animationPersonality": {
+              "speed": "calm",
+              "easing": "gentle",
+              "type": "expressive"
+            },
+            "mobileAdaptation": {
+              "breathingRoomPreserved": true,
+              "typographyOptimized": true,
+              "interactionFriendly": true
+            },
+            "microInteractions": [
+              "smooth_transitions"
+            ]
+          }
+        },
+        "visualProperties": {
+          "color": {
+            "primary": "rgb(26, 37, 43)",
+            "background": "rgb(244, 241, 234)",
+            "border": "rgb(26, 37, 43)"
+          },
+          "layout": {
+            "padding": "120px 60px",
+            "margin": "0px",
+            "maxWidth": "none",
+            "width": "1385px"
+          },
+          "typography": {
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+            "lineHeight": "27.2px"
+          }
+        },
+        "implementationData": {
+          "selector": "section.hero-patient-harbor",
+          "htmlStructure": "\n        <div class=\"hero-content-container\">\n            <h1 class=\"hero-title\">\n                <span class=\"title-line\">Smile with</span>\n                <span class=\"title-line\">Self-Respect</span>\n            </h1>\n            <p class=\"hero-subtitle\">\n                We help people rediscover the freedom to eat, smile, and express themselves without shame.\n                Not all dentists are the same—we're here for people who care how they feel, not just how they look.\n            </p>\n            <div class=\"cta-container\">\n                <a href=\"#\" class=\"cta-button\">Book Your £95 Smile Check-Up</a>\n            </div>\n        </div>\n    ",
+          "cssClasses": "hero-patient-harbor",
+          "computedStyles": {
+            "color": {
+              "primary": "rgb(26, 37, 43)",
+              "background": "rgb(244, 241, 234)",
+              "border": "rgb(26, 37, 43)"
+            },
+            "layout": {
+              "padding": "120px 60px",
+              "margin": "0px",
+              "maxWidth": "none",
+              "width": "1385px"
+            },
+            "typography": {
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+              "lineHeight": "27.2px"
+            }
+          },
+          "accessibility": {
+            "role": null,
+            "ariaLabel": null,
+            "tabIndex": null
+          },
+          "performanceImpact": "minimal",
+          "dependencies": []
+        },
+        "analysisMetrics": {
+          "duration": 3154,
+          "signatureAlignmentScore": 45,
+          "conversionEffectivenessScore": 80,
+          "archetypeExpressionScore": 85
+        },
+        "componentInsights": {
+          "componentRole": "Primary Brand Impression & Safe Harbor Establishment",
+          "signatureGaps": [
+            "signature_alignment_needs_improvement"
+          ],
+          "enhancementPriorities": [
+            {
+              "type": "signature_alignment",
+              "priority": "high"
+            },
+            {
+              "type": "archetype_expression",
+              "priority": "medium"
+            },
+            {
+              "type": "visual_refinements",
+              "priority": "low"
+            }
+          ],
+          "archetypeOpportunities": [
+            {
+              "archetype": "safe_harbor",
+              "improvements": [
+                "warm_colors",
+                "protective_language",
+                "contained_layout"
+              ]
+            },
+            {
+              "archetype": "mirror_recognition",
+              "improvements": [
+                "authentic_messaging",
+                "self_empowerment",
+                "clear_presentation"
+              ]
+            }
+          ],
+          "heroSpecific": {
+            "firstImpressionImpact": {
+              "clarity": "High - Clear value proposition immediately visible",
+              "differentiation": "Strong - Anti-chain positioning evident",
+              "trustEstablishment": "Effective - Professional yet warm presentation",
+              "emotionalResonance": "Positive - Self-respect theme connects authentically"
+            },
+            "safeHarborEstablishment": {
+              "visualSafety": "Warm colors and generous spacing create protective atmosphere",
+              "messageSafety": "Non-judgmental language and gentle positioning",
+              "interactionSafety": "Patient reveals and unhurried user experience"
+            },
+            "brandDifferentiation": {
+              "industryContrast": "Clear departure from typical dental clinic aesthetics",
+              "personalityExpression": "Founder's authentic character visible in design choices",
+              "premiumPositioning": "Sophisticated simplicity vs flashy marketing"
+            }
+          }
+        },
+        "enhancementOpportunities": [
+          "improve_signature_alignment",
+          "strengthen_archetype_expression",
+          "optimize_mobile_experience"
+        ],
+        "metrics": {
+          "signatureAlignment": 45,
+          "conversionEffectiveness": 85,
+          "archetypeExpression": 89
+        }
+      },
+      "enhancements": {
+        "colorPhilosophy": {
+          "primaryColorOptimization": "Apply signature deep trust (#2B3A42) to headings",
+          "backgroundHarmony": "Use cream comfort (#F4F1EA) for safe sections",
+          "accentIntegration": "Incorporate copper warmth (#C4975A) for transformation moments",
+          "temperatureJourney": "Cool to warm progression through content flow"
+        },
+        "layoutBreathingRoom": {
+          "sectionPadding": "Increase to 120px+ for calm precision",
+          "contentMaxWidth": "Constrain to 680px for comprehension",
+          "asymmetricPositioning": "5% offset for organic curation feel",
+          "verticalRhythm": "1.6em line height for reading comfort"
+        },
+        "archetypeExpression": {
+          "owlWisdom": "Patient reveals, thoughtful spacing, calm typography",
+          "safeHarbor": "Protective colors, contained layouts, judgment-free language",
+          "mirrorRecognition": "Self-empowerment messaging, authentic positioning, clarity"
+        },
+        "conversionOptimization": {
+          "trustBuilding": "Enhance credibility indicators without compromising authenticity",
+          "gentleUrgency": "Create motivation without pressure tactics",
+          "valueClarity": "Strengthen unique positioning and premium perception",
+          "frictionReduction": "Simplify interactions while maintaining personality"
+        },
+        "implementationCode": {
+          "css": "\n/* Enhanced comp_001 - Signature Integrated Styles */\n.comp_001-enhanced {\n  /* Color Philosophy Application */\n  background-color: var(--signature-cream-comfort, #F4F1EA);\n  color: var(--signature-deep-trust, #2B3A42);\n\n  /* Breathing Room Philosophy */\n  padding: var(--signature-breathing-room, 120px) 0;\n  max-width: var(--signature-content-width, 680px);\n  margin: 0 auto;\n\n  /* Archetype Expression */\n  transition: all 0.6s ease-out; /* Patient transitions */\n  letter-spacing: 0.01em; /* Thoughtful spacing */\n}\n\n.comp_001-enhanced:hover {\n  transform: translateY(-2px); /* Gentle elevation */\n}\n",
+          "html": "\n<!-- Enhanced comp_001 Structure -->\n<div class=\"comp_001-enhanced signature-integrated\">\n  <!-- Signature elements would be injected here -->\n  <div class=\"signature-breathing-wrapper\">\n    <!-- Original content with signature enhancements -->\n  </div>\n</div>\n",
+          "javascript": "\n// Enhanced comp_001 - Signature Behaviors\ndocument.addEventListener('DOMContentLoaded', function() {\n  const component = document.querySelector('.comp_001-enhanced');\n  if (!component) return;\n\n  // Owl wisdom: Patient interactions\n  component.addEventListener('mouseenter', function() {\n    this.style.transition = 'all 0.6s ease-out';\n  });\n\n  // Safe harbor: Gentle feedback\n  component.addEventListener('focus', function() {\n    this.style.boxShadow = '0 0 0 3px rgba(107, 143, 113, 0.2)';\n  });\n});\n"
+        }
+      },
+      "validation": {
+        "signatureRecognition": {
+          "success": true,
+          "archetypeRecognition": "high",
+          "personalityExpression": "authentic",
+          "brandDifferentiation": "clear"
+        },
+        "conversionPreservation": {
+          "ctaVisibility": "maintained",
+          "trustIndicators": "enhanced",
+          "frictionLevel": "reduced",
+          "overallScore": 85
+        },
+        "mobileAdaptation": {
+          "breathingRoomPreserved": true,
+          "typographyOptimized": true,
+          "interactionFriendly": true,
+          "overallScore": 90
+        },
+        "overallValidation": 88
+      },
+      "processingTime": 4681
+    },
+    "comp_007": {
+      "analysis": {
+        "componentId": "comp_007",
+        "timestamp": "2025-07-28T14:43:11.958Z",
+        "analysisVersion": "v2.0_seven_dimensional",
+        "dimensions": {
+          "domHierarchy": {
+            "assembly": "content_heading",
+            "parent": "div",
+            "children": [
+              "span",
+              "span"
+            ],
+            "reusability": "unique_instance",
+            "semanticStructure": {
+              "role": "h1",
+              "ariaLevel": null,
+              "isLandmark": false
+            },
+            "complexity": {
+              "childrenCount": 2,
+              "nestingLevel": 4
+            }
+          },
+          "functionalPurpose": {
+            "primaryFunction": "brand_impression",
+            "secondaryFunction": "differentiation",
+            "conversionStage": "consideration",
+            "functionalPriority": "critical",
+            "userAction": "read_and_comprehend"
+          },
+          "contentMediaType": {
+            "contentCategory": "descriptive",
+            "mediaFormat": "text_primary",
+            "informationDensity": "minimal",
+            "contentMetrics": {
+              "wordCount": 3,
+              "interactiveElements": 0,
+              "mediaElements": 0
+            },
+            "typographyRequirements": {
+              "hierarchyLevels": 0,
+              "primaryHeading": "h2",
+              "readabilityPriority": "medium",
+              "emphasysNeeded": false
+            }
+          },
+          "userJourneyStage": {
+            "primaryStage": "awareness",
+            "secondaryStage": "information_gathering",
+            "transitionTrigger": "natural_progression",
+            "emotionalState": "empowered",
+            "decisionSupport": {
+              "evidenceProvided": false,
+              "socialProof": false,
+              "riskReduction": false,
+              "supportLevel": "medium"
+            }
+          },
+          "archetypeExpression": {
+            "archetypeCarrierStrength": "low",
+            "personalityTraits": [],
+            "voiceReflection": "gentle_guidance",
+            "archetypeScores": {
+              "owlWisdom": 20,
+              "safeHarbor": 25,
+              "mirrorRecognition": 25
+            },
+            "enhancementOpportunities": [
+              "increase_breathing_room",
+              "soften_typography_weight",
+              "add_patient_messaging",
+              "warm_background_colors",
+              "protective_language",
+              "contained_widths",
+              "self_recognition_messaging",
+              "authentic_positioning",
+              "clear_presentation"
+            ]
+          },
+          "conversionPsychology": {
+            "trustBuilding": {
+              "indicators": {
+                "credentials": false,
+                "experience": false,
+                "testimonials": false,
+                "transparency": false
+              },
+              "score": 0
+            },
+            "urgencyCreation": {
+              "type": "none",
+              "appropriateForArchetype": true
+            },
+            "valueDemonstration": {
+              "indicators": {
+                "uniqueApproach": false,
+                "qualityFocus": false,
+                "outcomes": false,
+                "experience": true
+              },
+              "score": 25
+            },
+            "frictionReduction": {
+              "complexity": "low",
+              "clarity": "medium",
+              "accessibility": "none"
+            },
+            "socialProof": {
+              "types": [],
+              "strength": "moderate"
+            },
+            "persuasionTechniques": [
+              "self_empowerment"
+            ]
+          },
+          "visualBehavior": {
+            "responsiveness": {
+              "mobile": {
+                "width": 296,
+                "height": 96,
+                "fontSize": "40px",
+                "padding": "0px",
+                "display": "block"
+              },
+              "tablet": {
+                "width": 680,
+                "height": 96,
+                "fontSize": "40px",
+                "padding": "0px",
+                "display": "block"
+              },
+              "desktop": {
+                "width": 680,
+                "height": 148.78125,
+                "fontSize": "64px",
+                "padding": "0px",
+                "display": "block"
+              }
+            },
+            "interactions": {
+              "hasHoverStates": false,
+              "hasTransitions": true,
+              "isInteractive": false,
+              "focusable": false
+            },
+            "animationPersonality": {
+              "speed": "calm",
+              "easing": "gentle",
+              "type": "expressive"
+            },
+            "mobileAdaptation": {
+              "breathingRoomPreserved": true,
+              "typographyOptimized": true,
+              "interactionFriendly": true
+            },
+            "microInteractions": [
+              "smooth_transitions"
+            ]
+          }
+        },
+        "visualProperties": {
+          "color": {
+            "primary": "rgb(26, 37, 43)",
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(26, 37, 43)"
+          },
+          "layout": {
+            "padding": "0px",
+            "margin": "0px 0px 32px",
+            "maxWidth": "none",
+            "width": "680px"
+          },
+          "typography": {
+            "fontSize": "64px",
+            "fontWeight": "700",
+            "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+            "lineHeight": "70.4px"
+          }
+        },
+        "implementationData": {
+          "selector": "h1.hero-title",
+          "htmlStructure": "\n                <span class=\"title-line\">Smile with</span>\n                <span class=\"title-line\">Self-Respect</span>\n            ",
+          "cssClasses": "hero-title",
+          "computedStyles": {
+            "color": {
+              "primary": "rgb(26, 37, 43)",
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "rgb(26, 37, 43)"
+            },
+            "layout": {
+              "padding": "0px",
+              "margin": "0px 0px 32px",
+              "maxWidth": "none",
+              "width": "680px"
+            },
+            "typography": {
+              "fontSize": "64px",
+              "fontWeight": "700",
+              "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+              "lineHeight": "70.4px"
+            }
+          },
+          "accessibility": {
+            "role": null,
+            "ariaLabel": null,
+            "tabIndex": null
+          },
+          "performanceImpact": "minimal",
+          "dependencies": []
+        },
+        "analysisMetrics": {
+          "duration": 3141,
+          "signatureAlignmentScore": 15,
+          "conversionEffectivenessScore": 80,
+          "archetypeExpressionScore": 75
+        },
+        "componentInsights": {
+          "componentRole": "Core Value Proposition & Emotional Hook",
+          "signatureGaps": [
+            "signature_alignment_needs_improvement",
+            "archetype_expression_weak",
+            "breathing_room_insufficient"
+          ],
+          "enhancementPriorities": [
+            {
+              "type": "signature_alignment",
+              "priority": "high"
+            },
+            {
+              "type": "archetype_expression",
+              "priority": "medium"
+            },
+            {
+              "type": "visual_refinements",
+              "priority": "low"
+            }
+          ],
+          "archetypeOpportunities": [
+            {
+              "archetype": "owl_wisdom",
+              "improvements": [
+                "increase_breathing_room",
+                "patient_messaging",
+                "thoughtful_spacing"
+              ]
+            },
+            {
+              "archetype": "safe_harbor",
+              "improvements": [
+                "warm_colors",
+                "protective_language",
+                "contained_layout"
+              ]
+            },
+            {
+              "archetype": "mirror_recognition",
+              "improvements": [
+                "authentic_messaging",
+                "self_empowerment",
+                "clear_presentation"
+              ]
+            }
+          ],
+          "titleSpecific": {
+            "typographyPersonality": {
+              "weightBalance": "Confident authority without aggression",
+              "spacingRhythm": "Thoughtful letter and line spacing for calm reading",
+              "hierarchyClarity": "Clear information structure supporting comprehension"
+            },
+            "messageResonance": {
+              "selfRespectTheme": "Core message aligns with target audience values",
+              "authenticityMarkers": "Language feels genuine rather than marketing-driven",
+              "emotionalConnection": "Dignity and empowerment themes resonate strongly"
+            },
+            "emotionalHook": {
+              "immediateImpact": "Self-respect concept creates instant emotional connection",
+              "curiosityGeneration": "Unique positioning encourages further exploration",
+              "aspirationalAppeal": "Transformation promise feels achievable and authentic"
+            }
+          }
+        },
+        "enhancementOpportunities": [
+          "improve_signature_alignment",
+          "strengthen_archetype_expression",
+          "optimize_mobile_experience"
+        ],
+        "metrics": {
+          "signatureAlignment": 15,
+          "conversionEffectiveness": 96,
+          "archetypeExpression": 89
+        }
+      },
+      "enhancements": {
+        "colorPhilosophy": {
+          "primaryColorOptimization": "Apply signature deep trust (#2B3A42) to headings",
+          "backgroundHarmony": "Use cream comfort (#F4F1EA) for safe sections",
+          "accentIntegration": "Incorporate copper warmth (#C4975A) for transformation moments",
+          "temperatureJourney": "Cool to warm progression through content flow"
+        },
+        "layoutBreathingRoom": {
+          "sectionPadding": "Increase to 120px+ for calm precision",
+          "contentMaxWidth": "Constrain to 680px for comprehension",
+          "asymmetricPositioning": "5% offset for organic curation feel",
+          "verticalRhythm": "1.6em line height for reading comfort"
+        },
+        "archetypeExpression": {
+          "owlWisdom": "Patient reveals, thoughtful spacing, calm typography",
+          "safeHarbor": "Protective colors, contained layouts, judgment-free language",
+          "mirrorRecognition": "Self-empowerment messaging, authentic positioning, clarity"
+        },
+        "conversionOptimization": {
+          "trustBuilding": "Enhance credibility indicators without compromising authenticity",
+          "gentleUrgency": "Create motivation without pressure tactics",
+          "valueClarity": "Strengthen unique positioning and premium perception",
+          "frictionReduction": "Simplify interactions while maintaining personality"
+        },
+        "implementationCode": {
+          "css": "\n/* Enhanced comp_007 - Signature Integrated Styles */\n.comp_007-enhanced {\n  /* Color Philosophy Application */\n  background-color: var(--signature-cream-comfort, #F4F1EA);\n  color: var(--signature-deep-trust, #2B3A42);\n\n  /* Breathing Room Philosophy */\n  padding: var(--signature-breathing-room, 120px) 0;\n  max-width: var(--signature-content-width, 680px);\n  margin: 0 auto;\n\n  /* Archetype Expression */\n  transition: all 0.6s ease-out; /* Patient transitions */\n  letter-spacing: 0.01em; /* Thoughtful spacing */\n}\n\n.comp_007-enhanced:hover {\n  transform: translateY(-2px); /* Gentle elevation */\n}\n",
+          "html": "\n<!-- Enhanced comp_007 Structure -->\n<div class=\"comp_007-enhanced signature-integrated\">\n  <!-- Signature elements would be injected here -->\n  <div class=\"signature-breathing-wrapper\">\n    <!-- Original content with signature enhancements -->\n  </div>\n</div>\n",
+          "javascript": "\n// Enhanced comp_007 - Signature Behaviors\ndocument.addEventListener('DOMContentLoaded', function() {\n  const component = document.querySelector('.comp_007-enhanced');\n  if (!component) return;\n\n  // Owl wisdom: Patient interactions\n  component.addEventListener('mouseenter', function() {\n    this.style.transition = 'all 0.6s ease-out';\n  });\n\n  // Safe harbor: Gentle feedback\n  component.addEventListener('focus', function() {\n    this.style.boxShadow = '0 0 0 3px rgba(107, 143, 113, 0.2)';\n  });\n});\n"
+        }
+      },
+      "validation": {
+        "signatureRecognition": {
+          "success": true,
+          "archetypeRecognition": "high",
+          "personalityExpression": "authentic",
+          "brandDifferentiation": "clear"
+        },
+        "conversionPreservation": {
+          "ctaVisibility": "maintained",
+          "trustIndicators": "enhanced",
+          "frictionLevel": "reduced",
+          "overallScore": 85
+        },
+        "mobileAdaptation": {
+          "breathingRoomPreserved": true,
+          "typographyOptimized": true,
+          "interactionFriendly": true,
+          "overallScore": 90
+        },
+        "overallValidation": 88
+      },
+      "processingTime": 9349
+    },
+    "comp_006": {
+      "analysis": {
+        "componentId": "comp_006",
+        "timestamp": "2025-07-28T14:43:16.625Z",
+        "analysisVersion": "v2.0_seven_dimensional",
+        "dimensions": {
+          "domHierarchy": {
+            "assembly": "page_footer",
+            "parent": "body",
+            "children": [
+              "div"
+            ],
+            "reusability": "reusable_component",
+            "semanticStructure": {
+              "role": "footer",
+              "ariaLevel": null,
+              "isLandmark": true
+            },
+            "complexity": {
+              "childrenCount": 1,
+              "nestingLevel": 2
+            }
+          },
+          "functionalPurpose": {
+            "primaryFunction": "value_demonstration",
+            "secondaryFunction": "differentiation",
+            "conversionStage": "decision",
+            "functionalPriority": "high",
+            "userAction": "click_to_convert"
+          },
+          "contentMediaType": {
+            "contentCategory": "headline_focused",
+            "mediaFormat": "text_primary",
+            "informationDensity": "minimal",
+            "contentMetrics": {
+              "wordCount": 21,
+              "interactiveElements": 1,
+              "mediaElements": 0
+            },
+            "typographyRequirements": {
+              "hierarchyLevels": 1,
+              "primaryHeading": "h2",
+              "readabilityPriority": "medium",
+              "emphasysNeeded": false
+            }
+          },
+          "userJourneyStage": {
+            "primaryStage": "decision",
+            "secondaryStage": "information_gathering",
+            "transitionTrigger": "curiosity_activation",
+            "emotionalState": "empowered",
+            "decisionSupport": {
+              "evidenceProvided": false,
+              "socialProof": false,
+              "riskReduction": false,
+              "supportLevel": "medium"
+            }
+          },
+          "archetypeExpression": {
+            "archetypeCarrierStrength": "low",
+            "personalityTraits": [
+              "thoughtful",
+              "patient",
+              "wise"
+            ],
+            "voiceReflection": "gentle_guidance",
+            "archetypeScores": {
+              "owlWisdom": 65,
+              "safeHarbor": 25,
+              "mirrorRecognition": 25
+            },
+            "enhancementOpportunities": [
+              "warm_background_colors",
+              "protective_language",
+              "contained_widths",
+              "self_recognition_messaging",
+              "authentic_positioning",
+              "clear_presentation"
+            ]
+          },
+          "conversionPsychology": {
+            "trustBuilding": {
+              "indicators": {
+                "credentials": false,
+                "experience": false,
+                "testimonials": false,
+                "transparency": false
+              },
+              "score": 0
+            },
+            "urgencyCreation": {
+              "type": "gentle",
+              "appropriateForArchetype": true
+            },
+            "valueDemonstration": {
+              "indicators": {
+                "uniqueApproach": false,
+                "qualityFocus": false,
+                "outcomes": false,
+                "experience": true
+              },
+              "score": 25
+            },
+            "frictionReduction": {
+              "complexity": "low",
+              "clarity": "medium",
+              "accessibility": "present"
+            },
+            "socialProof": {
+              "types": [],
+              "strength": "moderate"
+            },
+            "persuasionTechniques": [
+              "self_empowerment"
+            ]
+          },
+          "visualBehavior": {
+            "responsiveness": {
+              "mobile": {
+                "width": 360,
+                "height": 546.78125,
+                "fontSize": "16px",
+                "padding": "120px 0px 80px",
+                "display": "block"
+              },
+              "tablet": {
+                "width": 753,
+                "height": 462.484375,
+                "fontSize": "16px",
+                "padding": "120px 0px 80px",
+                "display": "block"
+              },
+              "desktop": {
+                "width": 1385,
+                "height": 516.875,
+                "fontSize": "16px",
+                "padding": "120px 0px 80px",
+                "display": "block"
+              }
+            },
+            "interactions": {
+              "hasHoverStates": false,
+              "hasTransitions": true,
+              "isInteractive": false,
+              "focusable": false
+            },
+            "animationPersonality": {
+              "speed": "calm",
+              "easing": "gentle",
+              "type": "expressive"
+            },
+            "mobileAdaptation": {
+              "breathingRoomPreserved": true,
+              "typographyOptimized": true,
+              "interactionFriendly": true
+            },
+            "microInteractions": [
+              "smooth_transitions"
+            ]
+          }
+        },
+        "visualProperties": {
+          "color": {
+            "primary": "rgb(255, 255, 255)",
+            "background": "rgb(43, 58, 66)",
+            "border": "rgb(255, 255, 255)"
+          },
+          "layout": {
+            "padding": "120px 0px 80px",
+            "margin": "0px",
+            "maxWidth": "none",
+            "width": "1385px"
+          },
+          "typography": {
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+            "lineHeight": "27.2px"
+          }
+        },
+        "implementationData": {
+          "selector": "footer.breathing-footer",
+          "htmlStructure": "\n        <div class=\"footer-container\">\n            <h2 class=\"footer-title fade-in-up\">Ready to Smile with Self-Respect?</h2>\n            <p class=\"footer-subtitle fade-in-up\">\n                Book your £95 Smile Check-Up and discover what's really possible for your smile.\n            </p>\n            <a href=\"#\" class=\"footer-cta fade-in-up\">Book Your Check-Up</a>\n        </div>\n    ",
+          "cssClasses": "breathing-footer",
+          "computedStyles": {
+            "color": {
+              "primary": "rgb(255, 255, 255)",
+              "background": "rgb(43, 58, 66)",
+              "border": "rgb(255, 255, 255)"
+            },
+            "layout": {
+              "padding": "120px 0px 80px",
+              "margin": "0px",
+              "maxWidth": "none",
+              "width": "1385px"
+            },
+            "typography": {
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+              "lineHeight": "27.2px"
+            }
+          },
+          "accessibility": {
+            "role": null,
+            "ariaLabel": null,
+            "tabIndex": null
+          },
+          "performanceImpact": "minimal",
+          "dependencies": []
+        },
+        "analysisMetrics": {
+          "duration": 3090,
+          "signatureAlignmentScore": 30,
+          "conversionEffectivenessScore": 80,
+          "archetypeExpressionScore": 75
+        },
+        "componentInsights": {
+          "componentRole": "Final Conversion Trigger & Gentle Urgency",
+          "signatureGaps": [
+            "signature_alignment_needs_improvement",
+            "archetype_expression_weak"
+          ],
+          "enhancementPriorities": [
+            {
+              "type": "signature_alignment",
+              "priority": "high"
+            },
+            {
+              "type": "archetype_expression",
+              "priority": "medium"
+            },
+            {
+              "type": "visual_refinements",
+              "priority": "low"
+            }
+          ],
+          "archetypeOpportunities": [
+            {
+              "archetype": "safe_harbor",
+              "improvements": [
+                "warm_colors",
+                "protective_language",
+                "contained_layout"
+              ]
+            },
+            {
+              "archetype": "mirror_recognition",
+              "improvements": [
+                "authentic_messaging",
+                "self_empowerment",
+                "clear_presentation"
+              ]
+            }
+          ],
+          "ctaSpecific": {
+            "conversionPressure": {
+              "pressureLevel": "Low - Gentle invitation rather than aggressive push",
+              "urgencyType": "Soft urgency through value emphasis not scarcity",
+              "respectForChoice": "Patient-centered approach honors decision autonomy"
+            },
+            "gentleUrgency": {
+              "motivationTechnique": "Value-based motivation rather than fear-based",
+              "timingRespect": "When ready' approach vs 'act now' pressure",
+              "confidenceBuilding": "Focus on positive outcomes rather than missed opportunities"
+            },
+            "finalImpression": {
+              "brandConsistency": "Final touchpoint reinforces established personality",
+              "conversionOptimization": "Clear next step without compromising authenticity",
+              "lastingMemory": "Professional warmth and respect theme maintained throughout"
+            }
+          }
+        },
+        "enhancementOpportunities": [
+          "improve_signature_alignment",
+          "strengthen_archetype_expression",
+          "optimize_mobile_experience"
+        ],
+        "metrics": {
+          "signatureAlignment": 30,
+          "conversionEffectiveness": 86,
+          "archetypeExpression": 90
+        }
+      },
+      "enhancements": {
+        "colorPhilosophy": {
+          "primaryColorOptimization": "Apply signature deep trust (#2B3A42) to headings",
+          "backgroundHarmony": "Use cream comfort (#F4F1EA) for safe sections",
+          "accentIntegration": "Incorporate copper warmth (#C4975A) for transformation moments",
+          "temperatureJourney": "Cool to warm progression through content flow"
+        },
+        "layoutBreathingRoom": {
+          "sectionPadding": "Increase to 120px+ for calm precision",
+          "contentMaxWidth": "Constrain to 680px for comprehension",
+          "asymmetricPositioning": "5% offset for organic curation feel",
+          "verticalRhythm": "1.6em line height for reading comfort"
+        },
+        "archetypeExpression": {
+          "owlWisdom": "Patient reveals, thoughtful spacing, calm typography",
+          "safeHarbor": "Protective colors, contained layouts, judgment-free language",
+          "mirrorRecognition": "Self-empowerment messaging, authentic positioning, clarity"
+        },
+        "conversionOptimization": {
+          "trustBuilding": "Enhance credibility indicators without compromising authenticity",
+          "gentleUrgency": "Create motivation without pressure tactics",
+          "valueClarity": "Strengthen unique positioning and premium perception",
+          "frictionReduction": "Simplify interactions while maintaining personality"
+        },
+        "implementationCode": {
+          "css": "\n/* Enhanced comp_006 - Signature Integrated Styles */\n.comp_006-enhanced {\n  /* Color Philosophy Application */\n  background-color: var(--signature-cream-comfort, #F4F1EA);\n  color: var(--signature-deep-trust, #2B3A42);\n\n  /* Breathing Room Philosophy */\n  padding: var(--signature-breathing-room, 120px) 0;\n  max-width: var(--signature-content-width, 680px);\n  margin: 0 auto;\n\n  /* Archetype Expression */\n  transition: all 0.6s ease-out; /* Patient transitions */\n  letter-spacing: 0.01em; /* Thoughtful spacing */\n}\n\n.comp_006-enhanced:hover {\n  transform: translateY(-2px); /* Gentle elevation */\n}\n",
+          "html": "\n<!-- Enhanced comp_006 Structure -->\n<div class=\"comp_006-enhanced signature-integrated\">\n  <!-- Signature elements would be injected here -->\n  <div class=\"signature-breathing-wrapper\">\n    <!-- Original content with signature enhancements -->\n  </div>\n</div>\n",
+          "javascript": "\n// Enhanced comp_006 - Signature Behaviors\ndocument.addEventListener('DOMContentLoaded', function() {\n  const component = document.querySelector('.comp_006-enhanced');\n  if (!component) return;\n\n  // Owl wisdom: Patient interactions\n  component.addEventListener('mouseenter', function() {\n    this.style.transition = 'all 0.6s ease-out';\n  });\n\n  // Safe harbor: Gentle feedback\n  component.addEventListener('focus', function() {\n    this.style.boxShadow = '0 0 0 3px rgba(107, 143, 113, 0.2)';\n  });\n});\n"
+        }
+      },
+      "validation": {
+        "signatureRecognition": {
+          "success": true,
+          "archetypeRecognition": "high",
+          "personalityExpression": "authentic",
+          "brandDifferentiation": "clear"
+        },
+        "conversionPreservation": {
+          "ctaVisibility": "maintained",
+          "trustIndicators": "enhanced",
+          "frictionLevel": "reduced",
+          "overallScore": 85
+        },
+        "mobileAdaptation": {
+          "breathingRoomPreserved": true,
+          "typographyOptimized": true,
+          "interactionFriendly": true,
+          "overallScore": 90
+        },
+        "overallValidation": 88
+      },
+      "processingTime": 13967
+    }
+  },
+  "sessionMetrics": {
+    "startTime": 1753713787276,
+    "componentCount": 3,
+    "endTime": 1753713801243,
+    "duration": 13967
+  }
+}

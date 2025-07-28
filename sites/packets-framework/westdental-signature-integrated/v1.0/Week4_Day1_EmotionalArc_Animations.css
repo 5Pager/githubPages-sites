@@ -1,0 +1,573 @@
+/*
+ * Week 4 Day 1: Emotional Arc Animations
+ * CSS Animation System for Five-Act Journey Progression
+ * "The Journey to Self-Respectful Smile Recognition"
+ */
+
+/* =============================================================================
+   GLOBAL ANIMATION FOUNDATION
+   ============================================================================= */
+
+:root {
+    /* Emotional Arc Variables */
+    --emotional-temperature: 0.7;
+    --safety-intensity: 0.8;
+    --wisdom-intensity: 0.6;
+    --recognition-intensity: 0.5;
+    --action-confidence: 0.0;
+    --breathing-room-multiplier: 1.0;
+    --emotional-intensity: 0.0;
+
+    /* Animation Timing Signatures */
+    --signature-timing-gentle: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --signature-timing-confident: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --signature-timing-recognition: cubic-bezier(0.23, 1, 0.32, 1);
+    --signature-timing-trust: cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Emotional Color Temperatures */
+    --warm-embrace: rgba(247, 250, 252, 0.6);
+    --cool-wisdom: rgba(74, 85, 104, 0.1);
+    --recognition-glow: rgba(102, 116, 244, 0.15);
+    --safety-blanket: rgba(226, 232, 240, 0.4);
+    --confidence-surge: rgba(102, 116, 244, 0.25);
+}
+
+/* =============================================================================
+   ACT 1: ARRIVAL - SAFE HARBOR ESTABLISHMENT (0-10 seconds)
+   Emotional Goal: Immediate calm and curiosity activation
+   ============================================================================= */
+
+.act-act1 {
+    --emotional-temperature: 0.9;
+    --safety-intensity: 1.0;
+    --breathing-room-multiplier: 1.3;
+    animation: safeArrival 2s var(--signature-timing-gentle) forwards;
+}
+
+@keyframes safeArrival {
+    0% {
+        background-color: rgba(255, 255, 255, 0);
+        transform: scale(0.98);
+    }
+    50% {
+        background-color: var(--warm-embrace);
+        transform: scale(1.01);
+    }
+    100% {
+        background-color: var(--warm-embrace);
+        transform: scale(1);
+    }
+}
+
+/* Act 1 Component Animations */
+[data-act="act1_arrival"].signature-active {
+    animation: gentleWelcome 1.5s var(--signature-timing-gentle) forwards;
+}
+
+@keyframes gentleWelcome {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+        filter: blur(3px);
+    }
+    60% {
+        opacity: 0.8;
+        transform: translateY(-5px) scale(1.02);
+        filter: blur(1px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+
+/* Safe Harbor Breathing Animation */
+[data-archetype="safe_harbor"].signature-active {
+    animation: safeHarborBreathing 4s ease-in-out infinite;
+}
+
+@keyframes safeHarborBreathing {
+    0%, 100% {
+        background-color: var(--safety-blanket);
+        box-shadow: 0 0 20px rgba(226, 232, 240, 0.3);
+    }
+    50% {
+        background-color: rgba(247, 250, 252, 0.8);
+        box-shadow: 0 0 30px rgba(247, 250, 252, 0.4);
+    }
+}
+
+/* =============================================================================
+   ACT 2: EXPLORATION - VALUE DISCOVERY (10-45 seconds)
+   Emotional Goal: Growing interest and possibility awareness
+   ============================================================================= */
+
+.act-act2 {
+    --wisdom-intensity: 0.9;
+    --breathing-room-multiplier: 1.1;
+    --emotional-temperature: 0.7;
+    animation: wisdomUnfolding 3s var(--signature-timing-confident) forwards;
+}
+
+@keyframes wisdomUnfolding {
+    0% {
+        filter: brightness(1);
+        background: linear-gradient(135deg, transparent, transparent);
+    }
+    100% {
+        filter: brightness(1.05);
+        background: linear-gradient(135deg, var(--cool-wisdom), rgba(113, 128, 150, 0.05));
+    }
+}
+
+/* Owl Wisdom Component Animations */
+[data-archetype="owl_wisdom"].signature-active {
+    animation: thoughtfulReveal 2s var(--signature-timing-gentle) forwards;
+}
+
+@keyframes thoughtfulReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+        background: transparent;
+    }
+    30% {
+        opacity: 0.6;
+        transform: translateY(10px);
+        background: rgba(74, 85, 104, 0.05);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        background: var(--cool-wisdom);
+    }
+}
+
+/* Information Cascade Effect */
+[data-act="act2_exploration"] .signature-active:nth-child(1) { animation-delay: 0s; }
+[data-act="act2_exploration"] .signature-active:nth-child(2) { animation-delay: 0.3s; }
+[data-act="act2_exploration"] .signature-active:nth-child(3) { animation-delay: 0.6s; }
+[data-act="act2_exploration"] .signature-active:nth-child(4) { animation-delay: 0.9s; }
+[data-act="act2_exploration"] .signature-active:nth-child(5) { animation-delay: 1.2s; }
+
+/* =============================================================================
+   ACT 3: TRUST BUILDING - CREDIBILITY ESTABLISHMENT (30-60 seconds)
+   Emotional Goal: Trust development and safety confirmation
+   ============================================================================= */
+
+.act-act3 {
+    --safety-intensity: 1.0;
+    --trust-building-glow: 0.8;
+    --professional-warmth: 0.9;
+    animation: trustEstablishment 2.5s var(--signature-timing-trust) forwards;
+}
+
+@keyframes trustEstablishment {
+    0% {
+        border: 1px solid transparent;
+        box-shadow: none;
+    }
+    50% {
+        border: 1px solid rgba(102, 116, 244, 0.2);
+        box-shadow: 0 5px 20px rgba(102, 116, 244, 0.1);
+    }
+    100% {
+        border: 1px solid rgba(102, 116, 244, 0.3);
+        box-shadow: 0 10px 40px rgba(102, 116, 244, 0.15);
+    }
+}
+
+/* Trust Building Component Animations */
+[data-act="act3_trust_building"].signature-active {
+    animation: trustAnchor 2s var(--signature-timing-trust) forwards;
+}
+
+@keyframes trustAnchor {
+    0% {
+        transform: scale(0.95);
+        opacity: 0.7;
+        background: transparent;
+    }
+    30% {
+        transform: scale(1.02);
+        opacity: 0.9;
+        background: rgba(247, 250, 252, 0.3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+        background: var(--safety-blanket);
+    }
+}
+
+/* Professional Warmth Gradient */
+[data-archetype="safe_harbor"][data-act="act3_trust_building"] {
+    background: linear-gradient(45deg,
+        rgba(247, 250, 252, 0.6),
+        rgba(226, 232, 240, 0.4),
+        rgba(247, 250, 252, 0.6)
+    );
+    background-size: 200% 200%;
+    animation: warmthFlow 6s ease-in-out infinite;
+}
+
+@keyframes warmthFlow {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+/* =============================================================================
+   ACT 4: RECOGNITION - SELF-RECOGNITION BREAKTHROUGH (45-75 seconds)
+   Emotional Goal: Personal connection and authentic empowerment
+   ============================================================================= */
+
+.act-act4 {
+    --recognition-intensity: 1.0;
+    --personal-connection-glow: 0.9;
+    --authenticity-resonance: 1.0;
+    animation: recognitionBreakthrough 3s var(--signature-timing-recognition) forwards;
+}
+
+@keyframes recognitionBreakthrough {
+    0% {
+        filter: brightness(1) contrast(1);
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    30% {
+        filter: brightness(1.1) contrast(1.1);
+        transform: perspective(1000px) rotateY(2deg);
+    }
+    60% {
+        filter: brightness(1.15) contrast(1.15);
+        transform: perspective(1000px) rotateY(-1deg);
+    }
+    100% {
+        filter: brightness(1.1) contrast(1.1);
+        transform: perspective(1000px) rotateY(0deg);
+    }
+}
+
+/* Mirror Recognition Component Animations */
+[data-archetype="mirror_recognition"].signature-active {
+    position: relative;
+    animation: mirrorAwakening 2.5s var(--signature-timing-recognition) forwards;
+}
+
+@keyframes mirrorAwakening {
+    0% {
+        opacity: 0.8;
+        transform: scale(0.98);
+        background: transparent;
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+        background: var(--recognition-glow);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        background: var(--recognition-glow);
+    }
+}
+
+/* Recognition Pulse Effect */
+[data-archetype="mirror_recognition"].signature-active::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: radial-gradient(circle, rgba(102, 116, 244, 0.3) 0%, transparent 70%);
+    border-radius: inherit;
+    animation: recognitionPulse 3s ease-in-out infinite;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@keyframes recognitionPulse {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+/* Personal Connection Ripple */
+[data-act="act4_recognition"].signature-climactic {
+    animation: personalConnectionRipple 1.5s var(--signature-timing-recognition) forwards;
+}
+
+@keyframes personalConnectionRipple {
+    0% {
+        box-shadow: 0 0 0 0 rgba(102, 116, 244, 0.4);
+        background: var(--recognition-glow);
+    }
+    50% {
+        box-shadow: 0 0 0 20px rgba(102, 116, 244, 0.1);
+        background: rgba(102, 116, 244, 0.25);
+    }
+    100% {
+        box-shadow: 0 0 0 40px rgba(102, 116, 244, 0);
+        background: var(--recognition-glow);
+    }
+}
+
+/* =============================================================================
+   ACT 5: ACTION - CONFIDENT DECISION INVITATION (60+ seconds)
+   Emotional Goal: Empowered action without pressure
+   ============================================================================= */
+
+.act-act5 {
+    --action-confidence: 1.0;
+    --wisdom-intensity: 0.8;
+    --safety-intensity: 0.9;
+    --recognition-intensity: 0.8;
+    animation: confidentInvitation 2s var(--signature-timing-confident) forwards;
+}
+
+@keyframes confidentInvitation {
+    0% {
+        background: transparent;
+        transform: translateY(0);
+    }
+    50% {
+        background: var(--confidence-surge);
+        transform: translateY(-5px);
+    }
+    100% {
+        background: var(--confidence-surge);
+        transform: translateY(0);
+    }
+}
+
+/* Integrated Archetype Harmony */
+[data-archetype="integrated_all"].signature-active {
+    animation: archetypeHarmony 3s var(--signature-timing-confident) forwards;
+    background: linear-gradient(135deg,
+        var(--cool-wisdom),
+        var(--safety-blanket),
+        var(--recognition-glow),
+        var(--confidence-surge)
+    );
+    background-size: 400% 400%;
+}
+
+@keyframes archetypeHarmony {
+    0% {
+        background-position: 0% 50%;
+        opacity: 0.8;
+        transform: scale(0.98);
+    }
+    25% {
+        background-position: 100% 50%;
+        opacity: 0.9;
+        transform: scale(1.01);
+    }
+    50% {
+        background-position: 50% 100%;
+        opacity: 1;
+        transform: scale(1.02);
+    }
+    75% {
+        background-position: 0% 0%;
+        opacity: 1;
+        transform: scale(1.01);
+    }
+    100% {
+        background-position: 50% 50%;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Confident Action CTA Animation */
+[data-component="comp_006"] .signature-active {
+    animation: confidentCTA 2s var(--signature-timing-confident) forwards;
+}
+
+@keyframes confidentCTA {
+    0% {
+        background: var(--brand-blue);
+        transform: scale(1);
+        box-shadow: 0 4px 15px rgba(102, 116, 244, 0.3);
+    }
+    50% {
+        background: linear-gradient(135deg, var(--brand-blue), #5a67d8);
+        transform: scale(1.05);
+        box-shadow: 0 8px 30px rgba(102, 116, 244, 0.4);
+    }
+    100% {
+        background: linear-gradient(135deg, var(--brand-blue), #5a67d8);
+        transform: scale(1);
+        box-shadow: 0 6px 25px rgba(102, 116, 244, 0.35);
+    }
+}
+
+/* =============================================================================
+   INTERACTION ANIMATIONS
+   ============================================================================= */
+
+/* Hover Enhancements */
+.signature-enhanced-hover {
+    animation: gentleElevation 0.3s var(--signature-timing-confident) forwards;
+}
+
+@keyframes gentleElevation {
+    0% {
+        transform: translateY(0) scale(1);
+        box-shadow: 0 2px 10px rgba(102, 116, 244, 0.1);
+    }
+    100% {
+        transform: translateY(-3px) scale(1.02);
+        box-shadow: 0 8px 25px rgba(102, 116, 244, 0.2);
+    }
+}
+
+/* Click Resonance */
+.signature-resonating {
+    animation: resonanceWave 1s var(--signature-timing-recognition) forwards;
+}
+
+@keyframes resonanceWave {
+    0% {
+        transform: scale(1);
+        background: transparent;
+    }
+    30% {
+        transform: scale(1.05);
+        background: var(--recognition-glow);
+    }
+    60% {
+        transform: scale(0.98);
+        background: rgba(102, 116, 244, 0.25);
+    }
+    100% {
+        transform: scale(1);
+        background: var(--recognition-glow);
+    }
+}
+
+/* =============================================================================
+   SCROLL-TRIGGERED ENHANCEMENTS
+   ============================================================================= */
+
+.scroll-enhanced {
+    animation: scrollSync 0.8s var(--signature-timing-gentle) forwards;
+}
+
+@keyframes scrollSync {
+    0% {
+        opacity: 0.7;
+        transform: translateY(20px);
+        filter: blur(2px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+/* =============================================================================
+   CLIMAX EFFECTS
+   ============================================================================= */
+
+.climax-reached {
+    animation: climaxCelebration 2s var(--signature-timing-recognition) forwards;
+}
+
+@keyframes climaxCelebration {
+    0% {
+        filter: brightness(1);
+        background: transparent;
+    }
+    25% {
+        filter: brightness(1.2);
+        background: radial-gradient(circle, rgba(102, 116, 244, 0.1), transparent);
+    }
+    50% {
+        filter: brightness(1.1);
+        background: radial-gradient(circle, rgba(102, 116, 244, 0.2), transparent);
+    }
+    75% {
+        filter: brightness(1.15);
+        background: radial-gradient(circle, rgba(102, 116, 244, 0.15), transparent);
+    }
+    100% {
+        filter: brightness(1.1);
+        background: radial-gradient(circle, rgba(102, 116, 244, 0.1), transparent);
+    }
+}
+
+/* =============================================================================
+   MOBILE RESPONSIVENESS
+   ============================================================================= */
+
+@media (max-width: 768px) {
+    :root {
+        --breathing-room-multiplier: 1.4;
+    }
+
+    /* Gentler animations for mobile */
+    .signature-active {
+        animation-duration: 1.5s;
+    }
+
+    /* Reduce motion for mobile users who prefer it */
+    @media (prefers-reduced-motion: reduce) {
+        * {
+            animation-duration: 0.3s !important;
+            animation-iteration-count: 1 !important;
+        }
+    }
+}
+
+/* =============================================================================
+   ACCESSIBILITY ENHANCEMENTS
+   ============================================================================= */
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    :root {
+        --recognition-glow: rgba(102, 116, 244, 0.5);
+        --safety-blanket: rgba(226, 232, 240, 0.8);
+    }
+}
+
+/* Focus indicators for keyboard navigation */
+.signature-active:focus-visible {
+    outline: 2px solid var(--brand-blue);
+    outline-offset: 4px;
+    animation: focusGlow 0.3s ease-in-out;
+}
+
+@keyframes focusGlow {
+    0% { box-shadow: 0 0 0 0 rgba(102, 116, 244, 0.5); }
+    100% { box-shadow: 0 0 0 8px rgba(102, 116, 244, 0.2); }
+}
+
+/* =============================================================================
+   PERFORMANCE OPTIMIZATIONS
+   ============================================================================= */
+
+/* Hardware acceleration for smooth animations */
+.signature-active,
+.signature-enhanced-hover,
+.signature-resonating {
+    will-change: transform, opacity, background;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+/* Optimize animation performance */
+@media (prefers-reduced-motion: no-preference) {
+    .signature-active {
+        transform: translateZ(0);
+    }
+}

@@ -1,0 +1,130 @@
+{
+  "storyTitle": "The Journey to Self-Respectful Smile Recognition",
+  "generatedFrom": "seventeen_dimensional_component_analysis",
+  "storyStructure": {
+    "act1_arrival": {
+      "timeframe": "0-10 seconds",
+      "components": [
+        "comp_001",
+        "comp_007"
+      ],
+      "storyFunction": "Safe harbor establishment and brand differentiation",
+      "emotionalGoal": "Immediate calm and curiosity activation"
+    },
+    "act2_exploration": {
+      "timeframe": "10-45 seconds",
+      "components": [
+        "comp_002",
+        "comp_008",
+        "comp_012",
+        "comp_013",
+        "comp_014"
+      ],
+      "storyFunction": "Value discovery and service education",
+      "emotionalGoal": "Growing interest and possibility awareness"
+    },
+    "act3_trust_building": {
+      "timeframe": "30-60 seconds",
+      "components": [
+        "comp_004",
+        "comp_009",
+        "comp_015",
+        "comp_016",
+        "comp_017"
+      ],
+      "storyFunction": "Credibility establishment and anti-chain positioning",
+      "emotionalGoal": "Trust development and safety confirmation"
+    },
+    "act4_recognition": {
+      "timeframe": "45-75 seconds",
+      "components": [
+        "comp_003",
+        "comp_005",
+        "comp_010"
+      ],
+      "storyFunction": "Self-recognition breakthrough and transformation vision",
+      "emotionalGoal": "Personal connection and authentic empowerment"
+    },
+    "act5_action": {
+      "timeframe": "60+ seconds",
+      "components": [
+        "comp_006",
+        "comp_011"
+      ],
+      "storyFunction": "Confident decision invitation with gentle urgency",
+      "emotionalGoal": "Empowered action without pressure"
+    }
+  },
+  "emotionalArc": {
+    "opening_emotion": "Cautious curiosity with dental anxiety",
+    "rising_emotions": [
+      "Calm recognition of safety",
+      "Growing interest in possibilities",
+      "Developing trust in expertise",
+      "Personal connection and understanding"
+    ],
+    "climax_emotion": "Self-recognition breakthrough and empowerment",
+    "resolution_emotion": "Confident readiness for authentic transformation",
+    "archetype_integration": "All three archetypes working in harmony"
+  },
+  "visualBeats": {
+    "beat1_safe_arrival": {
+      "visualFocus": "Hero section generous breathing room and warm colors",
+      "archetypeExpression": "Safe harbor through protective atmosphere",
+      "conversionFunction": "Brand differentiation and anxiety reduction"
+    },
+    "beat2_value_revelation": {
+      "visualFocus": "Service grid with organic asymmetric positioning",
+      "archetypeExpression": "Owl wisdom through thoughtful organization",
+      "conversionFunction": "Education and possibility awareness"
+    },
+    "beat3_trust_confirmation": {
+      "visualFocus": "Feature trio demonstrating competence qualities",
+      "archetypeExpression": "Safe harbor through professional warmth",
+      "conversionFunction": "Credibility building and objection handling"
+    },
+    "beat4_personal_connection": {
+      "visualFocus": "Recognition moment and asymmetric personal content",
+      "archetypeExpression": "Mirror recognition through authentic messaging",
+      "conversionFunction": "Personal relevance and emotional resonance"
+    },
+    "beat5_confident_invitation": {
+      "visualFocus": "Footer CTA with gentle urgency and respect",
+      "archetypeExpression": "All archetypes integrated for decision support",
+      "conversionFunction": "Action trigger without manipulation"
+    }
+  },
+  "interactionMoments": {
+    "hover_moments": "Gentle elevation and color temperature changes",
+    "scroll_reveals": "Patient information reveals respecting cognitive load",
+    "click_feedback": "Calm confidence responses reinforcing safety",
+    "form_interactions": "Protective input styling and encouraging validation"
+  },
+  "archetypeProgression": {
+    "owl_wisdom_journey": {
+      "entry": "Calm observation of thoughtful layout",
+      "development": "Appreciation of organized information presentation",
+      "climax": "Recognition of competent decision-making support",
+      "resolution": "Wise choice making without pressure"
+    },
+    "safe_harbor_journey": {
+      "entry": "Immediate visual safety and warmth recognition",
+      "development": "Growing comfort in non-judgmental environment",
+      "climax": "Complete trust in protective professional care",
+      "resolution": "Confident vulnerability and openness"
+    },
+    "mirror_recognition_journey": {
+      "entry": "Initial self-respect theme resonance",
+      "development": "Growing awareness of authentic transformation possibility",
+      "climax": "Breakthrough recognition of true self expression potential",
+      "resolution": "Empowered action toward authentic self-representation"
+    }
+  },
+  "conversionChoreography": {
+    "awareness_triggers": "Visual differentiation and safe harbor establishment",
+    "interest_triggers": "Service value demonstration and possibility revelation",
+    "consideration_triggers": "Trust building and anti-chain positioning",
+    "intent_triggers": "Personal connection and self-recognition moments",
+    "action_triggers": "Respectful invitation with gentle urgency"
+  }
+}

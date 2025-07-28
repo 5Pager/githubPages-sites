@@ -1,0 +1,623 @@
+{
+  "sessionName": "Priority3_BatchAnalysis",
+  "components": {
+    "comp_003": {
+      "analysis": {
+        "componentId": "comp_003",
+        "timestamp": "2025-07-28T14:46:53.340Z",
+        "analysisVersion": "v2.0_seven_dimensional",
+        "dimensions": {
+          "domHierarchy": {
+            "assembly": "layout_section",
+            "parent": "body",
+            "children": [
+              "div"
+            ],
+            "reusability": "template_section",
+            "semanticStructure": {
+              "role": "section",
+              "ariaLevel": null,
+              "isLandmark": true
+            },
+            "complexity": {
+              "childrenCount": 1,
+              "nestingLevel": 2
+            }
+          },
+          "functionalPurpose": {
+            "primaryFunction": "content_organization",
+            "secondaryFunction": "user_guidance",
+            "conversionStage": "general",
+            "functionalPriority": "standard",
+            "userAction": "scan_and_evaluate"
+          },
+          "contentMediaType": {
+            "contentCategory": "descriptive",
+            "mediaFormat": "text_primary",
+            "informationDensity": "minimal",
+            "contentMetrics": {
+              "wordCount": 37,
+              "interactiveElements": 0,
+              "mediaElements": 0
+            },
+            "typographyRequirements": {
+              "hierarchyLevels": 0,
+              "primaryHeading": "h2",
+              "readabilityPriority": "medium",
+              "emphasysNeeded": false
+            }
+          },
+          "userJourneyStage": {
+            "primaryStage": "consideration",
+            "secondaryStage": "information_gathering",
+            "transitionTrigger": "natural_progression",
+            "emotionalState": "neutral",
+            "decisionSupport": {
+              "evidenceProvided": false,
+              "socialProof": true,
+              "riskReduction": false,
+              "supportLevel": "medium"
+            }
+          },
+          "archetypeExpression": {
+            "archetypeCarrierStrength": "low",
+            "personalityTraits": [
+              "thoughtful",
+              "patient",
+              "wise",
+              "authentic",
+              "revealing",
+              "empowering"
+            ],
+            "voiceReflection": "authentic_empowerment",
+            "archetypeScores": {
+              "owlWisdom": 65,
+              "safeHarbor": 0,
+              "mirrorRecognition": 55
+            },
+            "enhancementOpportunities": [
+              "warm_background_colors",
+              "protective_language",
+              "contained_widths",
+              "self_recognition_messaging",
+              "authentic_positioning",
+              "clear_presentation"
+            ]
+          },
+          "conversionPsychology": {
+            "trustBuilding": {
+              "indicators": {
+                "credentials": false,
+                "experience": false,
+                "testimonials": true,
+                "transparency": false
+              },
+              "score": 25
+            },
+            "urgencyCreation": {
+              "type": "gentle",
+              "appropriateForArchetype": true
+            },
+            "valueDemonstration": {
+              "indicators": {
+                "uniqueApproach": false,
+                "qualityFocus": false,
+                "outcomes": false,
+                "experience": false
+              },
+              "score": 0
+            },
+            "frictionReduction": {
+              "complexity": "low",
+              "clarity": "medium",
+              "accessibility": "none"
+            },
+            "socialProof": {
+              "types": [
+                "testimonials"
+              ],
+              "strength": "moderate"
+            },
+            "persuasionTechniques": [
+              "self_empowerment"
+            ]
+          },
+          "visualBehavior": {
+            "responsiveness": {
+              "mobile": {
+                "width": 360,
+                "height": 546.21875,
+                "fontSize": "16px",
+                "padding": "120px 0px",
+                "display": "block"
+              },
+              "tablet": {
+                "width": 753,
+                "height": 454.0625,
+                "fontSize": "16px",
+                "padding": "120px 0px",
+                "display": "block"
+              },
+              "desktop": {
+                "width": 1385,
+                "height": 683.140625,
+                "fontSize": "16px",
+                "padding": "200px 0px",
+                "display": "block"
+              }
+            },
+            "interactions": {
+              "hasHoverStates": false,
+              "hasTransitions": true,
+              "isInteractive": false,
+              "focusable": false
+            },
+            "animationPersonality": {
+              "speed": "calm",
+              "easing": "gentle",
+              "type": "expressive"
+            },
+            "mobileAdaptation": {
+              "breathingRoomPreserved": true,
+              "typographyOptimized": true,
+              "interactionFriendly": true
+            },
+            "microInteractions": [
+              "smooth_transitions"
+            ]
+          }
+        },
+        "visualProperties": {
+          "color": {
+            "primary": "rgb(26, 37, 43)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(26, 37, 43)"
+          },
+          "layout": {
+            "padding": "200px 0px",
+            "margin": "0px",
+            "maxWidth": "none",
+            "width": "1385px"
+          },
+          "typography": {
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+            "lineHeight": "27.2px"
+          }
+        },
+        "implementationData": {
+          "selector": "section.recognition-moment-section",
+          "htmlStructure": "\n        <div class=\"recognition-container\">\n            <blockquote class=\"recognition-quote fade-in-up\">\n                When the mirror went up, I finally recognised myself. It wasn't just about the teeth—\n                it was about feeling like the person I'd become inside finally matched what I saw outside.\n            </blockquote>\n            <div class=\"recognition-attribution fade-in-up\">\n                — Sarah M., West Dental Patient\n            </div>\n        </div>\n    ",
+          "cssClasses": "recognition-moment-section",
+          "computedStyles": {
+            "color": {
+              "primary": "rgb(26, 37, 43)",
+              "background": "rgb(255, 255, 255)",
+              "border": "rgb(26, 37, 43)"
+            },
+            "layout": {
+              "padding": "200px 0px",
+              "margin": "0px",
+              "maxWidth": "none",
+              "width": "1385px"
+            },
+            "typography": {
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+              "lineHeight": "27.2px"
+            }
+          },
+          "accessibility": {
+            "role": null,
+            "ariaLabel": null,
+            "tabIndex": null
+          },
+          "performanceImpact": "minimal",
+          "dependencies": []
+        },
+        "analysisMetrics": {
+          "duration": 3125,
+          "signatureAlignmentScore": 30,
+          "conversionEffectivenessScore": 80,
+          "archetypeExpressionScore": 75
+        },
+        "batchOptimizations": {
+          "processingMode": "optimized",
+          "enhancementAutoGeneration": true,
+          "mobileTestingIntegrated": true
+        },
+        "signatureGaps": [
+          "signature_alignment_below_target",
+          "archetype_expression_needs_strengthening"
+        ],
+        "narrativeRole": {
+          "role": "Recognition Moment Catalyst",
+          "storyBeat": "Self-recognition breakthrough trigger",
+          "emotionalFunction": "Mirror recognition activation"
+        }
+      },
+      "enhancements": {
+        "signatureIntegration": {
+          "colorPhilosophyApplication": "Apply signature palette based on component narrative role",
+          "breathingRoomOptimization": "Increase padding to minimum 80px for calm precision",
+          "asymmetricPositioning": "Add 5-15px organic offsets for thoughtful curation"
+        },
+        "archetypeStrengthening": {
+          "owlWisdomEnhancement": "Patient reveals and thoughtful spacing increases",
+          "safeHarborEnhancement": "Warm protective colors and contained layouts",
+          "mirrorRecognitionEnhancement": "Self-empowerment messaging and authentic positioning"
+        },
+        "mobileOptimization": {
+          "breathingRoomPreservation": "Maintain 60%+ of desktop padding on mobile",
+          "typographyOptimization": "16px+ font sizes with 1.4+ line height",
+          "interactionOptimization": "44px+ touch targets with generous spacing"
+        },
+        "narrativeIntegration": {
+          "storyRole": "Recognition Moment Catalyst",
+          "emotionalContribution": "Mirror recognition activation",
+          "visualAlignment": "Align visual treatment with story beat function",
+          "interactionAlignment": "Design behaviors that support narrative role"
+        },
+        "implementationCode": {
+          "css": "\n/* Optimized comp_003 - Batch Enhanced Styles */\n.comp_003-batch-enhanced {\n  /* Signature Integration */\n  background-color: var(--signature-cream-comfort, #F4F1EA);\n  color: var(--signature-deep-trust, #2B3A42);\n\n  /* Breathing Room Optimization */\n  padding: clamp(60px, 8vw, 120px) 0;\n  max-width: min(680px, 90vw);\n  margin: 0 auto;\n\n  /* Archetype Expression */\n  transition: all 0.6s ease-out;\n  position: relative;\n}\n\n/* Mobile Optimization */\n@media (max-width: 768px) {\n  .comp_003-batch-enhanced {\n    padding: clamp(40px, 6vw, 80px) 5%;\n    font-size: clamp(16px, 4vw, 18px);\n    line-height: 1.5;\n  }\n}\n\n/* Narrative Integration */\n.comp_003-batch-enhanced[data-story-beat] {\n  /* Story-specific styling would be applied here */\n}\n",
+          "html": "\n<!-- Batch Enhanced comp_003 -->\n<div class=\"comp_003-batch-enhanced\"\n     data-story-beat=\"Recognition Moment Catalyst\"\n     data-archetype-primary=\"true\">\n  <!-- Enhanced content structure with narrative integration -->\n  <div class=\"signature-breathing-wrapper\">\n    <!-- Original content with batch optimizations -->\n  </div>\n</div>\n",
+          "javascript": "\n// Batch Enhanced comp_003 - Optimized Behaviors\ndocument.addEventListener('DOMContentLoaded', function() {\n  const component = document.querySelector('.comp_003-batch-enhanced');\n  if (!component) return;\n\n  // Archetype-aligned interactions\n  component.addEventListener('mouseenter', function() {\n    // Owl wisdom: Patient response\n    this.style.transition = 'all 0.6s ease-out';\n    this.style.transform = 'translateY(-2px)';\n  });\n\n  // Safe harbor: Gentle feedback\n  component.addEventListener('focus', function() {\n    this.style.boxShadow = '0 0 0 3px rgba(107, 143, 113, 0.2)';\n  });\n\n  // Mirror recognition: Clear state communication\n  component.addEventListener('click', function() {\n    this.setAttribute('data-activated', 'true');\n  });\n});\n"
+        }
+      },
+      "validation": {
+        "signatureRecognition": {
+          "score": 88,
+          "personalityExpression": "authentic",
+          "brandAlignment": "strong"
+        },
+        "mobileAdaptation": {
+          "breathingRoomPreserved": true,
+          "typographyOptimized": true,
+          "interactionFriendly": true,
+          "score": 89
+        },
+        "narrativeContribution": {
+          "storyRole": "Recognition Moment Catalyst",
+          "emotionalContribution": "positive",
+          "flowIntegration": "seamless"
+        }
+      },
+      "processingTime": 3126,
+      "optimizationApplied": true
+    },
+    "comp_005": {
+      "analysis": {
+        "componentId": "comp_005",
+        "timestamp": "2025-07-28T14:46:56.466Z",
+        "analysisVersion": "v2.0_seven_dimensional",
+        "dimensions": {
+          "domHierarchy": {
+            "assembly": "layout_section",
+            "parent": "body",
+            "children": [
+              "div"
+            ],
+            "reusability": "template_section",
+            "semanticStructure": {
+              "role": "section",
+              "ariaLevel": null,
+              "isLandmark": true
+            },
+            "complexity": {
+              "childrenCount": 1,
+              "nestingLevel": 2
+            }
+          },
+          "functionalPurpose": {
+            "primaryFunction": "value_demonstration",
+            "secondaryFunction": "credibility_establishment",
+            "conversionStage": "decision",
+            "functionalPriority": "high",
+            "userAction": "click_to_convert"
+          },
+          "contentMediaType": {
+            "contentCategory": "headline_focused",
+            "mediaFormat": "text_primary",
+            "informationDensity": "minimal",
+            "contentMetrics": {
+              "wordCount": 44,
+              "interactiveElements": 1,
+              "mediaElements": 0
+            },
+            "typographyRequirements": {
+              "hierarchyLevels": 1,
+              "primaryHeading": "h2",
+              "readabilityPriority": "medium",
+              "emphasysNeeded": false
+            }
+          },
+          "userJourneyStage": {
+            "primaryStage": "evaluation",
+            "secondaryStage": "information_gathering",
+            "transitionTrigger": "natural_progression",
+            "emotionalState": "neutral",
+            "decisionSupport": {
+              "evidenceProvided": false,
+              "socialProof": false,
+              "riskReduction": false,
+              "supportLevel": "medium"
+            }
+          },
+          "archetypeExpression": {
+            "archetypeCarrierStrength": "medium",
+            "personalityTraits": [
+              "thoughtful",
+              "patient",
+              "wise",
+              "authentic",
+              "revealing",
+              "empowering"
+            ],
+            "voiceReflection": "authentic_empowerment",
+            "archetypeScores": {
+              "owlWisdom": 80,
+              "safeHarbor": 0,
+              "mirrorRecognition": 55
+            },
+            "enhancementOpportunities": [
+              "warm_background_colors",
+              "protective_language",
+              "contained_widths",
+              "self_recognition_messaging",
+              "authentic_positioning",
+              "clear_presentation"
+            ]
+          },
+          "conversionPsychology": {
+            "trustBuilding": {
+              "indicators": {
+                "credentials": true,
+                "experience": false,
+                "testimonials": false,
+                "transparency": false
+              },
+              "score": 25
+            },
+            "urgencyCreation": {
+              "type": "timebound",
+              "appropriateForArchetype": false
+            },
+            "valueDemonstration": {
+              "indicators": {
+                "uniqueApproach": false,
+                "qualityFocus": false,
+                "outcomes": false,
+                "experience": false
+              },
+              "score": 0
+            },
+            "frictionReduction": {
+              "complexity": "low",
+              "clarity": "medium",
+              "accessibility": "present"
+            },
+            "socialProof": {
+              "types": [],
+              "strength": "moderate"
+            },
+            "persuasionTechniques": [
+              "authority_establishment"
+            ]
+          },
+          "visualBehavior": {
+            "responsiveness": {
+              "mobile": {
+                "width": 360,
+                "height": 1055.671875,
+                "fontSize": "16px",
+                "padding": "120px 0px",
+                "display": "block"
+              },
+              "tablet": {
+                "width": 753,
+                "height": 772.875,
+                "fontSize": "16px",
+                "padding": "120px 0px",
+                "display": "block"
+              },
+              "desktop": {
+                "width": 1385,
+                "height": 540,
+                "fontSize": "16px",
+                "padding": "120px 0px",
+                "display": "block"
+              }
+            },
+            "interactions": {
+              "hasHoverStates": false,
+              "hasTransitions": true,
+              "isInteractive": false,
+              "focusable": false
+            },
+            "animationPersonality": {
+              "speed": "calm",
+              "easing": "gentle",
+              "type": "expressive"
+            },
+            "mobileAdaptation": {
+              "breathingRoomPreserved": true,
+              "typographyOptimized": true,
+              "interactionFriendly": true
+            },
+            "microInteractions": [
+              "smooth_transitions"
+            ]
+          }
+        },
+        "visualProperties": {
+          "color": {
+            "primary": "rgb(26, 37, 43)",
+            "background": "rgb(255, 255, 255)",
+            "border": "rgb(26, 37, 43)"
+          },
+          "layout": {
+            "padding": "120px 0px",
+            "margin": "0px",
+            "maxWidth": "none",
+            "width": "1385px"
+          },
+          "typography": {
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+            "lineHeight": "27.2px"
+          }
+        },
+        "implementationData": {
+          "selector": "section.asymmetric-content-section",
+          "htmlStructure": "\n        <div class=\"asymmetric-container\">\n            <div class=\"asymmetric-text fade-in-up\">\n                <h2 class=\"asymmetric-title\">Let's Make Sure Your Smile Reflects the Person You've Become</h2>\n                <p class=\"asymmetric-description\">\n                    This isn't cosmetic—it's symbolic. Every smile tells a story, and we're here to make sure\n                    yours tells the truth about who you are today.\n                </p>\n                <a href=\"#\" class=\"cta-button\">Start Your Smile Journey</a>\n            </div>\n            <div class=\"asymmetric-image fade-in-up\">\n                [Dr. Karm's Portrait Would Go Here]\n            </div>\n        </div>\n    ",
+          "cssClasses": "asymmetric-content-section",
+          "computedStyles": {
+            "color": {
+              "primary": "rgb(26, 37, 43)",
+              "background": "rgb(255, 255, 255)",
+              "border": "rgb(26, 37, 43)"
+            },
+            "layout": {
+              "padding": "120px 0px",
+              "margin": "0px",
+              "maxWidth": "none",
+              "width": "1385px"
+            },
+            "typography": {
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+              "lineHeight": "27.2px"
+            }
+          },
+          "accessibility": {
+            "role": null,
+            "ariaLabel": null,
+            "tabIndex": null
+          },
+          "performanceImpact": "minimal",
+          "dependencies": []
+        },
+        "analysisMetrics": {
+          "duration": 3081,
+          "signatureAlignmentScore": 40,
+          "conversionEffectivenessScore": 75,
+          "archetypeExpressionScore": 85
+        },
+        "batchOptimizations": {
+          "processingMode": "optimized",
+          "enhancementAutoGeneration": true,
+          "mobileTestingIntegrated": true
+        },
+        "signatureGaps": [
+          "signature_alignment_below_target",
+          "archetype_expression_needs_strengthening"
+        ],
+        "narrativeRole": {
+          "role": "Asymmetric Content Curator",
+          "storyBeat": "Thoughtful positioning demonstration",
+          "emotionalFunction": "Owl wisdom through organic layout"
+        }
+      },
+      "enhancements": {
+        "signatureIntegration": {
+          "colorPhilosophyApplication": "Apply signature palette based on component narrative role",
+          "breathingRoomOptimization": "Increase padding to minimum 80px for calm precision",
+          "asymmetricPositioning": "Add 5-15px organic offsets for thoughtful curation"
+        },
+        "archetypeStrengthening": {
+          "owlWisdomEnhancement": "Patient reveals and thoughtful spacing increases",
+          "safeHarborEnhancement": "Warm protective colors and contained layouts",
+          "mirrorRecognitionEnhancement": "Self-empowerment messaging and authentic positioning"
+        },
+        "mobileOptimization": {
+          "breathingRoomPreservation": "Maintain 60%+ of desktop padding on mobile",
+          "typographyOptimization": "16px+ font sizes with 1.4+ line height",
+          "interactionOptimization": "44px+ touch targets with generous spacing"
+        },
+        "narrativeIntegration": {
+          "storyRole": "Asymmetric Content Curator",
+          "emotionalContribution": "Owl wisdom through organic layout",
+          "visualAlignment": "Align visual treatment with story beat function",
+          "interactionAlignment": "Design behaviors that support narrative role"
+        },
+        "implementationCode": {
+          "css": "\n/* Optimized comp_005 - Batch Enhanced Styles */\n.comp_005-batch-enhanced {\n  /* Signature Integration */\n  background-color: var(--signature-cream-comfort, #F4F1EA);\n  color: var(--signature-deep-trust, #2B3A42);\n\n  /* Breathing Room Optimization */\n  padding: clamp(60px, 8vw, 120px) 0;\n  max-width: min(680px, 90vw);\n  margin: 0 auto;\n\n  /* Archetype Expression */\n  transition: all 0.6s ease-out;\n  position: relative;\n}\n\n/* Mobile Optimization */\n@media (max-width: 768px) {\n  .comp_005-batch-enhanced {\n    padding: clamp(40px, 6vw, 80px) 5%;\n    font-size: clamp(16px, 4vw, 18px);\n    line-height: 1.5;\n  }\n}\n\n/* Narrative Integration */\n.comp_005-batch-enhanced[data-story-beat] {\n  /* Story-specific styling would be applied here */\n}\n",
+          "html": "\n<!-- Batch Enhanced comp_005 -->\n<div class=\"comp_005-batch-enhanced\"\n     data-story-beat=\"Asymmetric Content Curator\"\n     data-archetype-primary=\"true\">\n  <!-- Enhanced content structure with narrative integration -->\n  <div class=\"signature-breathing-wrapper\">\n    <!-- Original content with batch optimizations -->\n  </div>\n</div>\n",
+          "javascript": "\n// Batch Enhanced comp_005 - Optimized Behaviors\ndocument.addEventListener('DOMContentLoaded', function() {\n  const component = document.querySelector('.comp_005-batch-enhanced');\n  if (!component) return;\n\n  // Archetype-aligned interactions\n  component.addEventListener('mouseenter', function() {\n    // Owl wisdom: Patient response\n    this.style.transition = 'all 0.6s ease-out';\n    this.style.transform = 'translateY(-2px)';\n  });\n\n  // Safe harbor: Gentle feedback\n  component.addEventListener('focus', function() {\n    this.style.boxShadow = '0 0 0 3px rgba(107, 143, 113, 0.2)';\n  });\n\n  // Mirror recognition: Clear state communication\n  component.addEventListener('click', function() {\n    this.setAttribute('data-activated', 'true');\n  });\n});\n"
+        }
+      },
+      "validation": {
+        "signatureRecognition": {
+          "score": 91,
+          "personalityExpression": "authentic",
+          "brandAlignment": "strong"
+        },
+        "mobileAdaptation": {
+          "breathingRoomPreserved": true,
+          "typographyOptimized": true,
+          "interactionFriendly": true,
+          "score": 87
+        },
+        "narrativeContribution": {
+          "storyRole": "Asymmetric Content Curator",
+          "emotionalContribution": "positive",
+          "flowIntegration": "seamless"
+        }
+      },
+      "processingTime": 3081,
+      "optimizationApplied": true
+    },
+    "comp_008": {
+      "error": "Component comp_008 not found in DOM",
+      "timestamp": "2025-07-28T14:47:01.067Z"
+    },
+    "comp_009": {
+      "error": "Component comp_009 not found in DOM",
+      "timestamp": "2025-07-28T14:47:02.589Z"
+    },
+    "comp_010": {
+      "error": "Component comp_010 not found in DOM",
+      "timestamp": "2025-07-28T14:47:04.109Z"
+    },
+    "comp_011": {
+      "error": "Component comp_011 not found in DOM",
+      "timestamp": "2025-07-28T14:47:05.633Z"
+    },
+    "comp_012": {
+      "error": "Component comp_012 not found in DOM",
+      "timestamp": "2025-07-28T14:47:07.150Z"
+    },
+    "comp_013": {
+      "error": "Component comp_013 not found in DOM",
+      "timestamp": "2025-07-28T14:47:08.669Z"
+    },
+    "comp_014": {
+      "error": "Component comp_014 not found in DOM",
+      "timestamp": "2025-07-28T14:47:10.195Z"
+    },
+    "comp_015": {
+      "error": "Component comp_015 not found in DOM",
+      "timestamp": "2025-07-28T14:47:11.715Z"
+    },
+    "comp_016": {
+      "error": "Component comp_016 not found in DOM",
+      "timestamp": "2025-07-28T14:47:13.234Z"
+    },
+    "comp_017": {
+      "error": "Component comp_017 not found in DOM",
+      "timestamp": "2025-07-28T14:47:14.753Z"
+    }
+  },
+  "batchMetrics": {
+    "startTime": 1753714013340,
+    "componentCount": 12,
+    "processingMode": "optimized_batch",
+    "endTime": 1753714034753,
+    "totalDuration": 21413,
+    "averageProcessingTime": 1784.4166666666667
+  }
+}
